@@ -1,0 +1,71 @@
+{
+  "name": "N3 文法",
+  "category": "grammar",
+  "level": "N3",
+  "data": [
+    {
+      "id": "grammar-n3-001",
+      "japanese": "うちに",
+      "simple_chinese": "在～過程中／趁～",
+      "full_explanation": "表示在某狀態持續期間做某事。常與「ている」「ない」搭配使用。",
+      "examples": [
+        {
+          "sentence": "勉強している【うちに】眠くなった",
+          "chinese": "讀書讀著讀著就睏了"
+        },
+        {
+          "sentence": "若い【うちに】いろいろな経験をしたい",
+          "chinese": "趁年輕想做各種體驗"
+        }
+      ]
+    },
+    {
+      "id": "grammar-n3-002",
+      "japanese": "～から～にかけて",
+      "simple_chinese": "從～到～",
+      "full_explanation": "表示從某個範圍到另一個範圍的大致區間，不精確。",
+      "examples": [
+        {
+          "sentence": "東京【から】大阪【にかけて】雨が降るでしょう",
+          "chinese": "從東京到大阪一帶會下雨吧"
+        }
+      ]
+    },
+    {
+      "id": "grammar-n3-003",
+      "japanese": "ようにする",
+      "simple_chinese": "努力做到～、盡量～",
+      "full_explanation": "表示有意識地努力做到某事。用於表達習慣或持續的努力。",
+      "examples": [
+        {
+          "sentence": "毎日運動する【ようにする】",
+          "chinese": "盡量每天運動"
+        }
+      ]
+    },
+    {
+      "id": "grammar-n3-004",
+      "japanese": "ことになる",
+      "simple_chinese": "決定～、變成～",
+      "full_explanation": "表示（由外在因素）決定了某件事。非個人意志。",
+      "examples": [
+        {
+          "sentence": "来月から東京で働く【ことになる】",
+          "chinese": "下個月起要在東京工作了"
+        }
+      ]
+    },
+    {
+      "id": "grammar-n3-005",
+      "japanese": "～ば～ほど",
+      "simple_chinese": "越～越～",
+      "full_explanation": "表示隨著前項程度的增加，後項也跟著變化。",
+      "examples": [
+        {
+          "sentence": "練習すれ【ば】する【ほど】上手になる",
+          "chinese": "越練習越熟練"
+        }
+      ]
+    }
+  ]
+}

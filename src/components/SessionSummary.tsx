@@ -1,0 +1,75 @@
+import type { SessionResult } from "../types";
+
+interface SessionSummaryProps {
+  result: SessionResult;
+  onStudyAgain: () => void;
+  onGoHome: () => void;
+}
+
+export default function SessionSummary({ result, onStudyAgain, onGoHome }: SessionSummaryProps) {
+  const { total, good, hard, again } = result;
+
+  return (
+    <div className="text-center">
+      <div className="text-4xl mb-2">🎉</div>
+      <h2 className="text-2xl font-bold text-gray-900 mb-6">學習完成！</h2>
+
+      {/* Stats */}
+      <div className="grid grid-cols-3 gap-4 mb-8">
+        <div className="bg-emerald-50 rounded-xl p-4">
+          <div className="text-3xl font-bold text-emerald-600">{good}</div>
+          <div className="text-sm text-emerald-700 mt-1">記住了</div>
+        </div>
+        <div className="bg-amber-50 rounded-xl p-4">
+          <div className="text-3xl font-bold text-amber-600">{hard}</div>
+          <div className="text-sm text-amber-700 mt-1">還好</div>
+        </div>
+        <div className="bg-red-50 rounded-xl p-4">
+          <div className="text-3xl font-bold text-red-600">{again}</div>
+          <div className="text-sm text-red-700 mt-1">不會</div>
+        </div>
+      </div>
+
+      {/* Progress bar */}
+      <div className="mb-8">
+        <div className="text-sm text-gray-500 mb-2">本次共複習 {total} 張卡片</div>
+        <div className="flex h-3 rounded-full overflow-hidden bg-gray-100">
+          {good > 0 && (
+            <div
+              className="bg-emerald-500 transition-all"
+              style={{ width: `${(good / total) * 100}%` }}
+            />
+          )}
+          {hard > 0 && (
+            <div
+              className="bg-amber-500 transition-all"
+              style={{ width: `${(hard / total) * 100}%` }}
+            />
+          )}
+          {again > 0 && (
+            <div
+              className="bg-red-500 transition-all"
+              style={{ width: `${(again / total) * 100}%` }}
+            />
+          )}
+        </div>
+      </div>
+
+      {/* Actions */}
+      <div className="flex gap-3">
+        <button
+          onClick={onStudyAgain}
+          className="flex-1 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-colors tap-active"
+        >
+          再來一次
+        </button>
+        <button
+          onClick={onGoHome}
+          className="flex-1 py-3 rounded-xl border-2 border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-colors tap-active"
+        >
+          回首頁
+        </button>
+      </div>
+    </div>
+  );
+}

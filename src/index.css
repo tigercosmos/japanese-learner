@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Flashcard flip animation */
+.perspective {
+  perspective: 1000px;
+}
+
+.card-flip {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.card-flip.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* Slide transition */
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Tap feedback */
+.tap-active:active {
+  transform: scale(0.98);
+  transition: transform 0.1s;
+}
