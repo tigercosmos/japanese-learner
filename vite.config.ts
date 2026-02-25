@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/japanese-learner/',
   plugins: [react(), tailwindcss()],
   server: {
     host: '127.0.0.1',
