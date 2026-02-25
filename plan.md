@@ -313,3 +313,126 @@ Create minimal test data during Phase 2:
 - `data/grammar-n3.json` — 5 grammar items (including multi-bracket patterns)
 
 These serve as both development fixtures and format documentation.
+
+---
+
+## 10. Learning Mode (Phase 5)
+
+A read-only browsing mode that shows cards one-by-one with full content visible (no flip, no rating). Designed for initial learning before testing.
+
+### 10.1 Route
+
+```
+/learn/:datasetId           → LearnPage (browse cards sequentially)
+```
+
+### 10.2 User Flow
+
+```
+SetupPage
+  ├── "學習模式" button (alongside 開始測驗)
+  └── Click → LearnPage
+
+LearnPage
+  ├── Progress bar at top (e.g., 2 / 5)
+  ├── Full card content displayed (no flip):
+  │   ├── Vocabulary: japanese + hiragana + chinese + full_explanation
+  │   └── Grammar: japanese + chinese + full_explanation + all examples (highlighted)
+  ├── Navigation: ← 上一張 / 下一張 → buttons
+  ├── Keyboard: Left arrow = previous, Right arrow = next
+  └── End: shows "學習完成" with back options
+```
+
+### 10.3 Card Layout (Learning Mode)
+
+**Vocabulary card** — single view, no flip:
+- Top: Japanese kanji (large)
+- Middle: hiragana reading
+- Below: Chinese meaning (bold)
+- Bottom: full explanation
+
+**Grammar card** — single view, no flip:
+- Top: Grammar pattern (large)
+- Middle: Chinese meaning (bold)
+- Below: full explanation
+- Examples section: each example shows sentence (with grammar highlighted) + Chinese translation
+
+---
+
+## 11. Review All / Random Mode (Phase 5)
+
+When all cards in a dataset are already learned (due = 0), users should still be able to study.
+
+### 11.1 Session Types
+
+The SetupPage passes a `sessionType` to the StudyPage via location.state:
+
+| sessionType | Behavior |
+|-------------|----------|
+| `"due"` (default) | Only due/new cards. Current behavior. |
+| `"random"` | All cards, shuffled randomly, ignoring due dates. Still updates SM-2 progress. |
+
+### 11.2 Changes to SetupPage
+
+- Always show both buttons:
+  - "開始測驗" — uses `"due"` session type (only due cards)
+  - "隨機複習" — uses `"random"` session type (all cards, shuffled)
+- When due cards = 0, the "開始測驗" button is disabled with hint text.
+
+### 11.3 Changes to useStudySession
+
+- Accept `sessionType` parameter.
+- When `sessionType === "random"`:
+  - Ignore `isDue()` filter, include all cards.
+  - Still shuffle and limit by sessionSize.
+  - Still track session results for summary display.
+  - Still update SM-2 progress (ratings count).
+
+---
+
+## 12. Statistics (Phase 5)
+
+### 12.1 Dataset Statistics on DatasetCard (HomePage)
+
+Each DatasetCard shows a mastery progress bar:
+
+- **已學習**: number of cards that have been rated at least once
+- **熟練度**: progress bar showing percentage of cards with `repetitions >= 3` (well-learned)
+
+### 12.2 Dataset Statistics on SetupPage
+
+A stats section displayed on SetupPage (above mode selection):
+
+| Stat | Description |
+|------|-------------|
+| 總卡片數 | Total cards in dataset |
+| 已學習 | Cards with at least one review |
+| 待複習 | Cards currently due |
+| 已熟練 | Cards with repetitions >= 3 |
+
+### 12.3 Implementation
+
+- Stats are computed from `ProgressStore` in localStorage.
+- A utility function `getDatasetStats(dataset, progress)` returns all stat values.
+- `DatasetMeta` type extended with `learnedCards` and `masteredCards` fields.
+
+### 12.4 New Files
+
+```
+src/lib/stats.ts                # getDatasetStats() utility
+src/components/StatsBar.tsx     # Mastery bar on DatasetCard
+src/components/DatasetStats.tsx # Stats section for SetupPage
+src/components/LearnCard.tsx    # Full-content card for learning mode
+src/pages/LearnPage.tsx         # Learning mode page
+```
+
+---
+
+## 13. Updated Route Map
+
+```
+/                                → HomePage
+/study/:datasetId                → SetupPage (mode + session config)
+/study/:datasetId/session        → StudyPage (flashcard test session)
+/learn/:datasetId                → LearnPage (browse cards with full content)
+```

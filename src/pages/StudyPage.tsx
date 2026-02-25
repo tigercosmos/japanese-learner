@@ -6,7 +6,7 @@ import Flashcard from "../components/Flashcard";
 import RatingButtons from "../components/RatingButtons";
 import ProgressBar from "../components/ProgressBar";
 import SessionSummary from "../components/SessionSummary";
-import type { TestMode } from "../types";
+import type { TestMode, SessionType } from "../types";
 
 export default function StudyPage() {
   const { datasetId } = useParams<{ datasetId: string }>();
@@ -14,7 +14,11 @@ export default function StudyPage() {
   const navigate = useNavigate();
   const dataset = useDatasetById(datasetId ?? "");
 
-  const { mode, sessionSize } = (location.state as { mode: TestMode; sessionSize: number }) ?? {
+  const { mode, sessionSize, sessionType } = (location.state as {
+    mode: TestMode;
+    sessionSize: number;
+    sessionType?: SessionType;
+  }) ?? {
     mode: "kanji-to-chinese" as TestMode,
     sessionSize: 20,
   };
@@ -28,7 +32,7 @@ export default function StudyPage() {
     sessionResult,
     flip,
     rate,
-  } = useStudySession(dataset, mode, sessionSize);
+  } = useStudySession(dataset, mode, sessionSize, sessionType ?? "due");
 
   useKeyboard({
     isFlipped,

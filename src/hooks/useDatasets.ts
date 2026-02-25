@@ -1,6 +1,6 @@
 import type { Dataset, DatasetMeta } from "../types";
 import { loadProgress } from "../lib/storage";
-import { isDue } from "../lib/sm2";
+import { getDatasetStats } from "../lib/stats";
 
 // Eagerly import all JSON files from the data directory (synchronous)
 const dataModules = import.meta.glob<Dataset>("../../data/*.json", { eager: true });
@@ -47,14 +47,16 @@ export function useDatasetMetas(
       return true;
     })
     .map((ds) => {
-      const dueCount = ds.data.filter((item) => isDue(progress[item.id])).length;
+      const stats = getDatasetStats(ds.data, progress);
       return {
         id: ds.id,
         name: ds.name,
         category: ds.category,
         level: ds.level,
-        totalCards: ds.data.length,
-        dueCards: dueCount,
+        totalCards: stats.totalCards,
+        dueCards: stats.dueCards,
+        learnedCards: stats.learnedCards,
+        masteredCards: stats.masteredCards,
       };
     });
 }

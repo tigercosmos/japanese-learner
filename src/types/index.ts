@@ -106,6 +106,8 @@ export interface SessionResult {
 
 // ========== Dataset Metadata (for listing) ==========
 
+export type SessionType = "due" | "random";
+
 export interface DatasetMeta {
   id: string;             // filename-derived identifier
   name: string;
@@ -113,4 +115,6 @@ export interface DatasetMeta {
   level: string;
   totalCards: number;
   dueCards: number;
+  learnedCards: number;   // cards reviewed at least once
+  masteredCards: number;  // cards with repetitions >= 3
 }

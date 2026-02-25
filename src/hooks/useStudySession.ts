@@ -7,6 +7,7 @@ import type {
   Rating,
   FlashcardContent,
   SessionResult,
+  SessionType,
 } from "../types";
 import type { LoadedDataset } from "./useDatasets";
 import { useProgress } from "./useProgress";
@@ -24,6 +25,7 @@ export function useStudySession(
   dataset: LoadedDataset | undefined,
   mode: TestMode,
   sessionSize: number,
+  sessionType: SessionType = "due",
 ) {
   const { progress, rateCard } = useProgress();
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,9 +38,13 @@ export function useStudySession(
   const initialCards: StudyCard[] = useMemo(() => {
     if (!dataset) return [];
 
-    // Filter due cards and new cards
-    const dueItems = dataset.data.filter((item) => isDue(progress[item.id]));
-    const shuffled = shuffle(dueItems);
+    // Filter cards based on session type
+    const items =
+      sessionType === "random"
+        ? dataset.data // All cards for random mode
+        : dataset.data.filter((item) => isDue(progress[item.id])); // Only due cards
+
+    const shuffled = shuffle(items);
     const selected = shuffled.slice(0, sessionSize);
 
     return selected.map((item) => {
@@ -47,7 +53,7 @@ export function useStudySession(
     });
   // Only compute once on mount (deps intentionally exclude progress to avoid re-shuffle)
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dataset?.id, mode, sessionSize]);
+  }, [dataset?.id, mode, sessionSize, sessionType]);
 
   // Combined queue: initial cards + requeued cards
   const allCards = useMemo(() => [...initialCards, ...requeue], [initialCards, requeue]);
@@ -75,7 +81,6 @@ export function useStudySession(
       // Move to next card
       const nextIndex = currentIndex + 1;
       if (nextIndex >= allCards.length + (rating === "again" ? 1 : 0)) {
-        // Check if this was the last card considering potential requeue
         if (nextIndex >= totalCards + (rating === "again" ? 1 : 0)) {
           setIsComplete(true);
         }

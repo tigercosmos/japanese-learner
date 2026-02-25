@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import type { DatasetMeta } from "../types";
+import StatsBar from "./StatsBar";
 
 interface DatasetCardProps {
   dataset: DatasetMeta;
@@ -42,6 +43,11 @@ export default function DatasetCard({ dataset }: DatasetCardProps) {
           <div className="text-xs text-gray-500">待複習 / {dataset.totalCards}</div>
         </div>
       </div>
+      <StatsBar
+        learnedCards={dataset.learnedCards}
+        masteredCards={dataset.masteredCards}
+        totalCards={dataset.totalCards}
+      />
     </button>
   );
 }
