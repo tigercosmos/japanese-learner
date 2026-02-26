@@ -2,6 +2,7 @@ import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { useDatasetById } from "../hooks/useDatasets";
 import { useStudySession } from "../hooks/useStudySession";
 import { useKeyboard } from "../hooks/useKeyboard";
+import { useSwipe } from "../hooks/useSwipe";
 import Flashcard from "../components/Flashcard";
 import RatingButtons from "../components/RatingButtons";
 import ProgressBar from "../components/ProgressBar";
@@ -39,6 +40,12 @@ export default function StudyPage() {
     onFlip: flip,
     onRate: rate,
     enabled: !isSessionComplete && !!currentCard,
+  });
+
+  const { targetRef: swipeRef, swipeState } = useSwipe({
+    onSwipe: rate,
+    enabled: !isSessionComplete && !!currentCard,
+    key: currentIndex,
   });
 
   if (!dataset) {
@@ -82,15 +89,25 @@ export default function StudyPage() {
     <div>
       <ProgressBar current={currentIndex} total={totalCards} />
 
-      <div key={currentIndex} className="slide-in">
-        <Flashcard content={currentCard.flashcard} isFlipped={isFlipped} onFlip={flip} />
+      <div key={currentIndex} className="slide-in" ref={swipeRef}>
+        <Flashcard
+          content={currentCard.flashcard}
+          isFlipped={isFlipped}
+          onFlip={flip}
+          swipe={swipeState}
+        />
       </div>
 
       <RatingButtons onRate={rate} visible={isFlipped} />
 
+      {/* Swipe hint (mobile) */}
+      <div className="sm:hidden text-center mt-4 text-xs text-gray-400">
+        ← 不會 · ↓ 還好 · → 記住了
+      </div>
+
       {/* Keyboard hint (desktop only) */}
       <div className="hidden sm:block text-center mt-4 text-xs text-gray-400">
-        空白鍵翻面 · 1 不會 · 2 還好 · 3 記住了
+        空白鍵翻面 · 1 不會 · 2 還好 · 3 記住了 · 可拖曳卡片
       </div>
     </div>
   );

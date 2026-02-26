@@ -44,3 +44,9 @@
   transform: scale(0.98);
   transition: transform 0.1s;
 }
+
+/* Prevent text selection during swipe/drag */
+.select-none {
+  -webkit-user-select: none;
+  user-select: none;
+}
