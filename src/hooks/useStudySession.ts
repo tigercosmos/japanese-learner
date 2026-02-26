@@ -62,7 +62,7 @@ export function useStudySession(
   const totalCards = allCards.length;
 
   const flip = useCallback(() => {
-    setIsFlipped(true);
+    setIsFlipped((prev) => !prev);
   }, []);
 
   const rate = useCallback(

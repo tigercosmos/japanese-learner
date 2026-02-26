@@ -58,13 +58,16 @@ export default function Flashcard({ content, isFlipped, onFlip, swipe }: Flashca
       )}
 
       <div
-        className={`card-flip relative w-full cursor-pointer ${isFlipped ? "flipped" : ""}`}
+        className="relative w-full cursor-pointer"
         style={{
           minHeight: "280px",
           transform: swipeTransform,
           transition: swipeTransition,
         }}
-        onClick={!isFlipped ? onFlip : undefined}
+        onClick={onFlip}
+      >
+      <div
+        className={`card-flip absolute inset-0 ${isFlipped ? "flipped" : ""}`}
       >
         {/* Front */}
         <div className="card-face absolute inset-0 bg-white rounded-2xl border border-gray-200 shadow-sm flex flex-col items-center justify-center p-8">
@@ -94,7 +97,9 @@ export default function Flashcard({ content, isFlipped, onFlip, swipe }: Flashca
               {content.back.detail}
             </div>
           )}
+          <div className="absolute bottom-4 text-xs text-gray-400">點擊翻回</div>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -23,12 +23,10 @@ export function useKeyboard({ isFlipped, onFlip, onRate, enabled = true }: UseKe
       // Ignore if typing in an input
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
 
-      if (!isFlipped) {
-        if (e.code === "Space" || e.code === "Enter") {
-          e.preventDefault();
-          onFlip();
-        }
-      } else {
+      if (e.code === "Space" || e.code === "Enter") {
+        e.preventDefault();
+        onFlip();
+      } else if (isFlipped) {
         switch (e.key) {
           case "1":
             e.preventDefault();
