@@ -5,6 +5,8 @@ import { defineConfig, devices } from "@playwright/test";
 const E2E_PORT = 5174;
 
 export default defineConfig({
+  globalSetup: "./e2e/global-setup.ts",
+  globalTeardown: "./e2e/global-teardown.ts",
   testDir: "./e2e",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,

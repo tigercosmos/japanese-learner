@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Test fixture data copied into data/ during e2e runs
+data/test-*.json
+
 # Playwright
 /test-results/
 /playwright-report/
