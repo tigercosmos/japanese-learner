@@ -1,0 +1,31 @@
+{
+  "name": "Test 文法",
+  "category": "grammar",
+  "level": "T1",
+  "data": [
+    {
+      "id": "test-grammar-001",
+      "japanese": "ている",
+      "simple_chinese": "正在～",
+      "full_explanation": "表示動作正在進行中。",
+      "examples": [
+        {
+          "sentence": "本を読ん【ている】",
+          "chinese": "正在看書"
+        }
+      ]
+    },
+    {
+      "id": "test-grammar-002",
+      "japanese": "～から～まで",
+      "simple_chinese": "從～到～",
+      "full_explanation": "表示時間或空間的起點到終點。",
+      "examples": [
+        {
+          "sentence": "東京【から】大阪【まで】新幹線で行く",
+          "chinese": "從東京到大阪搭新幹線"
+        }
+      ]
+    }
+  ]
+}
