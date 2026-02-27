@@ -70,34 +70,34 @@ export default function Flashcard({ content, isFlipped, onFlip, swipe }: Flashca
         className={`card-flip absolute inset-0 ${isFlipped ? "flipped" : ""}`}
       >
         {/* Front */}
-        <div className="card-face absolute inset-0 bg-white rounded-2xl border border-gray-200 shadow-sm flex flex-col items-center justify-center p-8">
-          <div className="text-3xl font-bold text-gray-900 text-center leading-relaxed">
+        <div className="card-face absolute inset-0 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center p-8">
+          <div className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center leading-relaxed">
             {renderText(content.front.primary)}
           </div>
           {content.front.secondary && (
-            <div className="text-base text-gray-500 mt-3 text-center">
+            <div className="text-base text-gray-500 dark:text-gray-400 mt-3 text-center">
               {content.front.secondary}
             </div>
           )}
-          <div className="absolute bottom-4 text-xs text-gray-400">點擊翻面</div>
+          <div className="absolute bottom-4 text-xs text-gray-400 dark:text-gray-500">點擊翻面</div>
         </div>
 
         {/* Back */}
-        <div className="card-face card-back absolute inset-0 bg-white rounded-2xl border border-gray-200 shadow-sm flex flex-col items-center justify-center p-8">
-          <div className="text-3xl font-bold text-gray-900 text-center leading-relaxed">
+        <div className="card-face card-back absolute inset-0 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center p-8">
+          <div className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center leading-relaxed">
             {renderText(content.back.primary)}
           </div>
           {content.back.secondary && (
-            <div className="text-lg text-gray-600 mt-3 text-center">
+            <div className="text-lg text-gray-600 dark:text-gray-300 mt-3 text-center">
               {content.back.secondary}
             </div>
           )}
           {content.back.detail && (
-            <div className="text-sm text-gray-400 mt-4 text-center max-w-sm leading-relaxed">
+            <div className="text-sm text-gray-400 dark:text-gray-500 mt-4 text-center max-w-sm leading-relaxed">
               {content.back.detail}
             </div>
           )}
-          <div className="absolute bottom-4 text-xs text-gray-400">點擊翻回</div>
+          <div className="absolute bottom-4 text-xs text-gray-400 dark:text-gray-500">點擊翻回</div>
         </div>
       </div>
       </div>

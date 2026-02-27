@@ -9,14 +9,14 @@ export default function ProgressBar({ current, total }: ProgressBarProps) {
   return (
     <div className="mb-6">
       <div className="flex justify-between items-center mb-1.5">
-        <span className="text-sm text-gray-500">
+        <span className="text-sm text-gray-500 dark:text-gray-400">
           {current} / {total}
         </span>
-        <span className="text-sm text-gray-500">{Math.round(pct)}%</span>
+        <span className="text-sm text-gray-500 dark:text-gray-400">{Math.round(pct)}%</span>
       </div>
-      <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden">
+      <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
         <div
-          className="h-full bg-gray-900 rounded-full transition-all duration-300 ease-out"
+          className="h-full bg-gray-900 dark:bg-white rounded-full transition-all duration-300 ease-out"
           style={{ width: `${pct}%` }}
         />
       </div>

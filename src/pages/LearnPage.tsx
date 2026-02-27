@@ -32,7 +32,7 @@ export default function LearnPage() {
 
   if (!dataset) {
     return (
-      <div className="text-center py-12 text-gray-400">
+      <div className="text-center py-12 text-gray-400 dark:text-gray-500">
         <p>找不到學習集</p>
       </div>
     );
@@ -118,10 +118,10 @@ export default function LearnPage() {
 
         <div className="text-center py-8">
           <div className="text-4xl mb-2">📖</div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-2">
             {isDaily ? `第 ${currentDayIndex + 1} 天完成！` : "瀏覽完成！"}
           </h2>
-          <p className="text-sm text-gray-500 mb-6">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
             {isDaily
               ? `已看完 ${totalCards} 張卡片`
               : `已看完全部 ${totalCards} 張卡片`}
@@ -129,13 +129,13 @@ export default function LearnPage() {
           <div className="flex flex-col gap-3 max-w-xs mx-auto">
             <button
               onClick={() => setCurrentIndex(0)}
-              className="py-3 rounded-xl border-2 border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-colors tap-active"
+              className="py-3 rounded-xl border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors tap-active"
             >
               從頭看今天
             </button>
             <button
               onClick={navigateToExam}
-              className="py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-colors tap-active"
+              className="py-3 rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-semibold hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors tap-active"
             >
               {isDaily ? "測驗今天的卡片" : "去測驗"}
             </button>
@@ -174,15 +174,15 @@ export default function LearnPage() {
           disabled={currentIndex === 0}
           className={`flex-1 py-3 rounded-xl font-semibold transition-colors tap-active ${
             currentIndex === 0
-              ? "bg-gray-100 text-gray-300 cursor-not-allowed"
-              : "border-2 border-gray-300 text-gray-700 hover:bg-gray-50"
+              ? "bg-gray-100 dark:bg-gray-700 text-gray-300 dark:text-gray-500 cursor-not-allowed"
+              : "border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
           }`}
         >
           ← 上一張
         </button>
         <button
           onClick={goNext}
-          className="flex-1 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-colors tap-active"
+          className="flex-1 py-3 rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-semibold hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors tap-active"
         >
           {currentIndex === totalCards - 1 ? "完成" : "下一張 →"}
         </button>
@@ -191,13 +191,13 @@ export default function LearnPage() {
       {/* Exam button — always visible */}
       <button
         onClick={navigateToExam}
-        className="w-full mt-3 py-3 rounded-xl border-2 border-blue-200 bg-blue-50 text-blue-700 font-semibold hover:bg-blue-100 transition-colors tap-active"
+        className="w-full mt-3 py-3 rounded-xl border-2 border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors tap-active"
       >
         {isDaily ? "開始測驗今天的卡片" : "開始測驗"}
       </button>
 
       {/* Keyboard hint (desktop only) */}
-      <div className="hidden sm:block text-center mt-4 text-xs text-gray-400">
+      <div className="hidden sm:block text-center mt-4 text-xs text-gray-400 dark:text-gray-500">
         ← 上一張 · → 下一張
       </div>
     </div>
@@ -219,8 +219,8 @@ function DayTabs({ plan, currentDayIndex, onSelectDay }: DayTabsProps) {
           onClick={() => onSelectDay(dayIdx)}
           className={`flex-shrink-0 px-4 py-2 rounded-xl text-sm font-semibold transition-colors tap-active ${
             currentDayIndex === dayIdx
-              ? "bg-gray-900 text-white"
-              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900"
+              : "bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
           }`}
         >
           第 {dayIdx + 1} 天

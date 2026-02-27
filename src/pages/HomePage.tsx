@@ -22,8 +22,8 @@ export default function HomePage() {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-1">學習集</h2>
-        <p className="text-sm text-gray-500">選擇一個學習集開始複習</p>
+        <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-1">學習集</h2>
+        <p className="text-sm text-gray-500 dark:text-gray-400">選擇一個學習集開始複習</p>
       </div>
 
       <FilterBar
@@ -36,7 +36,7 @@ export default function HomePage() {
       />
 
       {metas.length === 0 ? (
-        <div className="text-center py-12 text-gray-400">
+        <div className="text-center py-12 text-gray-400 dark:text-gray-500">
           <div className="text-4xl mb-3">📚</div>
           <p>沒有找到符合條件的學習集</p>
         </div>

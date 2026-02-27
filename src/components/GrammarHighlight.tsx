@@ -16,8 +16,8 @@ export default function GrammarHighlight({ sentence, mode }: GrammarHighlightPro
             key={i}
             className={
               mode === "highlight"
-                ? "bg-amber-200 text-amber-900 px-1 rounded font-bold"
-                : "text-amber-600 font-bold"
+                ? "bg-amber-200 dark:bg-amber-800 text-amber-900 dark:text-amber-200 px-1 rounded font-bold"
+                : "text-amber-600 dark:text-amber-400 font-bold"
             }
           >
             {part.text}

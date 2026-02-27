@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Class-based dark mode: toggle .dark on <html> */
+@variant dark (&:where(.dark, .dark *));
+
 /* Flashcard flip animation */
 .perspective {
   perspective: 1000px;

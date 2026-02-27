@@ -58,7 +58,7 @@ export default function StudyPage() {
 
   if (!dataset) {
     return (
-      <div className="text-center py-12 text-gray-400">
+      <div className="text-center py-12 text-gray-400 dark:text-gray-500">
         <p>找不到學習集</p>
       </div>
     );
@@ -94,11 +94,11 @@ export default function StudyPage() {
     return (
       <div className="text-center py-12">
         <div className="text-4xl mb-3">✨</div>
-        <h2 className="text-xl font-bold text-gray-900 mb-2">目前沒有待複習的卡片</h2>
-        <p className="text-sm text-gray-500 mb-6">所有卡片都已經複習完畢！</p>
+        <h2 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-2">目前沒有待複習的卡片</h2>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">所有卡片都已經複習完畢！</p>
         <button
           onClick={() => navigate("/", { replace: true })}
-          className="px-6 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-colors"
+          className="px-6 py-3 rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-semibold hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
         >
           回首頁
         </button>
@@ -122,12 +122,12 @@ export default function StudyPage() {
       <RatingButtons onRate={rate} visible={isFlipped} />
 
       {/* Swipe hint (mobile) */}
-      <div className="sm:hidden text-center mt-4 text-xs text-gray-400">
+      <div className="sm:hidden text-center mt-4 text-xs text-gray-400 dark:text-gray-500">
         ← 不會 · ↓ 還好 · → 記住了
       </div>
 
       {/* Keyboard hint (desktop only) */}
-      <div className="hidden sm:block text-center mt-4 text-xs text-gray-400">
+      <div className="hidden sm:block text-center mt-4 text-xs text-gray-400 dark:text-gray-500">
         空白鍵翻面 · 1 不會 · 2 還好 · 3 記住了 · 可拖曳卡片
       </div>
     </div>
