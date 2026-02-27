@@ -10,6 +10,10 @@ import type {
  * Build flashcard content for a vocabulary item based on the test mode.
  */
 export function buildVocabCard(item: VocabItem, mode: VocabTestMode): FlashcardContent {
+  if (mode === "random") {
+    const concreteModes: VocabTestMode[] = ["kanji-to-chinese", "hiragana-to-chinese", "chinese-to-japanese"];
+    return buildVocabCard(item, concreteModes[Math.floor(Math.random() * concreteModes.length)]);
+  }
   switch (mode) {
     case "kanji-to-chinese":
       return {
@@ -55,6 +59,10 @@ export function buildGrammarCard(
   mode: GrammarTestMode,
   exampleIndex?: number,
 ): FlashcardContent {
+  if (mode === "random") {
+    const concreteModes: GrammarTestMode[] = ["grammar-to-chinese", "example-to-chinese", "chinese-to-grammar", "fill-in-grammar"];
+    return buildGrammarCard(item, concreteModes[Math.floor(Math.random() * concreteModes.length)], exampleIndex);
+  }
   const example = item.examples?.[exampleIndex ?? 0];
 
   switch (mode) {

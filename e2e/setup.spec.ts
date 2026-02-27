@@ -15,9 +15,12 @@ test.describe("Setup Page - Vocabulary", () => {
   });
 
   test("should display vocab test mode options", async ({ page }) => {
-    await expect(page.getByText("漢字 → 中文")).toBeVisible();
-    await expect(page.getByText("假名 → 中文")).toBeVisible();
-    await expect(page.getByText("中文 → 日文")).toBeVisible();
+    const select = page.getByRole("combobox");
+    await expect(select).toBeVisible();
+    await expect(select).toContainText("漢字 → 中文");
+    await expect(select).toContainText("假名 → 中文");
+    await expect(select).toContainText("中文 → 日文");
+    await expect(select).toContainText("隨機");
   });
 
   test("should display session size options", async ({ page }) => {
@@ -67,9 +70,12 @@ test.describe("Setup Page - Grammar", () => {
   });
 
   test("should display grammar test mode options", async ({ page }) => {
-    await expect(page.getByText("文法 → 中文")).toBeVisible();
-    await expect(page.getByText("例句 → 中文")).toBeVisible();
-    await expect(page.getByText("中文 → 文法")).toBeVisible();
-    await expect(page.getByText("填空 → 文法")).toBeVisible();
+    const select = page.getByRole("combobox");
+    await expect(select).toBeVisible();
+    await expect(select).toContainText("文法 → 中文");
+    await expect(select).toContainText("例句 → 中文");
+    await expect(select).toContainText("中文 → 文法");
+    await expect(select).toContainText("填空 → 文法");
+    await expect(select).toContainText("隨機");
   });
 });

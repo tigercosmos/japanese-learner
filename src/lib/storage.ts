@@ -40,3 +40,29 @@ export function loadSettings(): AppSettings {
 export function saveSettings(settings: AppSettings): void {
   localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
 }
+
+// ========== Test Mode Preference ==========
+
+const TEST_MODE_KEY = "jp-learner:test-mode";
+
+export function loadTestMode(category: "vocabulary" | "grammar"): string | null {
+  try {
+    const raw = localStorage.getItem(TEST_MODE_KEY);
+    if (!raw) return null;
+    const stored = JSON.parse(raw);
+    return stored[category] ?? null;
+  } catch {
+    return null;
+  }
+}
+
+export function saveTestMode(category: "vocabulary" | "grammar", mode: string): void {
+  try {
+    const raw = localStorage.getItem(TEST_MODE_KEY);
+    const stored = raw ? JSON.parse(raw) : {};
+    stored[category] = mode;
+    localStorage.setItem(TEST_MODE_KEY, JSON.stringify(stored));
+  } catch {
+    // ignore
+  }
+}

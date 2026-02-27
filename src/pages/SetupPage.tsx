@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDatasetById } from "../hooks/useDatasets";
-import { loadProgress } from "../lib/storage";
+import { loadProgress, loadTestMode, saveTestMode } from "../lib/storage";
 import { getDatasetStats } from "../lib/stats";
 import ModeSelector from "../components/ModeSelector";
 import DatasetStatsDisplay from "../components/DatasetStats";
@@ -15,11 +15,18 @@ export default function SetupPage() {
   const navigate = useNavigate();
   const dataset = useDatasetById(datasetId ?? "");
 
-  const isVocab = dataset?.category === "vocabulary";
+  const category = dataset?.category ?? "vocabulary";
+  const isVocab = category === "vocabulary";
   const modes = isVocab ? VOCAB_TEST_MODES : GRAMMAR_TEST_MODES;
-  const defaultMode = modes[0].value;
+  const savedMode = loadTestMode(category);
+  const defaultMode = (savedMode && modes.some((m) => m.value === savedMode)) ? savedMode : modes[0].value;
 
   const [selectedMode, setSelectedMode] = useState<string>(defaultMode);
+
+  const handleModeChange = (mode: TestMode) => {
+    setSelectedMode(mode);
+    saveTestMode(category, mode);
+  };
   const [sessionSize, setSessionSize] = useState(20);
 
   if (!dataset) {
@@ -73,7 +80,7 @@ export default function SetupPage() {
         <ModeSelector
           modes={modes}
           selected={selectedMode}
-          onChange={(mode: TestMode) => setSelectedMode(mode)}
+          onChange={handleModeChange}
         />
       </div>
 

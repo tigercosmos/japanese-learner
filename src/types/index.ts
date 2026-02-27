@@ -35,13 +35,14 @@ export type GrammarDataset = Dataset<GrammarItem>;
 
 // ========== Test Mode Types ==========
 
-export type VocabTestMode = "kanji-to-chinese" | "hiragana-to-chinese" | "chinese-to-japanese";
+export type VocabTestMode = "kanji-to-chinese" | "hiragana-to-chinese" | "chinese-to-japanese" | "random";
 
 export type GrammarTestMode =
   | "grammar-to-chinese"
   | "example-to-chinese"
   | "chinese-to-grammar"
-  | "fill-in-grammar";
+  | "fill-in-grammar"
+  | "random";
 
 export type TestMode = VocabTestMode | GrammarTestMode;
 
@@ -49,6 +50,7 @@ export const VOCAB_TEST_MODES: { value: VocabTestMode; label: string; descriptio
   { value: "kanji-to-chinese", label: "漢字 → 中文", description: "看漢字，回想中文意思" },
   { value: "hiragana-to-chinese", label: "假名 → 中文", description: "看假名，回想中文意思" },
   { value: "chinese-to-japanese", label: "中文 → 日文", description: "看中文，回想日文寫法" },
+  { value: "random", label: "隨機", description: "每張卡片隨機選擇模式" },
 ];
 
 export const GRAMMAR_TEST_MODES: { value: GrammarTestMode; label: string; description: string }[] = [
@@ -56,6 +58,7 @@ export const GRAMMAR_TEST_MODES: { value: GrammarTestMode; label: string; descri
   { value: "example-to-chinese", label: "例句 → 中文", description: "看例句（標記文法），回想中文意思" },
   { value: "chinese-to-grammar", label: "中文 → 文法", description: "看中文意思，回想日文文法" },
   { value: "fill-in-grammar", label: "填空 → 文法", description: "看挖空例句和中文翻譯，回想文法" },
+  { value: "random", label: "隨機", description: "每張卡片隨機選擇模式" },
 ];
 
 // ========== Flashcard Types ==========
