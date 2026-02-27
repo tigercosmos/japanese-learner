@@ -107,9 +107,18 @@ export interface SessionResult {
   cards: { cardId: string; rating: Rating }[];
 }
 
+// ========== Study Plan Types ==========
+
+export interface StudyPlan {
+  datasetId: string;
+  totalDays: number;     // 0 = "all at once"
+  cardIds: string[][];   // [day0cardIds, day1cardIds, ...]
+  createdAt: string;     // ISO date
+}
+
 // ========== Dataset Metadata (for listing) ==========
 
-export type SessionType = "due" | "random";
+export type SessionType = "due" | "random" | "specific";
 
 export interface DatasetMeta {
   id: string;             // filename-derived identifier

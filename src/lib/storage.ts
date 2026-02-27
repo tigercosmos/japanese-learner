@@ -1,4 +1,4 @@
-import type { ProgressStore } from "../types";
+import type { ProgressStore, StudyPlan } from "../types";
 
 const PROGRESS_KEY = "jp-learner:progress";
 const SETTINGS_KEY = "jp-learner:settings";
@@ -65,4 +65,27 @@ export function saveTestMode(category: "vocabulary" | "grammar", mode: string): 
   } catch {
     // ignore
   }
+}
+
+// ========== Study Plan ==========
+
+function studyPlanKey(datasetId: string): string {
+  return `jp-learner:study-plan-${datasetId}`;
+}
+
+export function loadStudyPlan(datasetId: string): StudyPlan | null {
+  try {
+    const raw = localStorage.getItem(studyPlanKey(datasetId));
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+export function saveStudyPlan(plan: StudyPlan): void {
+  localStorage.setItem(studyPlanKey(plan.datasetId), JSON.stringify(plan));
+}
+
+export function clearStudyPlan(datasetId: string): void {
+  localStorage.removeItem(studyPlanKey(datasetId));
 }

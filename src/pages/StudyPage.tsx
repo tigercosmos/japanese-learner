@@ -9,16 +9,24 @@ import ProgressBar from "../components/ProgressBar";
 import SessionSummary from "../components/SessionSummary";
 import type { TestMode, SessionType } from "../types";
 
+interface ReturnTo {
+  dayIndex: number;
+  totalDays: number;
+  datasetId: string;
+}
+
 export default function StudyPage() {
   const { datasetId } = useParams<{ datasetId: string }>();
   const location = useLocation();
   const navigate = useNavigate();
   const dataset = useDatasetById(datasetId ?? "");
 
-  const { mode, sessionSize, sessionType } = (location.state as {
+  const { mode, sessionSize, sessionType, specificCardIds, returnTo } = (location.state as {
     mode: TestMode;
     sessionSize: number;
     sessionType?: SessionType;
+    specificCardIds?: string[];
+    returnTo?: ReturnTo;
   }) ?? {
     mode: "kanji-to-chinese" as TestMode,
     sessionSize: 20,
@@ -33,7 +41,7 @@ export default function StudyPage() {
     sessionResult,
     flip,
     rate,
-  } = useStudySession(dataset, mode, sessionSize, sessionType ?? "due");
+  } = useStudySession(dataset, mode, sessionSize, sessionType ?? "due", specificCardIds);
 
   useKeyboard({
     isFlipped,
@@ -57,6 +65,18 @@ export default function StudyPage() {
   }
 
   if (isSessionComplete) {
+    // Build nextAction when returnTo is defined and there's a next day
+    const nextAction =
+      returnTo && returnTo.dayIndex + 1 < returnTo.totalDays
+        ? {
+            label: "學習下一天",
+            onClick: () =>
+              navigate(`/learn/${returnTo.datasetId}/session`, {
+                state: { planType: "daily", dayIndex: returnTo.dayIndex + 1 },
+              }),
+          }
+        : undefined;
+
     return (
       <SessionSummary
         result={sessionResult}
@@ -65,6 +85,7 @@ export default function StudyPage() {
           navigate(`/study/${datasetId}`, { replace: true });
         }}
         onGoHome={() => navigate("/", { replace: true })}
+        nextAction={nextAction}
       />
     );
   }

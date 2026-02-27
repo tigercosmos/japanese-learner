@@ -4,9 +4,10 @@ interface SessionSummaryProps {
   result: SessionResult;
   onStudyAgain: () => void;
   onGoHome: () => void;
+  nextAction?: { label: string; onClick: () => void };
 }
 
-export default function SessionSummary({ result, onStudyAgain, onGoHome }: SessionSummaryProps) {
+export default function SessionSummary({ result, onStudyAgain, onGoHome, nextAction }: SessionSummaryProps) {
   const { total, good, hard, again } = result;
 
   return (
@@ -56,13 +57,21 @@ export default function SessionSummary({ result, onStudyAgain, onGoHome }: Sessi
       </div>
 
       {/* Actions */}
-      <div className="flex gap-3">
+      <div className={`flex gap-3 ${nextAction ? "flex-col" : ""}`}>
         <button
           onClick={onStudyAgain}
           className="flex-1 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-colors tap-active"
         >
           再來一次
         </button>
+        {nextAction && (
+          <button
+            onClick={nextAction.onClick}
+            className="flex-1 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors tap-active"
+          >
+            {nextAction.label}
+          </button>
+        )}
         <button
           onClick={onGoHome}
           className="flex-1 py-3 rounded-xl border-2 border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-colors tap-active"

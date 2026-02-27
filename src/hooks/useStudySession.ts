@@ -26,6 +26,7 @@ export function useStudySession(
   mode: TestMode,
   sessionSize: number,
   sessionType: SessionType = "due",
+  specificCardIds?: string[],
 ) {
   const { progress, rateCard } = useProgress();
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,6 +38,18 @@ export function useStudySession(
   // Build the initial card queue
   const initialCards: StudyCard[] = useMemo(() => {
     if (!dataset) return [];
+
+    if (specificCardIds) {
+      // Specific card IDs — filter and preserve order from specificCardIds
+      const idToOrder = new Map(specificCardIds.map((id, i) => [id, i]));
+      const filtered = dataset.data
+        .filter((item) => idToOrder.has(item.id))
+        .sort((a, b) => (idToOrder.get(a.id) ?? 0) - (idToOrder.get(b.id) ?? 0));
+      return filtered.map((item) => {
+        const flashcard = buildCard(item, dataset.category, mode);
+        return { item, flashcard };
+      });
+    }
 
     // Filter cards based on session type
     const items =
