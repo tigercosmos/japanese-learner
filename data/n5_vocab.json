@@ -1,0 +1,4718 @@
+{
+  "name": "N5 詞彙",
+  "category": "vocabulary",
+  "level": "N5",
+  "data": [
+    {
+      "id": "vocab-n5-0001",
+      "japanese": "アイスクリーム",
+      "hiragana": "あいすくりーむ",
+      "simple_chinese": "冰淇淋",
+      "full_explanation": "アイスクリーム（あいすくりーむ）：冰淇淋。例：昼、公園でアイスクリームを食べました。"
+    },
+    {
+      "id": "vocab-n5-0002",
+      "japanese": "間",
+      "hiragana": "あいだ",
+      "simple_chinese": "之間，中間；間隔",
+      "full_explanation": "間（あいだ）：之間，中間；間隔。例：授業の間、スマホは見ません。"
+    },
+    {
+      "id": "vocab-n5-0003",
+      "japanese": "会います",
+      "hiragana": "あいます",
+      "simple_chinese": "見，見面",
+      "full_explanation": "会います（あいます）：見，見面。例：久しぶりに駅で友だちに会いました。"
+    },
+    {
+      "id": "vocab-n5-0004",
+      "japanese": "青",
+      "hiragana": "あお",
+      "simple_chinese": "藍，藍色",
+      "full_explanation": "青（あお）：藍，藍色。例：青いシャツを買いました。"
+    },
+    {
+      "id": "vocab-n5-0005",
+      "japanese": "青い",
+      "hiragana": "あおい",
+      "simple_chinese": "藍的",
+      "full_explanation": "青い（あおい）：藍的。例：青い空がきれいです。"
+    },
+    {
+      "id": "vocab-n5-0006",
+      "japanese": "赤",
+      "hiragana": "あか",
+      "simple_chinese": "紅，紅色",
+      "full_explanation": "赤（あか）：紅，紅色。例：赤いりんごを買いました。"
+    },
+    {
+      "id": "vocab-n5-0007",
+      "japanese": "赤い",
+      "hiragana": "あかい",
+      "simple_chinese": "紅的",
+      "full_explanation": "赤い（あかい）：紅的。例：赤いかばんがほしいです。"
+    },
+    {
+      "id": "vocab-n5-0008",
+      "japanese": "（性格が）明るい",
+      "hiragana": "せいかくあか",
+      "simple_chinese": "（性格）開朗",
+      "full_explanation": "（性格が）明るい（せいかくあか）：（性格）開朗。例：田中さんは性格が明るいので、クラスが楽しいです。"
+    },
+    {
+      "id": "vocab-n5-0009",
+      "japanese": "開けます",
+      "hiragana": "あけます",
+      "simple_chinese": "打開，開",
+      "full_explanation": "開けます（あけます）：打開，開。例：暑いので、窓を開けます。"
+    },
+    {
+      "id": "vocab-n5-0010",
+      "japanese": "あげます",
+      "hiragana": "あげます",
+      "simple_chinese": "給，給予",
+      "full_explanation": "あげます（あげます）：給，給予。例：友だちの誕生日に花をあげました。"
+    },
+    {
+      "id": "vocab-n5-0011",
+      "japanese": "朝",
+      "hiragana": "あさ",
+      "simple_chinese": "早上",
+      "full_explanation": "朝（あさ）：早上。例：朝はコーヒーを飲んでから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0012",
+      "japanese": "あさって",
+      "hiragana": "あさって",
+      "simple_chinese": "後天",
+      "full_explanation": "あさって（あさって）：後天。例：あさって、友だちと会います。"
+    },
+    {
+      "id": "vocab-n5-0013",
+      "japanese": "足",
+      "hiragana": "あし",
+      "simple_chinese": "腳，腿",
+      "full_explanation": "足（あし）：腳，腿。例：新しいくつで歩いて、足がつかれました。"
+    },
+    {
+      "id": "vocab-n5-0014",
+      "japanese": "明日",
+      "hiragana": "あした",
+      "simple_chinese": "明天",
+      "full_explanation": "明日（あした）：明天。例：明日、朝早く出かけます。"
+    },
+    {
+      "id": "vocab-n5-0015",
+      "japanese": "あそこ",
+      "hiragana": "あそこ",
+      "simple_chinese": "那兒，那裡",
+      "full_explanation": "あそこ（あそこ）：那兒，那裡。例：トイレはあそこです。"
+    },
+    {
+      "id": "vocab-n5-0016",
+      "japanese": "あそびます",
+      "hiragana": "あそびます",
+      "simple_chinese": "玩",
+      "full_explanation": "あそびます（あそびます）：玩。例：日曜日は公園で子どもと遊びます。"
+    },
+    {
+      "id": "vocab-n5-0017",
+      "japanese": "あたたかい",
+      "hiragana": "あたたかい",
+      "simple_chinese": "溫暖，暖和",
+      "full_explanation": "あたたかい（あたたかい）：溫暖，暖和。例：春はあたたかくて、さんぽしたくなります。"
+    },
+    {
+      "id": "vocab-n5-0018",
+      "japanese": "新しい",
+      "hiragana": "あたらしい",
+      "simple_chinese": "新的",
+      "full_explanation": "新しい（あたらしい）：新的。例：新しい店が駅の前にできました。"
+    },
+    {
+      "id": "vocab-n5-0019",
+      "japanese": "あちら",
+      "hiragana": "あちら",
+      "simple_chinese": "那邊",
+      "full_explanation": "あちら（あちら）：那邊。例：受付はあちらです。"
+    },
+    {
+      "id": "vocab-n5-0020",
+      "japanese": "暑い",
+      "hiragana": "あつい",
+      "simple_chinese": "熱",
+      "full_explanation": "暑い（あつい）：熱。例：暑いから、窓を開けてもいいですか。"
+    },
+    {
+      "id": "vocab-n5-0021",
+      "japanese": "あっち",
+      "hiragana": "あっち",
+      "simple_chinese": "那邊： 「あちら」的非正式口語說法",
+      "full_explanation": "あっち（あっち）：那邊： 「あちら」的非正式口語說法。例：あっちはあぶないから、行かないで。"
+    },
+    {
+      "id": "vocab-n5-0022",
+      "japanese": "あと～",
+      "hiragana": "あと",
+      "simple_chinese": "～以後，再過～（例：再過 10 分鐘）",
+      "full_explanation": "あと～（あと）：～以後，再過～（例：再過 10 分鐘）。例：あと10分で電車が来ます。"
+    },
+    {
+      "id": "vocab-n5-0023",
+      "japanese": "兄",
+      "hiragana": "あに",
+      "simple_chinese": "家兄，我哥哥： 提及自己的哥哥時用「兄 」",
+      "full_explanation": "兄（あに）：家兄，我哥哥： 提及自己的哥哥時用「兄 」。例：兄はサッカーが好きです。"
+    },
+    {
+      "id": "vocab-n5-0024",
+      "japanese": "姉",
+      "hiragana": "あね",
+      "simple_chinese": "家姊，我姊姊：提及自己的姊姊時用「姉」",
+      "full_explanation": "姉（あね）：家姊，我姊姊：提及自己的姊姊時用「姉」。例：姉は毎日よく勉強します。"
+    },
+    {
+      "id": "vocab-n5-0025",
+      "japanese": "あぶない",
+      "hiragana": "あぶない",
+      "simple_chinese": "危險",
+      "full_explanation": "あぶない（あぶない）：危險。例：車に気をつけてください。あぶないです。"
+    },
+    {
+      "id": "vocab-n5-0026",
+      "japanese": "あまり～ない",
+      "hiragana": "あまりない",
+      "simple_chinese": "不太～",
+      "full_explanation": "あまり～ない（あまりない）：不太～。例：私はコーヒーをあまり飲みません。"
+    },
+    {
+      "id": "vocab-n5-0027",
+      "japanese": "雨",
+      "hiragana": "あめ",
+      "simple_chinese": "雨",
+      "full_explanation": "雨（あめ）：雨。例：今日は雨で、靴がぬれました。"
+    },
+    {
+      "id": "vocab-n5-0028",
+      "japanese": "アメリカ人",
+      "hiragana": "じんあめりか",
+      "simple_chinese": "美國人",
+      "full_explanation": "アメリカ人（じんあめりか）：美國人。例：私の友だちはアメリカ人です。"
+    },
+    {
+      "id": "vocab-n5-0029",
+      "japanese": "洗います",
+      "hiragana": "あらいます",
+      "simple_chinese": "洗",
+      "full_explanation": "洗います（あらいます）：洗。例：食事の前に手を洗います。"
+    },
+    {
+      "id": "vocab-n5-0030",
+      "japanese": "あります",
+      "hiragana": "あります",
+      "simple_chinese": "有，在",
+      "full_explanation": "あります（あります）：有，在。例：駅の前にコンビニがあります。"
+    },
+    {
+      "id": "vocab-n5-0031",
+      "japanese": "歩いてきます",
+      "hiragana": "あるいてきます",
+      "simple_chinese": "步行來，走路來",
+      "full_explanation": "歩いてきます（あるいてきます）：步行來，走路來。例：近いので、駅まで歩いてきました。"
+    },
+    {
+      "id": "vocab-n5-0032",
+      "japanese": "歩きます",
+      "hiragana": "あるきます",
+      "simple_chinese": "走，走路，步行",
+      "full_explanation": "歩きます（あるきます）：走，走路，步行。例：家から学校まで毎日歩きます。"
+    },
+    {
+      "id": "vocab-n5-0033",
+      "japanese": "アルバイト",
+      "hiragana": "あるばいと",
+      "simple_chinese": "打工，兼職",
+      "full_explanation": "アルバイト（あるばいと）：打工，兼職。例：アルバイトを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0034",
+      "japanese": "あれ",
+      "hiragana": "あれ",
+      "simple_chinese": "那，那個",
+      "full_explanation": "あれ（あれ）：那，那個。例：あれは富士山です。"
+    },
+    {
+      "id": "vocab-n5-0035",
+      "japanese": "いい",
+      "hiragana": "いい",
+      "simple_chinese": "好",
+      "full_explanation": "いい（いい）：好。例：今日はいい天気です。"
+    },
+    {
+      "id": "vocab-n5-0036",
+      "japanese": "いいえ",
+      "hiragana": "いいえ",
+      "simple_chinese": "不",
+      "full_explanation": "いいえ（いいえ）：不。例：「コーヒーはいかがですか。」「いいえ、けっこうです。」"
+    },
+    {
+      "id": "vocab-n5-0037",
+      "japanese": "言います",
+      "hiragana": "いいます",
+      "simple_chinese": "說；叫做",
+      "full_explanation": "言います（いいます）：說；叫做。例：先生はゆっくり言いました。"
+    },
+    {
+      "id": "vocab-n5-0038",
+      "japanese": "家",
+      "hiragana": "いえ",
+      "simple_chinese": "家；房子",
+      "full_explanation": "家（いえ）：家；房子。例：今日は早く家に帰ります。"
+    },
+    {
+      "id": "vocab-n5-0039",
+      "japanese": "いかが",
+      "hiragana": "いかが",
+      "simple_chinese": "如何，怎麼樣： 「どう」的禮貌表達",
+      "full_explanation": "いかが（いかが）：如何，怎麼樣： 「どう」的禮貌表達。例：お茶はいかがですか。"
+    },
+    {
+      "id": "vocab-n5-0040",
+      "japanese": "行きます",
+      "hiragana": "きます",
+      "simple_chinese": "去",
+      "full_explanation": "行きます（きます）：去。例：週末は友だちと映画に行きます。"
+    },
+    {
+      "id": "vocab-n5-0041",
+      "japanese": "いくつ①",
+      "hiragana": "いくつ",
+      "simple_chinese": "幾歲，多大",
+      "full_explanation": "いくつ①（いくつ）：幾歲，多大。例：おいくつですか。"
+    },
+    {
+      "id": "vocab-n5-0042",
+      "japanese": "いくつ②",
+      "hiragana": "いくつ",
+      "simple_chinese": "（數量）多少個",
+      "full_explanation": "いくつ②（いくつ）：（數量）多少個。例：りんごはいくつありますか。"
+    },
+    {
+      "id": "vocab-n5-0043",
+      "japanese": "いくら",
+      "hiragana": "いくら",
+      "simple_chinese": "多少錢",
+      "full_explanation": "いくら（いくら）：多少錢。例：このかばんはいくらですか。"
+    },
+    {
+      "id": "vocab-n5-0044",
+      "japanese": "医者",
+      "hiragana": "いしゃ",
+      "simple_chinese": "醫生",
+      "full_explanation": "医者（いしゃ）：醫生。例：私の友だちは医者です。"
+    },
+    {
+      "id": "vocab-n5-0045",
+      "japanese": "いす",
+      "hiragana": "いす",
+      "simple_chinese": "椅子",
+      "full_explanation": "いす（いす）：椅子。例：いすをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0046",
+      "japanese": "いそがしい",
+      "hiragana": "いそがしい",
+      "simple_chinese": "忙",
+      "full_explanation": "いそがしい（いそがしい）：忙。例：いそがしいので、メールはあとで返します。"
+    },
+    {
+      "id": "vocab-n5-0047",
+      "japanese": "急ぎます",
+      "hiragana": "いそぎます",
+      "simple_chinese": "著急，急；趕緊",
+      "full_explanation": "急ぎます（いそぎます）：著急，急；趕緊。例：電車に間に合わないので、急ぎます。"
+    },
+    {
+      "id": "vocab-n5-0048",
+      "japanese": "いたい",
+      "hiragana": "いたい",
+      "simple_chinese": "疼，疼痛",
+      "full_explanation": "いたい（いたい）：疼，疼痛。例：足をぶつけて、いたいです。"
+    },
+    {
+      "id": "vocab-n5-0049",
+      "japanese": "イタリア",
+      "hiragana": "いたりあ",
+      "simple_chinese": "義大利",
+      "full_explanation": "イタリア（いたりあ）：義大利。例：午後、駅でイタリアを買いました。"
+    },
+    {
+      "id": "vocab-n5-0050",
+      "japanese": "いちばん",
+      "hiragana": "いちばん",
+      "simple_chinese": "最～；最好，最佳",
+      "full_explanation": "いちばん（いちばん）：最～；最好，最佳。例：いちばんを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0051",
+      "japanese": "いつ",
+      "hiragana": "いつ",
+      "simple_chinese": "什麼時候，何時",
+      "full_explanation": "いつ（いつ）：什麼時候，何時。例：店員さんに「いつはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0052",
+      "japanese": "いっしょに",
+      "hiragana": "いっしょに",
+      "simple_chinese": "一起",
+      "full_explanation": "いっしょに（いっしょに）：一起。例：週末、いっしょに買い物に行きませんか。"
+    },
+    {
+      "id": "vocab-n5-0053",
+      "japanese": "いつも",
+      "hiragana": "いつも",
+      "simple_chinese": "總是",
+      "full_explanation": "いつも（いつも）：總是。例：友だちにいつもを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0054",
+      "japanese": "犬",
+      "hiragana": "いぬ",
+      "simple_chinese": "狗",
+      "full_explanation": "犬（いぬ）：狗。例：犬をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0055",
+      "japanese": "今",
+      "hiragana": "いま",
+      "simple_chinese": "現在",
+      "full_explanation": "今（いま）：現在。例：店員さんに「今はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0056",
+      "japanese": "今から",
+      "hiragana": "いまから",
+      "simple_chinese": "現在開始",
+      "full_explanation": "今から（いまから）：現在開始。例：今からをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0057",
+      "japanese": "妹",
+      "hiragana": "いもうと",
+      "simple_chinese": "舍妹，我妹妹： 提及自己的妹妹時用「 妹 」",
+      "full_explanation": "妹（いもうと）：舍妹，我妹妹： 提及自己的妹妹時用「 妹 」。例：妹はサッカーが好きです。"
+    },
+    {
+      "id": "vocab-n5-0058",
+      "japanese": "妹さん",
+      "hiragana": "いもうとさん",
+      "simple_chinese": "令妹，您妹妹： 提及别人的妹妹時用「 妹 さん」",
+      "full_explanation": "妹さん（いもうとさん）：令妹，您妹妹： 提及别人的妹妹時用「 妹 さん」。例：私の友だちは妹さんです。"
+    },
+    {
+      "id": "vocab-n5-0059",
+      "japanese": "入り口",
+      "hiragana": "いりぐち",
+      "simple_chinese": "入口",
+      "full_explanation": "入り口（いりぐち）：入口。例：朝、入り口を洗ってから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0060",
+      "japanese": "いります",
+      "hiragana": "いります",
+      "simple_chinese": "需要，必要",
+      "full_explanation": "いります（いります）：需要，必要。例：この手続きにはパスポートがいります。"
+    },
+    {
+      "id": "vocab-n5-0061",
+      "japanese": "入れます",
+      "hiragana": "いれます",
+      "simple_chinese": "放入，加入",
+      "full_explanation": "入れます（いれます）：放入，加入。例：かばんに水とハンカチを入れました。"
+    },
+    {
+      "id": "vocab-n5-0062",
+      "japanese": "いろいろ",
+      "hiragana": "いろいろ",
+      "simple_chinese": "各種各樣，形形色色",
+      "full_explanation": "いろいろ（いろいろ）：各種各樣，形形色色。例：いろいろをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0063",
+      "japanese": "インターネット",
+      "hiragana": "いんたーねっと",
+      "simple_chinese": "網際網路",
+      "full_explanation": "インターネット（いんたーねっと）：網際網路。例：私からインターネットをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0064",
+      "japanese": "インターネット（を）します",
+      "hiragana": "いんたーねっとをします",
+      "simple_chinese": "上網",
+      "full_explanation": "インターネット（を）します（いんたーねっとをします）：上網。例：夜、公園でインターネットをします。"
+    },
+    {
+      "id": "vocab-n5-0065",
+      "japanese": "上",
+      "hiragana": "うえ",
+      "simple_chinese": "上，上面",
+      "full_explanation": "上（うえ）：上，上面。例：店員さんに「上はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0066",
+      "japanese": "うしろ",
+      "hiragana": "うしろ",
+      "simple_chinese": "後，後面",
+      "full_explanation": "うしろ（うしろ）：後，後面。例：夜、駅でうしろを買いました。"
+    },
+    {
+      "id": "vocab-n5-0067",
+      "japanese": "歌",
+      "hiragana": "うた",
+      "simple_chinese": "歌",
+      "full_explanation": "歌（うた）：歌。例：友だちに歌を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0068",
+      "japanese": "歌います",
+      "hiragana": "うたいます",
+      "simple_chinese": "唱",
+      "full_explanation": "歌います（うたいます）：唱。例：カラオケで日本の歌を歌いました。"
+    },
+    {
+      "id": "vocab-n5-0069",
+      "japanese": "うち",
+      "hiragana": "うち",
+      "simple_chinese": "家",
+      "full_explanation": "うち（うち）：家。例：放課後、うちで勉強します。"
+    },
+    {
+      "id": "vocab-n5-0070",
+      "japanese": "生まれます",
+      "hiragana": "うまれます",
+      "simple_chinese": "出生",
+      "full_explanation": "生まれます（うまれます）：出生。例：私は大阪で生まれました。"
+    },
+    {
+      "id": "vocab-n5-0071",
+      "japanese": "海",
+      "hiragana": "うみ",
+      "simple_chinese": "海，大海，海洋",
+      "full_explanation": "海（うみ）：海，大海，海洋。例：海をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0072",
+      "japanese": "うら",
+      "hiragana": "うら",
+      "simple_chinese": "背後，背面；內部，幕後",
+      "full_explanation": "うら（うら）：背後，背面；內部，幕後。例：うらを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0073",
+      "japanese": "売ります",
+      "hiragana": "うります",
+      "simple_chinese": "賣，銷售",
+      "full_explanation": "売ります（うります）：賣，銷售。例：この店は新鮮な野菜を売っています。"
+    },
+    {
+      "id": "vocab-n5-0074",
+      "japanese": "うるさい",
+      "hiragana": "うるさい",
+      "simple_chinese": "吵，吵鬧；煩人",
+      "full_explanation": "うるさい（うるさい）：吵，吵鬧；煩人。例：となりの部屋がうるさくて、ねむれません。"
+    },
+    {
+      "id": "vocab-n5-0075",
+      "japanese": "うれしい",
+      "hiragana": "うれしい",
+      "simple_chinese": "高興，欣喜",
+      "full_explanation": "うれしい（うれしい）：高興，欣喜。例：プレゼントをもらって、うれしいです。"
+    },
+    {
+      "id": "vocab-n5-0076",
+      "japanese": "うん",
+      "hiragana": "うん",
+      "simple_chinese": "是，對，好： 「はい」的非正式口語說法",
+      "full_explanation": "うん（うん）：是，對，好： 「はい」的非正式口語說法。例：うん、いいよ。"
+    },
+    {
+      "id": "vocab-n5-0077",
+      "japanese": "え",
+      "hiragana": "え",
+      "simple_chinese": "畫",
+      "full_explanation": "え（え）：畫。例：えが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0078",
+      "japanese": "映画",
+      "hiragana": "えいが",
+      "simple_chinese": "電影",
+      "full_explanation": "映画（えいが）：電影。例：映画が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0079",
+      "japanese": "映画館",
+      "hiragana": "えいがかん",
+      "simple_chinese": "電影院",
+      "full_explanation": "映画館（えいがかん）：電影院。例：父に映画館を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0080",
+      "japanese": "英語",
+      "hiragana": "えいご",
+      "simple_chinese": "英語",
+      "full_explanation": "英語（えいご）：英語。例：今日、駅で英語を買いました。"
+    },
+    {
+      "id": "vocab-n5-0081",
+      "japanese": "ええ（＝はい）",
+      "hiragana": "ええはい",
+      "simple_chinese": "是，對（＝はい）",
+      "full_explanation": "ええ（＝はい）（ええはい）：是，對（＝はい）。例：「ええ、お願いします。」と答えました。"
+    },
+    {
+      "id": "vocab-n5-0082",
+      "japanese": "駅",
+      "hiragana": "えき",
+      "simple_chinese": "車站",
+      "full_explanation": "駅（えき）：車站。例：昨日、駅で待ち合わせします。"
+    },
+    {
+      "id": "vocab-n5-0083",
+      "japanese": "駅前",
+      "hiragana": "えきまえ",
+      "simple_chinese": "車站前",
+      "full_explanation": "駅前（えきまえ）：車站前。例：駅前は駅の近くにあります。"
+    },
+    {
+      "id": "vocab-n5-0084",
+      "japanese": "えんぴつ",
+      "hiragana": "えんぴつ",
+      "simple_chinese": "鉛筆",
+      "full_explanation": "えんぴつ（えんぴつ）：鉛筆。例：昨日、駅でえんぴつを買いました。"
+    },
+    {
+      "id": "vocab-n5-0085",
+      "japanese": "おいしい",
+      "hiragana": "おいしい",
+      "simple_chinese": "好吃，好喝",
+      "full_explanation": "おいしい（おいしい）：好吃，好喝。例：このラーメンはおいしいです。"
+    },
+    {
+      "id": "vocab-n5-0086",
+      "japanese": "多い",
+      "hiragana": "おおい",
+      "simple_chinese": "多的",
+      "full_explanation": "多い（おおい）：多的。例：今日は多いので、気をつけて行きましょう。"
+    },
+    {
+      "id": "vocab-n5-0087",
+      "japanese": "大きい",
+      "hiragana": "おおきい",
+      "simple_chinese": "大的",
+      "full_explanation": "大きい（おおきい）：大的。例：この公園は大きいです。"
+    },
+    {
+      "id": "vocab-n5-0088",
+      "japanese": "おおぜい",
+      "hiragana": "おおぜい",
+      "simple_chinese": "很多（人）",
+      "full_explanation": "おおぜい（おおぜい）：很多（人）。例：駅の前に人がおおぜいいました。"
+    },
+    {
+      "id": "vocab-n5-0089",
+      "japanese": "お母さん",
+      "hiragana": "おかあさん",
+      "simple_chinese": "令堂，您母親：提及別人的母親時用「お母さん」",
+      "full_explanation": "お母さん（おかあさん）：令堂，您母親：提及別人的母親時用「お母さん」。例：公園にお母さんがいます。"
+    },
+    {
+      "id": "vocab-n5-0090",
+      "japanese": "お金",
+      "hiragana": "おかね",
+      "simple_chinese": "錢",
+      "full_explanation": "お金（おかね）：錢。例：お金をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0091",
+      "japanese": "起きます",
+      "hiragana": "おきます",
+      "simple_chinese": "起床，起來",
+      "full_explanation": "起きます（おきます）：起床，起來。例：平日は七時に起きます。"
+    },
+    {
+      "id": "vocab-n5-0092",
+      "japanese": "（物を）おきます",
+      "hiragana": "ものをおきます",
+      "simple_chinese": "放，放置（東西）",
+      "full_explanation": "（物を）おきます（ものをおきます）：放，放置（東西）。例：夜、病院で物をおきます。"
+    },
+    {
+      "id": "vocab-n5-0093",
+      "japanese": "お客さん",
+      "hiragana": "おきゃくさん",
+      "simple_chinese": "客人，顧客，客戶：「客」的禮貌表達",
+      "full_explanation": "お客さん（おきゃくさん）：客人，顧客，客戶：「客」的禮貌表達。例：あの人はお客さんです。"
+    },
+    {
+      "id": "vocab-n5-0094",
+      "japanese": "奥さん",
+      "hiragana": "おくさん",
+      "simple_chinese": "尊夫人，您妻子： 提及别人的太太時用「奥 さん」",
+      "full_explanation": "奥さん（おくさん）：尊夫人，您妻子： 提及别人的太太時用「奥 さん」。例：公園に奥さんがいます。"
+    },
+    {
+      "id": "vocab-n5-0095",
+      "japanese": "お薬",
+      "hiragana": "おくすり",
+      "simple_chinese": "藥：「薬」的禮貌表達",
+      "full_explanation": "お薬（おくすり）：藥：「薬」的禮貌表達。例：お薬をかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0096",
+      "japanese": "お酒",
+      "hiragana": "おさけ",
+      "simple_chinese": "酒",
+      "full_explanation": "お酒（おさけ）：酒。例：お酒をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0097",
+      "japanese": "おじいさん①",
+      "hiragana": "ひと",
+      "simple_chinese": "您爺爺，您外公： 提及別人的爺爺或外公時用「おじい",
+      "full_explanation": "おじいさん①（ひと）：您爺爺，您外公： 提及別人的爺爺或外公時用「おじい。例：おじいさんはお元気ですか。"
+    },
+    {
+      "id": "vocab-n5-0098",
+      "japanese": "おじいさん②",
+      "hiragana": "じかん",
+      "simple_chinese": "老爺爺： 指年紀大的男性",
+      "full_explanation": "おじいさん②（じかん）：老爺爺： 指年紀大的男性。例：公園でおじいさんが散歩しています。"
+    },
+    {
+      "id": "vocab-n5-0099",
+      "japanese": "お時間",
+      "hiragana": "じかんお",
+      "simple_chinese": "時間： 「時間」的禮貌表達",
+      "full_explanation": "お時間（じかんお）：時間： 「時間」的禮貌表達。例：お時間を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0100",
+      "japanese": "お好きなもの",
+      "hiragana": "すおきなもの",
+      "simple_chinese": "（您）喜歡的東西： 「好きなもの」的禮貌表達",
+      "full_explanation": "お好きなもの（すおきなもの）：（您）喜歡的東西： 「好きなもの」的禮貌表達。例：駅はここからお好きなものです。"
+    },
+    {
+      "id": "vocab-n5-0101",
+      "japanese": "おそい",
+      "hiragana": "おそい",
+      "simple_chinese": "慢；晚",
+      "full_explanation": "おそい（おそい）：慢；晚。例：夜おそくまで起きていました。"
+    },
+    {
+      "id": "vocab-n5-0102",
+      "japanese": "おそくまで",
+      "hiragana": "おそくまで",
+      "simple_chinese": "到很晚",
+      "full_explanation": "おそくまで（おそくまで）：到很晚。例：昨夜はおそくまで勉強しました。"
+    },
+    {
+      "id": "vocab-n5-0103",
+      "japanese": "お茶",
+      "hiragana": "ちゃお",
+      "simple_chinese": "茶",
+      "full_explanation": "お茶（ちゃお）：茶。例：今朝、スーパーでお茶を食べました。"
+    },
+    {
+      "id": "vocab-n5-0104",
+      "japanese": "夫",
+      "hiragana": "おっと",
+      "simple_chinese": "丈夫",
+      "full_explanation": "夫（おっと）：丈夫。例：夫を持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0105",
+      "japanese": "おてら",
+      "hiragana": "おてら",
+      "simple_chinese": "廟，寺廟",
+      "full_explanation": "おてら（おてら）：廟，寺廟。例：私からおてらをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0106",
+      "japanese": "お父さん",
+      "hiragana": "とうおさん",
+      "simple_chinese": "令尊，您父親： 提及别人的父親時用「お父 さん」",
+      "full_explanation": "お父さん（とうおさん）：令尊，您父親： 提及别人的父親時用「お父 さん」。例：私の友だちはお父さんです。"
+    },
+    {
+      "id": "vocab-n5-0107",
+      "japanese": "弟",
+      "hiragana": "おとうと",
+      "simple_chinese": "舍弟，我弟弟： 提及自己的弟弟時用「 弟 」",
+      "full_explanation": "弟（おとうと）：舍弟，我弟弟： 提及自己的弟弟時用「 弟 」。例：弟は毎日よく勉強します。"
+    },
+    {
+      "id": "vocab-n5-0108",
+      "japanese": "弟さん",
+      "hiragana": "おとうとさん",
+      "simple_chinese": "令弟，您弟弟： 提及別人的弟弟時用「 弟 さん」",
+      "full_explanation": "弟さん（おとうとさん）：令弟，您弟弟： 提及別人的弟弟時用「 弟 さん」。例：あの人は弟さんです。"
+    },
+    {
+      "id": "vocab-n5-0109",
+      "japanese": "男の子",
+      "hiragana": "おとこのこ",
+      "simple_chinese": "男孩",
+      "full_explanation": "男の子（おとこのこ）：男孩。例：男の子をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0110",
+      "japanese": "男の人",
+      "hiragana": "おとこひと",
+      "simple_chinese": "男人，男子",
+      "full_explanation": "男の人（おとこひと）：男人，男子。例：病院に男の人がいます。"
+    },
+    {
+      "id": "vocab-n5-0111",
+      "japanese": "おととい",
+      "hiragana": "おととい",
+      "simple_chinese": "前天",
+      "full_explanation": "おととい（おととい）：前天。例：おととい、映画を見ました。"
+    },
+    {
+      "id": "vocab-n5-0112",
+      "japanese": "おなか",
+      "hiragana": "おなか",
+      "simple_chinese": "肚子",
+      "full_explanation": "おなか（おなか）：肚子。例：おなかをぶつけて、少し痛いです。"
+    },
+    {
+      "id": "vocab-n5-0113",
+      "japanese": "お兄さん",
+      "hiragana": "にいおさん",
+      "simple_chinese": "令兄，您哥哥： 提及別人的哥哥時用「お兄 さん」",
+      "full_explanation": "お兄さん（にいおさん）：令兄，您哥哥： 提及別人的哥哥時用「お兄 さん」。例：私の友だちはお兄さんです。"
+    },
+    {
+      "id": "vocab-n5-0114",
+      "japanese": "お姉さん",
+      "hiragana": "ねえおさん",
+      "simple_chinese": "令姊，您姊姊： 提及別人的姊姊時用「お姉 さん」",
+      "full_explanation": "お姉さん（ねえおさん）：令姊，您姊姊： 提及別人的姊姊時用「お姉 さん」。例：私の友だちはお姉さんです。"
+    },
+    {
+      "id": "vocab-n5-0115",
+      "japanese": "おばあさん①",
+      "hiragana": "ひと",
+      "simple_chinese": "您奶奶，您外婆： 提及別人的奶奶或外婆時用「おばあ",
+      "full_explanation": "おばあさん①（ひと）：您奶奶，您外婆： 提及別人的奶奶或外婆時用「おばあ。例：おばあさんによろしくお伝えください。"
+    },
+    {
+      "id": "vocab-n5-0116",
+      "japanese": "おばあさん②",
+      "hiragana": "おばあさん",
+      "simple_chinese": "老奶奶：指年紀大的女性",
+      "full_explanation": "おばあさん②（おばあさん）：老奶奶：指年紀大的女性。例：道でおばあさんを手伝いました。"
+    },
+    {
+      "id": "vocab-n5-0117",
+      "japanese": "重い",
+      "hiragana": "おもい",
+      "simple_chinese": "重的",
+      "full_explanation": "重い（おもい）：重的。例：この荷物は重いので、手伝ってください。"
+    },
+    {
+      "id": "vocab-n5-0118",
+      "japanese": "思います",
+      "hiragana": "おもいます",
+      "simple_chinese": "想，認為；覺得，感覺",
+      "full_explanation": "思います（おもいます）：想，認為；覺得，感覺。例：今日は寒いと思います。"
+    },
+    {
+      "id": "vocab-n5-0119",
+      "japanese": "おもしろい",
+      "hiragana": "おもしろい",
+      "simple_chinese": "有意思，有趣，好玩",
+      "full_explanation": "おもしろい（おもしろい）：有意思，有趣，好玩。例：この本はおもしろいので、つづきを読みたいです。"
+    },
+    {
+      "id": "vocab-n5-0120",
+      "japanese": "泳ぎます",
+      "hiragana": "およぎます",
+      "simple_chinese": "游泳",
+      "full_explanation": "泳ぎます（およぎます）：游泳。例：夏は海で泳ぎます。"
+    },
+    {
+      "id": "vocab-n5-0121",
+      "japanese": "降ります",
+      "hiragana": "おります",
+      "simple_chinese": "下（車）",
+      "full_explanation": "降ります（おります）：下（車）。例：次の駅で電車を降ります。"
+    },
+    {
+      "id": "vocab-n5-0122",
+      "japanese": "終わります",
+      "hiragana": "おわります",
+      "simple_chinese": "結束",
+      "full_explanation": "終わります（おわります）：結束。例：仕事が終わったら、電話します。"
+    },
+    {
+      "id": "vocab-n5-0123",
+      "japanese": "音楽",
+      "hiragana": "おんがく",
+      "simple_chinese": "音樂",
+      "full_explanation": "音楽（おんがく）：音樂。例：公園で音楽を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0124",
+      "japanese": "おんせん",
+      "hiragana": "おんせん",
+      "simple_chinese": "溫泉",
+      "full_explanation": "おんせん（おんせん）：溫泉。例：公園でおんせんを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0125",
+      "japanese": "女の人",
+      "hiragana": "おんなひと",
+      "simple_chinese": "女人，女子",
+      "full_explanation": "女の人（おんなひと）：女人，女子。例：喫茶店に女の人がいます。"
+    },
+    {
+      "id": "vocab-n5-0126",
+      "japanese": "お飲み物",
+      "hiragana": "はなし",
+      "simple_chinese": "飲料： 「飲み物 」的禮貌表達",
+      "full_explanation": "お飲み物（はなし）：飲料： 「飲み物 」的禮貌表達。例：昼、コンビニでお飲み物を食べました。"
+    },
+    {
+      "id": "vocab-n5-0127",
+      "japanese": "お話",
+      "hiragana": "おはなし",
+      "simple_chinese": "話；故事：「話」的禮貌表達",
+      "full_explanation": "お話（おはなし）：話；故事：「話」的禮貌表達。例：お話が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0128",
+      "japanese": "会議",
+      "hiragana": "かいぎ",
+      "simple_chinese": "會議",
+      "full_explanation": "会議（かいぎ）：會議。例：店員さんに「会議はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0129",
+      "japanese": "会議（を）します",
+      "hiragana": "かいぎをします",
+      "simple_chinese": "開會，舉行會議",
+      "full_explanation": "会議（を）します（かいぎをします）：開會，舉行會議。例：昼、会社で会議をします。"
+    },
+    {
+      "id": "vocab-n5-0130",
+      "japanese": "会議室",
+      "hiragana": "かいぎしつ",
+      "simple_chinese": "會議室",
+      "full_explanation": "会議室（かいぎしつ）：會議室。例：朝、会議室で待ち合わせします。"
+    },
+    {
+      "id": "vocab-n5-0131",
+      "japanese": "外国",
+      "hiragana": "がいこく",
+      "simple_chinese": "外國，國外",
+      "full_explanation": "外国（がいこく）：外國，國外。例：母に外国を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0132",
+      "japanese": "会社",
+      "hiragana": "かいしゃ",
+      "simple_chinese": "公司",
+      "full_explanation": "会社（かいしゃ）：公司。例：放課後、会社で勉強します。"
+    },
+    {
+      "id": "vocab-n5-0133",
+      "japanese": "会場",
+      "hiragana": "かいじょう",
+      "simple_chinese": "會場",
+      "full_explanation": "会場（かいじょう）：會場。例：会場は駅の近くにあります。"
+    },
+    {
+      "id": "vocab-n5-0134",
+      "japanese": "買います",
+      "hiragana": "かいます",
+      "simple_chinese": "買",
+      "full_explanation": "買います（かいます）：買。例：帰りにスーパーでパンを買います。"
+    },
+    {
+      "id": "vocab-n5-0135",
+      "japanese": "買い物",
+      "hiragana": "かもの",
+      "simple_chinese": "購物",
+      "full_explanation": "買い物（かもの）：購物。例：買い物を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0136",
+      "japanese": "買い物 （を）します",
+      "hiragana": "かもの",
+      "simple_chinese": "買東西，購物",
+      "full_explanation": "買い物 （を）します（かもの）：買東西，購物。例：今朝、図書館で買い物 をします。"
+    },
+    {
+      "id": "vocab-n5-0137",
+      "japanese": "帰ってきます",
+      "hiragana": "かえってきます",
+      "simple_chinese": "回來",
+      "full_explanation": "帰ってきます（かえってきます）：回來。例：仕事が終わったら、まっすぐ帰ってきます。"
+    },
+    {
+      "id": "vocab-n5-0138",
+      "japanese": "帰ります",
+      "hiragana": "かえります",
+      "simple_chinese": "回，回家",
+      "full_explanation": "帰ります（かえります）：回，回家。例：今日は早く家に帰ります。"
+    },
+    {
+      "id": "vocab-n5-0139",
+      "japanese": "顔",
+      "hiragana": "かお",
+      "simple_chinese": "臉",
+      "full_explanation": "顔（かお）：臉。例：朝、顔を洗ってから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0140",
+      "japanese": "（お金が）かかります①",
+      "hiragana": "かねおがかかります",
+      "simple_chinese": "花（錢）",
+      "full_explanation": "（お金が）かかります①（かねおがかかります）：花（錢）。例：このかばんは一万円ぐらいかかりました。"
+    },
+    {
+      "id": "vocab-n5-0141",
+      "japanese": "（時間が）かかります②",
+      "hiragana": "じかんがかかります",
+      "simple_chinese": "花（時間）",
+      "full_explanation": "（時間が）かかります②（じかんがかかります）：花（時間）。例：駅まで歩くと二十分ぐらいかかります。"
+    },
+    {
+      "id": "vocab-n5-0142",
+      "japanese": "かぎ",
+      "hiragana": "かぎ",
+      "simple_chinese": "鑰匙",
+      "full_explanation": "かぎ（かぎ）：鑰匙。例：朝、駅でかぎを買いました。"
+    },
+    {
+      "id": "vocab-n5-0143",
+      "japanese": "書きます",
+      "hiragana": "かきます",
+      "simple_chinese": "寫",
+      "full_explanation": "書きます（かきます）：寫。例：手紙に住所を書きました。"
+    },
+    {
+      "id": "vocab-n5-0144",
+      "japanese": "（えを）かきます",
+      "hiragana": "えをかきます",
+      "simple_chinese": "畫（畫，圖）",
+      "full_explanation": "（えを）かきます（えをかきます）：畫（畫，圖）。例：朝、コンビニでえをかきます。"
+    },
+    {
+      "id": "vocab-n5-0145",
+      "japanese": "学生",
+      "hiragana": "がくせい",
+      "simple_chinese": "學生",
+      "full_explanation": "学生（がくせい）：學生。例：公園に学生がいます。"
+    },
+    {
+      "id": "vocab-n5-0146",
+      "japanese": "（電話を）かけます",
+      "hiragana": "でんわをかけます",
+      "simple_chinese": "打（電話）",
+      "full_explanation": "（電話を）かけます（でんわをかけます）：打（電話）。例：今日、学校で電話をかけます。"
+    },
+    {
+      "id": "vocab-n5-0147",
+      "japanese": "かさ",
+      "hiragana": "かさ",
+      "simple_chinese": "傘",
+      "full_explanation": "かさ（かさ）：傘。例：かさを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0148",
+      "japanese": "かします",
+      "hiragana": "かします",
+      "simple_chinese": "借給人，借出",
+      "full_explanation": "かします（かします）：借給人，借出。例：今朝、会社でかします。"
+    },
+    {
+      "id": "vocab-n5-0149",
+      "japanese": "家族",
+      "hiragana": "かぞく",
+      "simple_chinese": "家人",
+      "full_explanation": "家族（かぞく）：家人。例：家族といっしょに晩ごはんを食べます。"
+    },
+    {
+      "id": "vocab-n5-0150",
+      "japanese": "方",
+      "hiragana": "ひと",
+      "simple_chinese": "人： 「人」的禮貌表達",
+      "full_explanation": "方（ひと）：人： 「人」的禮貌表達。例：方を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0151",
+      "japanese": "～方",
+      "hiragana": "がた",
+      "simple_chinese": "各位；…們：「～たち」的禮貌表達",
+      "full_explanation": "～方（がた）：各位；…們：「～たち」的禮貌表達。例：この漢字の読み方を教えてください。"
+    },
+    {
+      "id": "vocab-n5-0152",
+      "japanese": "学校",
+      "hiragana": "がっこう",
+      "simple_chinese": "學校",
+      "full_explanation": "学校（がっこう）：學校。例：放課後、学校で勉強します。"
+    },
+    {
+      "id": "vocab-n5-0153",
+      "japanese": "買ってきます",
+      "hiragana": "かってきます",
+      "simple_chinese": "買來",
+      "full_explanation": "買ってきます（かってきます）：買來。例：飲み物を買ってきますね。"
+    },
+    {
+      "id": "vocab-n5-0154",
+      "japanese": "かばん",
+      "hiragana": "かばん",
+      "simple_chinese": "包",
+      "full_explanation": "かばん（かばん）：包。例：かばんが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0155",
+      "japanese": "（ぼうしを）かぶります",
+      "hiragana": "ぼうしをかぶります",
+      "simple_chinese": "戴（帽子）",
+      "full_explanation": "（ぼうしを）かぶります（ぼうしをかぶります）：戴（帽子）。例：夜、図書館でぼうしをかぶります。"
+    },
+    {
+      "id": "vocab-n5-0156",
+      "japanese": "紙",
+      "hiragana": "かみ",
+      "simple_chinese": "紙",
+      "full_explanation": "紙（かみ）：紙。例：紙をかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0157",
+      "japanese": "紙しばい",
+      "hiragana": "かみしばい",
+      "simple_chinese": "紙劇場",
+      "full_explanation": "紙しばい（かみしばい）：紙劇場。例：子どもに紙しばいを見せました。"
+    },
+    {
+      "id": "vocab-n5-0158",
+      "japanese": "カメラ",
+      "hiragana": "かめら",
+      "simple_chinese": "照相機",
+      "full_explanation": "カメラ（かめら）：照相機。例：先週、駅でカメラを買いました。"
+    },
+    {
+      "id": "vocab-n5-0159",
+      "japanese": "～から",
+      "hiragana": "から",
+      "simple_chinese": "從～",
+      "full_explanation": "～から（から）：從～。例：雨だから、タクシーで帰ります。"
+    },
+    {
+      "id": "vocab-n5-0160",
+      "japanese": "からい",
+      "hiragana": "からい",
+      "simple_chinese": "辣",
+      "full_explanation": "からい（からい）：辣。例：このカレーはからいので、水を飲みました。"
+    },
+    {
+      "id": "vocab-n5-0161",
+      "japanese": "カラオケ",
+      "hiragana": "からおけ",
+      "simple_chinese": "卡拉 OK",
+      "full_explanation": "カラオケ（からおけ）：卡拉 OK。例：カラオケが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0162",
+      "japanese": "カラオケ（を）する",
+      "hiragana": "からおけをする",
+      "simple_chinese": "唱卡拉 OK",
+      "full_explanation": "カラオケ（を）する（からおけをする）：唱卡拉 OK。例：今日、駅でカラオケをするを買いました。"
+    },
+    {
+      "id": "vocab-n5-0163",
+      "japanese": "体",
+      "hiragana": "からだ",
+      "simple_chinese": "身體",
+      "full_explanation": "体（からだ）：身體。例：体を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0164",
+      "japanese": "借ります",
+      "hiragana": "かります",
+      "simple_chinese": "向人借，借來",
+      "full_explanation": "借ります（かります）：向人借，借來。例：図書館で日本語の本を借りました。"
+    },
+    {
+      "id": "vocab-n5-0165",
+      "japanese": "軽い",
+      "hiragana": "かるい",
+      "simple_chinese": "輕的",
+      "full_explanation": "軽い（かるい）：輕的。例：このかばんは軽いから、持ちやすいです。"
+    },
+    {
+      "id": "vocab-n5-0166",
+      "japanese": "カレー",
+      "hiragana": "かれー",
+      "simple_chinese": "咖哩",
+      "full_explanation": "カレー（かれー）：咖哩。例：カレーをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0167",
+      "japanese": "カレンダー",
+      "hiragana": "かれんだー",
+      "simple_chinese": "日曆，月曆",
+      "full_explanation": "カレンダー（かれんだー）：日曆，月曆。例：カレンダーを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0168",
+      "japanese": "川",
+      "hiragana": "かわ",
+      "simple_chinese": "河",
+      "full_explanation": "川（かわ）：河。例：川をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0169",
+      "japanese": "かんがえます",
+      "hiragana": "かんがえます",
+      "simple_chinese": "考慮，思考，想",
+      "full_explanation": "かんがえます（かんがえます）：考慮，思考，想。例：休みの予定を考えています。"
+    },
+    {
+      "id": "vocab-n5-0170",
+      "japanese": "韓国",
+      "hiragana": "かんこく",
+      "simple_chinese": "韓國",
+      "full_explanation": "韓国（かんこく）：韓國。例：店員さんに「韓国はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0171",
+      "japanese": "漢字",
+      "hiragana": "かんじ",
+      "simple_chinese": "漢字",
+      "full_explanation": "漢字（かんじ）：漢字。例：母に漢字を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0172",
+      "japanese": "かんたん",
+      "hiragana": "かんたん",
+      "simple_chinese": "簡單",
+      "full_explanation": "かんたん（かんたん）：簡單。例：会社はかんたんで、歩きやすいです。"
+    },
+    {
+      "id": "vocab-n5-0173",
+      "japanese": "木",
+      "hiragana": "き",
+      "simple_chinese": "木，木頭",
+      "full_explanation": "木（き）：木，木頭。例：朝、木を洗ってから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0174",
+      "japanese": "（音楽を）聞きます①",
+      "hiragana": "おんがくき",
+      "simple_chinese": "聽（音樂）",
+      "full_explanation": "（音楽を）聞きます①（おんがくき）：聽（音樂）。例：通学中に音楽を聞きます。"
+    },
+    {
+      "id": "vocab-n5-0175",
+      "japanese": "（友だちに／先生に）聞きます②",
+      "hiragana": "ともせんせいき",
+      "simple_chinese": "問（朋友／老師）",
+      "full_explanation": "（友だちに／先生に）聞きます②（ともせんせいき）：問（朋友／老師）。例：わからないところは先生に聞きます。"
+    },
+    {
+      "id": "vocab-n5-0176",
+      "japanese": "北",
+      "hiragana": "きた",
+      "simple_chinese": "北，北邊",
+      "full_explanation": "北（きた）：北，北邊。例：駅はここから北です。"
+    },
+    {
+      "id": "vocab-n5-0177",
+      "japanese": "ギター",
+      "hiragana": "ぎたー",
+      "simple_chinese": "吉他",
+      "full_explanation": "ギター（ぎたー）：吉他。例：友だちからギターをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0178",
+      "japanese": "きたない",
+      "hiragana": "きたない",
+      "simple_chinese": "髒，髒的",
+      "full_explanation": "きたない（きたない）：髒，髒的。例：部屋がきたないので、そうじします。"
+    },
+    {
+      "id": "vocab-n5-0179",
+      "japanese": "きっさ店",
+      "hiragana": "てんきっさ",
+      "simple_chinese": "咖啡店，茶館",
+      "full_explanation": "きっさ店（てんきっさ）：咖啡店，茶館。例：夜、きっさ店で待ち合わせします。"
+    },
+    {
+      "id": "vocab-n5-0180",
+      "japanese": "きっぷ",
+      "hiragana": "きっぷ",
+      "simple_chinese": "票",
+      "full_explanation": "きっぷ（きっぷ）：票。例：きっぷをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0181",
+      "japanese": "きのう",
+      "hiragana": "きのう",
+      "simple_chinese": "昨天",
+      "full_explanation": "きのう（きのう）：昨天。例：きのう、駅で友だちに会いました。"
+    },
+    {
+      "id": "vocab-n5-0182",
+      "japanese": "（性格が）きびしい",
+      "hiragana": "せいかくがきびしい",
+      "simple_chinese": "（性格）嚴肅，嚴厲",
+      "full_explanation": "（性格が）きびしい（せいかくがきびしい）：（性格）嚴肅，嚴厲。例：先生は性格がきびしいですが、説明はわかりやすいです。"
+    },
+    {
+      "id": "vocab-n5-0183",
+      "japanese": "来ます",
+      "hiragana": "きます",
+      "simple_chinese": "來",
+      "full_explanation": "来ます（きます）：來。例：友だちが今夜うちに来ます。"
+    },
+    {
+      "id": "vocab-n5-0184",
+      "japanese": "（服を）着ます",
+      "hiragana": "ふくき",
+      "simple_chinese": "穿（衣服）",
+      "full_explanation": "（服を）着ます（ふくき）：穿（衣服）。例：今日、家で服を着ます。"
+    },
+    {
+      "id": "vocab-n5-0185",
+      "japanese": "決まります",
+      "hiragana": "きまります",
+      "simple_chinese": "決定",
+      "full_explanation": "決まります（きまります）：決定。例：会議の時間がやっと決まりました。"
+    },
+    {
+      "id": "vocab-n5-0186",
+      "japanese": "決めます",
+      "hiragana": "きめます",
+      "simple_chinese": "決定，做決定",
+      "full_explanation": "決めます（きめます）：決定，做決定。例：旅行の日にちを今日決めます。"
+    },
+    {
+      "id": "vocab-n5-0187",
+      "japanese": "気持ちがいい",
+      "hiragana": "きもちがいい",
+      "simple_chinese": "舒服，",
+      "full_explanation": "気持ちがいい（きもちがいい）：舒服，。例：海の風が気持ちがいいです。"
+    },
+    {
+      "id": "vocab-n5-0188",
+      "japanese": "客",
+      "hiragana": "きゃく",
+      "simple_chinese": "客人，顧客",
+      "full_explanation": "客（きゃく）：客人，顧客。例：公園に客がいます。"
+    },
+    {
+      "id": "vocab-n5-0189",
+      "japanese": "牛乳",
+      "hiragana": "ぎゅうにゅう",
+      "simple_chinese": "牛奶",
+      "full_explanation": "牛乳（ぎゅうにゅう）：牛奶。例：あの人は牛乳です。"
+    },
+    {
+      "id": "vocab-n5-0190",
+      "japanese": "今日",
+      "hiragana": "きょう",
+      "simple_chinese": "今天",
+      "full_explanation": "今日（きょう）：今天。例：今日は雨なので、家でゆっくりします。"
+    },
+    {
+      "id": "vocab-n5-0191",
+      "japanese": "教室",
+      "hiragana": "きょうしつ",
+      "simple_chinese": "教室",
+      "full_explanation": "教室（きょうしつ）：教室。例：放課後、教室で勉強します。"
+    },
+    {
+      "id": "vocab-n5-0192",
+      "japanese": "兄弟",
+      "hiragana": "きょうだい",
+      "simple_chinese": "兄弟；兄弟姐妹",
+      "full_explanation": "兄弟（きょうだい）：兄弟；兄弟姐妹。例：先生に兄弟を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0193",
+      "japanese": "去年",
+      "hiragana": "きょねん",
+      "simple_chinese": "去年",
+      "full_explanation": "去年（きょねん）：去年。例：去年は新しいことを始めたいです。"
+    },
+    {
+      "id": "vocab-n5-0194",
+      "japanese": "きらい",
+      "hiragana": "きらい",
+      "simple_chinese": "討厭，厭煩",
+      "full_explanation": "きらい（きらい）：討厭，厭煩。例：うるさい音はきらいです。"
+    },
+    {
+      "id": "vocab-n5-0195",
+      "japanese": "切ります",
+      "hiragana": "きります",
+      "simple_chinese": "切，割；砍，剁；中斷",
+      "full_explanation": "切ります（きります）：切，割；砍，剁；中斷。例：野菜を小さく切って、スープを作ります。"
+    },
+    {
+      "id": "vocab-n5-0196",
+      "japanese": "（部屋が）きれい①",
+      "hiragana": "へやがきれい",
+      "simple_chinese": "（房間）乾淨",
+      "full_explanation": "（部屋が）きれい①（へやがきれい）：（房間）乾淨。例：この部屋はきれいで気持ちがいいです。"
+    },
+    {
+      "id": "vocab-n5-0197",
+      "japanese": "（けしきが）きれい②",
+      "hiragana": "けしきがきれい",
+      "simple_chinese": "（景色）美，漂亮",
+      "full_explanation": "（けしきが）きれい②（けしきがきれい）：（景色）美，漂亮。例：山の上からのけしきがきれいでした。"
+    },
+    {
+      "id": "vocab-n5-0198",
+      "japanese": "きれいに",
+      "hiragana": "きれいに",
+      "simple_chinese": "乾乾淨淨地；完完全全地",
+      "full_explanation": "きれいに（きれいに）：乾乾淨淨地；完完全全地。例：部屋をきれいにそうじしました。"
+    },
+    {
+      "id": "vocab-n5-0199",
+      "japanese": "金 （＝金曜日）",
+      "hiragana": "きんきんようび",
+      "simple_chinese": "星期五，週五",
+      "full_explanation": "金 （＝金曜日）（きんきんようび）：星期五，週五。例：時間割の「金」は金曜日のことです。"
+    },
+    {
+      "id": "vocab-n5-0200",
+      "japanese": "銀行",
+      "hiragana": "ぎんこう",
+      "simple_chinese": "銀行",
+      "full_explanation": "銀行（ぎんこう）：銀行。例：公園で銀行を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0201",
+      "japanese": "空港",
+      "hiragana": "くうこう",
+      "simple_chinese": "機場",
+      "full_explanation": "空港（くうこう）：機場。例：昼、駅で空港を買いました。"
+    },
+    {
+      "id": "vocab-n5-0202",
+      "japanese": "薬",
+      "hiragana": "くすり",
+      "simple_chinese": "藥",
+      "full_explanation": "薬（くすり）：藥。例：薬が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0203",
+      "japanese": "ください",
+      "hiragana": "ください",
+      "simple_chinese": "請（給我）",
+      "full_explanation": "ください（ください）：請（給我）。例：もう一度言ってください。"
+    },
+    {
+      "id": "vocab-n5-0204",
+      "japanese": "くだもの",
+      "hiragana": "くだもの",
+      "simple_chinese": "水果",
+      "full_explanation": "くだもの（くだもの）：水果。例：来週、家でくだものを食べました。"
+    },
+    {
+      "id": "vocab-n5-0205",
+      "japanese": "くつ",
+      "hiragana": "くつ",
+      "simple_chinese": "鞋子",
+      "full_explanation": "くつ（くつ）：鞋子。例：くつをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0206",
+      "japanese": "国",
+      "hiragana": "くに",
+      "simple_chinese": "國家",
+      "full_explanation": "国（くに）：國家。例：国をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0207",
+      "japanese": "～くらい",
+      "hiragana": "くらい",
+      "simple_chinese": "～左右",
+      "full_explanation": "～くらい（くらい）：～左右。例：駅まで歩いて十分くらいです。"
+    },
+    {
+      "id": "vocab-n5-0208",
+      "japanese": "車",
+      "hiragana": "くるま",
+      "simple_chinese": "車",
+      "full_explanation": "車（くるま）：車。例：今朝、駅で車を買いました。"
+    },
+    {
+      "id": "vocab-n5-0209",
+      "japanese": "黒い",
+      "hiragana": "くろい",
+      "simple_chinese": "黑，黑的",
+      "full_explanation": "黒い（くろい）：黑，黑的。例：黒いくつは仕事のときに使います。"
+    },
+    {
+      "id": "vocab-n5-0210",
+      "japanese": "けいたい電話",
+      "hiragana": "でんわけいたい",
+      "simple_chinese": "手機",
+      "full_explanation": "けいたい電話（でんわけいたい）：手機。例：けいたい電話をぶつけて、少し痛いです。"
+    },
+    {
+      "id": "vocab-n5-0211",
+      "japanese": "ケーキ",
+      "hiragana": "けーき",
+      "simple_chinese": "蛋糕",
+      "full_explanation": "ケーキ（けーき）：蛋糕。例：夜、会社でケーキを食べました。"
+    },
+    {
+      "id": "vocab-n5-0212",
+      "japanese": "ケース",
+      "hiragana": "けーす",
+      "simple_chinese": "盒子，箱子；事件；情況",
+      "full_explanation": "ケース（けーす）：盒子，箱子；事件；情況。例：ケースが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0213",
+      "japanese": "ゲーム",
+      "hiragana": "げーむ",
+      "simple_chinese": "遊戲，電玩",
+      "full_explanation": "ゲーム（げーむ）：遊戲，電玩。例：公園でゲームを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0214",
+      "japanese": "ゲーム（を）します",
+      "hiragana": "げーむをします",
+      "simple_chinese": "玩遊戲，玩電玩",
+      "full_explanation": "ゲーム（を）します（げーむをします）：玩遊戲，玩電玩。例：昨日、公園でゲームをします。"
+    },
+    {
+      "id": "vocab-n5-0215",
+      "japanese": "今朝",
+      "hiragana": "けさ",
+      "simple_chinese": "今天早上",
+      "full_explanation": "今朝（けさ）：今天早上。例：今朝、パンを食べてから学校に行きました。"
+    },
+    {
+      "id": "vocab-n5-0216",
+      "japanese": "けしき",
+      "hiragana": "けしき",
+      "simple_chinese": "景色",
+      "full_explanation": "けしき（けしき）：景色。例：けしきをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0217",
+      "japanese": "けしゴム",
+      "hiragana": "けしごむ",
+      "simple_chinese": "橡皮擦",
+      "full_explanation": "けしゴム（けしごむ）：橡皮擦。例：店員さんからけしゴムをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0218",
+      "japanese": "けします",
+      "hiragana": "けします",
+      "simple_chinese": "擦，抹去；熄滅，關",
+      "full_explanation": "けします（けします）：擦，抹去；熄滅，關。例：来週、会社でけします。"
+    },
+    {
+      "id": "vocab-n5-0219",
+      "japanese": "月 （＝月曜日）",
+      "hiragana": "げつげつようひ",
+      "simple_chinese": "星期一，週一",
+      "full_explanation": "月 （＝月曜日）（げつげつようひ）：星期一，週一。例：時間割の「月」は月曜日のことです。"
+    },
+    {
+      "id": "vocab-n5-0220",
+      "japanese": "けっこんします",
+      "hiragana": "けっこんします",
+      "simple_chinese": "結婚",
+      "full_explanation": "けっこんします（けっこんします）：結婚。例：朝、病院でけっこんします。"
+    },
+    {
+      "id": "vocab-n5-0221",
+      "japanese": "月曜日",
+      "hiragana": "げつようび",
+      "simple_chinese": "星期一",
+      "full_explanation": "月曜日（げつようび）：星期一。例：月曜日は日本語の授業があります。"
+    },
+    {
+      "id": "vocab-n5-0222",
+      "japanese": "見学",
+      "hiragana": "けんがく",
+      "simple_chinese": "參觀學習",
+      "full_explanation": "見学（けんがく）：參觀學習。例：見学を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0223",
+      "japanese": "元気",
+      "hiragana": "げんき",
+      "simple_chinese": "精神，朝氣；健康",
+      "full_explanation": "元気（げんき）：精神，朝氣；健康。例：今日は元気です。"
+    },
+    {
+      "id": "vocab-n5-0224",
+      "japanese": "元気がない",
+      "hiragana": "げんきがない",
+      "simple_chinese": "無精打采，沒精神",
+      "full_explanation": "元気がない（げんきがない）：無精打采，沒精神。例：きょうは元気がないので、早く寝ます。"
+    },
+    {
+      "id": "vocab-n5-0225",
+      "japanese": "公園",
+      "hiragana": "こうえん",
+      "simple_chinese": "公園",
+      "full_explanation": "公園（こうえん）：公園。例：今日、公園で待ち合わせします。"
+    },
+    {
+      "id": "vocab-n5-0226",
+      "japanese": "こう茶",
+      "hiragana": "ちゃこう",
+      "simple_chinese": "紅茶",
+      "full_explanation": "こう茶（ちゃこう）：紅茶。例：午後、喫茶店でこう茶を食べました。"
+    },
+    {
+      "id": "vocab-n5-0227",
+      "japanese": "こうばん",
+      "hiragana": "こうばん",
+      "simple_chinese": "派出所",
+      "full_explanation": "こうばん（こうばん）：派出所。例：公園でこうばんを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0228",
+      "japanese": "コート",
+      "hiragana": "こーと",
+      "simple_chinese": "大衣，外套",
+      "full_explanation": "コート（こーと）：大衣，外套。例：店員さんに「コートはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0229",
+      "japanese": "コーヒー",
+      "hiragana": "こーひー",
+      "simple_chinese": "咖啡",
+      "full_explanation": "コーヒー（こーひー）：咖啡。例：昼、会社でコーヒーを食べました。"
+    },
+    {
+      "id": "vocab-n5-0230",
+      "japanese": "ご家族",
+      "hiragana": "かぞくご",
+      "simple_chinese": "您的家人： 提及別人的家人時用「ご家族」",
+      "full_explanation": "ご家族（かぞくご）：您的家人： 提及別人的家人時用「ご家族」。例：ご家族といっしょに晩ごはんを食べます。"
+    },
+    {
+      "id": "vocab-n5-0231",
+      "japanese": "ご兄弟",
+      "hiragana": "ごきょうだい",
+      "simple_chinese": "您的兄弟姐妹：提及別人的手足時用「ご兄弟」",
+      "full_explanation": "ご兄弟（ごきょうだい）：您的兄弟姐妹：提及別人的手足時用「ご兄弟」。例：ご兄弟をぶつけて、少し痛いです。"
+    },
+    {
+      "id": "vocab-n5-0232",
+      "japanese": "午後",
+      "hiragana": "ごご",
+      "simple_chinese": "下午",
+      "full_explanation": "午後（ごご）：下午。例：午後に公園へ行きます。"
+    },
+    {
+      "id": "vocab-n5-0233",
+      "japanese": "ございます",
+      "hiragana": "ございます",
+      "simple_chinese": "有： 「あります」的禮貌表達",
+      "full_explanation": "ございます（ございます）：有： 「あります」的禮貌表達。例：こちらにメニューがございます。"
+    },
+    {
+      "id": "vocab-n5-0234",
+      "japanese": "ごじゆうに",
+      "hiragana": "ごじゆうに",
+      "simple_chinese": "自由地，隨意地： 「じゆうに」的禮貌表達",
+      "full_explanation": "ごじゆうに（ごじゆうに）：自由地，隨意地： 「じゆうに」的禮貌表達。例：ごじゆうにを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0235",
+      "japanese": "ご主人",
+      "hiragana": "しゅじんご",
+      "simple_chinese": "尊夫，您先生： 提及別人的先生時用「ご主人 」",
+      "full_explanation": "ご主人（しゅじんご）：尊夫，您先生： 提及別人的先生時用「ご主人 」。例：あの人はご主人です。"
+    },
+    {
+      "id": "vocab-n5-0236",
+      "japanese": "午前",
+      "hiragana": "ごぜん",
+      "simple_chinese": "上午",
+      "full_explanation": "午前（ごぜん）：上午。例：午前に病院へ行きます。"
+    },
+    {
+      "id": "vocab-n5-0237",
+      "japanese": "答え",
+      "hiragana": "こたえ",
+      "simple_chinese": "答案，回覆",
+      "full_explanation": "答え（こたえ）：答案，回覆。例：答えを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0238",
+      "japanese": "答えます",
+      "hiragana": "こたえます",
+      "simple_chinese": "回答，回覆",
+      "full_explanation": "答えます（こたえます）：回答，回覆。例：質問にゆっくり答えました。"
+    },
+    {
+      "id": "vocab-n5-0239",
+      "japanese": "こちら",
+      "hiragana": "こちら",
+      "simple_chinese": "這兒，這裡",
+      "full_explanation": "こちら（こちら）：這兒，這裡。例：こちらの席へどうぞ。"
+    },
+    {
+      "id": "vocab-n5-0240",
+      "japanese": "こっち",
+      "hiragana": "こっち",
+      "simple_chinese": "這邊： 「こちら」的非正式口語說法",
+      "full_explanation": "こっち（こっち）：這邊： 「こちら」的非正式口語說法。例：こっちに来て、一緒に見よう。"
+    },
+    {
+      "id": "vocab-n5-0241",
+      "japanese": "コップ",
+      "hiragana": "こっぷ",
+      "simple_chinese": "杯子",
+      "full_explanation": "コップ（こっぷ）：杯子。例：コップをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0242",
+      "japanese": "今年",
+      "hiragana": "ことし",
+      "simple_chinese": "今年",
+      "full_explanation": "今年（ことし）：今年。例：今年は新しいことを始めたいです。"
+    },
+    {
+      "id": "vocab-n5-0243",
+      "japanese": "ことば",
+      "hiragana": "ことば",
+      "simple_chinese": "語言；言辭；詞語",
+      "full_explanation": "ことば（ことば）：語言；言辭；詞語。例：わからないことばはノートに書きます。"
+    },
+    {
+      "id": "vocab-n5-0244",
+      "japanese": "子ども",
+      "hiragana": "こども",
+      "simple_chinese": "孩子",
+      "full_explanation": "子ども（こども）：孩子。例：姉から子どもをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0245",
+      "japanese": "子どもさん",
+      "hiragana": "こどもさん",
+      "simple_chinese": "您的孩子： 提及別人的孩子時用「子どもさん」",
+      "full_explanation": "子どもさん（こどもさん）：您的孩子： 提及別人的孩子時用「子どもさん」。例：あの人は子どもさんです。"
+    },
+    {
+      "id": "vocab-n5-0246",
+      "japanese": "この～",
+      "hiragana": "この",
+      "simple_chinese": "這個～",
+      "full_explanation": "この～（この）：這個～。例：この道をまっすぐ行ってください。"
+    },
+    {
+      "id": "vocab-n5-0247",
+      "japanese": "このあと",
+      "hiragana": "このあと",
+      "simple_chinese": "之後，隨後",
+      "full_explanation": "このあと（このあと）：之後，隨後。例：このあと、図書館に行きます。"
+    },
+    {
+      "id": "vocab-n5-0248",
+      "japanese": "このへん",
+      "hiragana": "このへん",
+      "simple_chinese": "這一帶，這附近",
+      "full_explanation": "このへん（このへん）：這一帶，這附近。例：このへんにコンビニはありますか。"
+    },
+    {
+      "id": "vocab-n5-0249",
+      "japanese": "ご飯",
+      "hiragana": "はんご",
+      "simple_chinese": "飯，米飯",
+      "full_explanation": "ご飯（はんご）：飯，米飯。例：昼、スーパーでご飯を食べました。"
+    },
+    {
+      "id": "vocab-n5-0250",
+      "japanese": "コピー",
+      "hiragana": "こぴー",
+      "simple_chinese": "影印，副本",
+      "full_explanation": "コピー（こぴー）：影印，副本。例：店員さんに「コピーはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0251",
+      "japanese": "コピー（を）します",
+      "hiragana": "こぴーをします",
+      "simple_chinese": "影印，複製",
+      "full_explanation": "コピー（を）します（こぴーをします）：影印，複製。例：先週、家でコピーをします。"
+    },
+    {
+      "id": "vocab-n5-0252",
+      "japanese": "ご両親",
+      "hiragana": "ごりょうしん",
+      "simple_chinese": "令尊令堂，您的父母：提及別人的雙親時用「ご両親」",
+      "full_explanation": "ご両親（ごりょうしん）：令尊令堂，您的父母：提及別人的雙親時用「ご両親」。例：ご両親に電話をかけました。"
+    },
+    {
+      "id": "vocab-n5-0253",
+      "japanese": "これ",
+      "hiragana": "これ",
+      "simple_chinese": "這個",
+      "full_explanation": "これ（これ）：這個。例：これ、だれのえんぴつですか。"
+    },
+    {
+      "id": "vocab-n5-0254",
+      "japanese": "これから",
+      "hiragana": "これから",
+      "simple_chinese": "從此，從今以後，從現在起",
+      "full_explanation": "これから（これから）：從此，從今以後，從現在起。例：私にこれからを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0255",
+      "japanese": "～ごろ",
+      "hiragana": "ごろ",
+      "simple_chinese": "～左右（例：10 點左右）",
+      "full_explanation": "～ごろ（ごろ）：～左右（例：10 點左右）。例：だいたい七時ごろ家に帰ります。"
+    },
+    {
+      "id": "vocab-n5-0256",
+      "japanese": "コンサート",
+      "hiragana": "こんさーと",
+      "simple_chinese": "音樂會，演唱會",
+      "full_explanation": "コンサート（こんさーと）：音樂會，演唱會。例：コンサートを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0257",
+      "japanese": "今度",
+      "hiragana": "こんど",
+      "simple_chinese": "這次，本次",
+      "full_explanation": "今度（こんど）：這次，本次。例：今度を持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0258",
+      "japanese": "今晩",
+      "hiragana": "こんばん",
+      "simple_chinese": "今晚",
+      "full_explanation": "今晩（こんばん）：今晚。例：今晩をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0259",
+      "japanese": "コンビニ",
+      "hiragana": "こんびに",
+      "simple_chinese": "便利商店",
+      "full_explanation": "コンビニ（こんびに）：便利商店。例：コンビニをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0260",
+      "japanese": "コンピューター",
+      "hiragana": "こんぴゅーたー",
+      "simple_chinese": "電腦",
+      "full_explanation": "コンピューター（こんぴゅーたー）：電腦。例：コンピューターが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0261",
+      "japanese": "魚",
+      "hiragana": "さかな",
+      "simple_chinese": "魚",
+      "full_explanation": "魚（さかな）：魚。例：今朝、会社で魚を食べました。"
+    },
+    {
+      "id": "vocab-n5-0262",
+      "japanese": "先に",
+      "hiragana": "さきに",
+      "simple_chinese": "先；先前，前面",
+      "full_explanation": "先に（さきに）：先；先前，前面。例：先にをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0263",
+      "japanese": "さきます",
+      "hiragana": "さきます",
+      "simple_chinese": "開（花）",
+      "full_explanation": "さきます（さきます）：開（花）。例：春になると公園の花が咲きます。"
+    },
+    {
+      "id": "vocab-n5-0264",
+      "japanese": "作文",
+      "hiragana": "さくぶん",
+      "simple_chinese": "作文；造句",
+      "full_explanation": "作文（さくぶん）：作文；造句。例：来週、作文があります。"
+    },
+    {
+      "id": "vocab-n5-0265",
+      "japanese": "さくら",
+      "hiragana": "さくら",
+      "simple_chinese": "櫻花",
+      "full_explanation": "さくら（さくら）：櫻花。例：私にさくらを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0266",
+      "japanese": "さしみ",
+      "hiragana": "さしみ",
+      "simple_chinese": "刺身，生魚片",
+      "full_explanation": "さしみ（さしみ）：刺身，生魚片。例：昨日、喫茶店でさしみを食べました。"
+    },
+    {
+      "id": "vocab-n5-0267",
+      "japanese": "サッカー",
+      "hiragana": "さっかー",
+      "simple_chinese": "足球",
+      "full_explanation": "サッカー（さっかー）：足球。例：公園でサッカーを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0268",
+      "japanese": "さっき",
+      "hiragana": "さっき",
+      "simple_chinese": "剛剛，剛才",
+      "full_explanation": "さっき（さっき）：剛剛，剛才。例：昨日、駅でさっきを買いました。"
+    },
+    {
+      "id": "vocab-n5-0269",
+      "japanese": "ざっし",
+      "hiragana": "ざっし",
+      "simple_chinese": "雜誌",
+      "full_explanation": "ざっし（ざっし）：雜誌。例：ざっしをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0270",
+      "japanese": "寒い",
+      "hiragana": "さむい",
+      "simple_chinese": "寒冷的",
+      "full_explanation": "寒い（さむい）：寒冷的。例：今日は寒いので、コートを着ます。"
+    },
+    {
+      "id": "vocab-n5-0271",
+      "japanese": "～さん／～先生",
+      "hiragana": "さん・せんせい",
+      "simple_chinese": "稱呼對方名字時置於名字後的敬稱；不加的話不禮貌",
+      "full_explanation": "～さん／～先生（さん・せんせい）：稱呼對方名字時置於名字後的敬稱；不加的話不禮貌。例：田中さんと山田先生にメールを送りました。"
+    },
+    {
+      "id": "vocab-n5-0272",
+      "japanese": "サンドイッチ",
+      "hiragana": "さんどいっち",
+      "simple_chinese": "三明治",
+      "full_explanation": "サンドイッチ（さんどいっち）：三明治。例：友だちにサンドイッチを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0273",
+      "japanese": "ざんねん",
+      "hiragana": "ざんねん",
+      "simple_chinese": "可惜，遺憾",
+      "full_explanation": "ざんねん（ざんねん）：可惜，遺憾。例：ざんねんを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0274",
+      "japanese": "さんぽ",
+      "hiragana": "さんぽ",
+      "simple_chinese": "散步",
+      "full_explanation": "さんぽ（さんぽ）：散步。例：私にさんぽを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0275",
+      "japanese": "さんぽ（を）します",
+      "hiragana": "さんぽをします",
+      "simple_chinese": "散步",
+      "full_explanation": "さんぽ（を）します（さんぽをします）：散步。例：来週、学校でさんぽをします。"
+    },
+    {
+      "id": "vocab-n5-0276",
+      "japanese": "字",
+      "hiragana": "じ",
+      "simple_chinese": "字",
+      "full_explanation": "字（じ）：字。例：店員さんに「字はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0277",
+      "japanese": "試合",
+      "hiragana": "しあい",
+      "simple_chinese": "比賽",
+      "full_explanation": "試合（しあい）：比賽。例：来週、試合があります。"
+    },
+    {
+      "id": "vocab-n5-0278",
+      "japanese": "しかし",
+      "hiragana": "しかし",
+      "simple_chinese": "但是",
+      "full_explanation": "しかし（しかし）：但是。例：安いです。しかし、あまりおいしくないです。"
+    },
+    {
+      "id": "vocab-n5-0279",
+      "japanese": "時間",
+      "hiragana": "じかん",
+      "simple_chinese": "時間",
+      "full_explanation": "時間（じかん）：時間。例：私に時間を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0280",
+      "japanese": "試験",
+      "hiragana": "しけん",
+      "simple_chinese": "考試",
+      "full_explanation": "試験（しけん）：考試。例：公園で試験を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0281",
+      "japanese": "仕事",
+      "hiragana": "しごと",
+      "simple_chinese": "工作",
+      "full_explanation": "仕事（しごと）：工作。例：朝、駅で仕事を買いました。"
+    },
+    {
+      "id": "vocab-n5-0282",
+      "japanese": "辞書",
+      "hiragana": "じしょ",
+      "simple_chinese": "辭典",
+      "full_explanation": "辞書（じしょ）：辭典。例：父に辞書を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0283",
+      "japanese": "しずか",
+      "hiragana": "しずか",
+      "simple_chinese": "安靜",
+      "full_explanation": "しずか（しずか）：安靜。例：昼はしずかな所でゆっくりしました。"
+    },
+    {
+      "id": "vocab-n5-0284",
+      "japanese": "下",
+      "hiragana": "した",
+      "simple_chinese": "下，下面",
+      "full_explanation": "下（した）：下，下面。例：下をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0285",
+      "japanese": "知っています",
+      "hiragana": "しっています",
+      "simple_chinese": "知道",
+      "full_explanation": "知っています（しっています）：知道。例：その店を知っています。駅の近くです。"
+    },
+    {
+      "id": "vocab-n5-0286",
+      "japanese": "質問",
+      "hiragana": "しつもん",
+      "simple_chinese": "問題，提問",
+      "full_explanation": "質問（しつもん）：問題，提問。例：公園で質問を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0287",
+      "japanese": "自転車",
+      "hiragana": "じてんしゃ",
+      "simple_chinese": "自行車",
+      "full_explanation": "自転車（じてんしゃ）：自行車。例：自転車を持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0288",
+      "japanese": "しにます",
+      "hiragana": "しにます",
+      "simple_chinese": "死，死亡",
+      "full_explanation": "しにます（しにます）：死，死亡。例：魚は水がないと死にます。"
+    },
+    {
+      "id": "vocab-n5-0289",
+      "japanese": "します",
+      "hiragana": "します",
+      "simple_chinese": "做",
+      "full_explanation": "します（します）：做。例：今から宿題をします。"
+    },
+    {
+      "id": "vocab-n5-0290",
+      "japanese": "じむ室",
+      "hiragana": "しつじむ",
+      "simple_chinese": "事務所，辦公室",
+      "full_explanation": "じむ室（しつじむ）：事務所，辦公室。例：昼、じむ室で待ち合わせします。"
+    },
+    {
+      "id": "vocab-n5-0291",
+      "japanese": "じゃ（＝じゃあ）",
+      "hiragana": "じゃ",
+      "simple_chinese": "那麼；那就（＝じゃあ）",
+      "full_explanation": "じゃ（＝じゃあ）（じゃ）：那麼；那就（＝じゃあ）。例：じゃ、また明日ね。"
+    },
+    {
+      "id": "vocab-n5-0292",
+      "japanese": "「では」のカジュアルな言い方",
+      "hiragana": "いかた",
+      "simple_chinese": "「では」的非正式口語說法",
+      "full_explanation": "「では」のカジュアルな言い方（いかた）：「では」的非正式口語說法。例：「では」のカジュアルな言い方は「じゃ」や「じゃあ」です。"
+    },
+    {
+      "id": "vocab-n5-0293",
+      "japanese": "じゃあ（＝じゃ）",
+      "hiragana": "しゃしん",
+      "simple_chinese": "那麼： 「では」的非正式口語說法",
+      "full_explanation": "じゃあ（＝じゃ）（しゃしん）：那麼： 「では」的非正式口語說法。例：じゃあ、駅で会いましょう。"
+    },
+    {
+      "id": "vocab-n5-0294",
+      "japanese": "写真",
+      "hiragana": "しゃしん",
+      "simple_chinese": "照片",
+      "full_explanation": "写真（しゃしん）：照片。例：写真が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0295",
+      "japanese": "シャツ",
+      "hiragana": "しゃつ",
+      "simple_chinese": "襯衫",
+      "full_explanation": "シャツ（しゃつ）：襯衫。例：シャツを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0296",
+      "japanese": "シャワー",
+      "hiragana": "しゃわー",
+      "simple_chinese": "淋浴，沖涼",
+      "full_explanation": "シャワー（しゃわー）：淋浴，沖涼。例：シャワーを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0297",
+      "japanese": "住所",
+      "hiragana": "じゅうしょ",
+      "simple_chinese": "地址",
+      "full_explanation": "住所（じゅうしょ）：地址。例：友だちに住所を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0298",
+      "japanese": "ジュース",
+      "hiragana": "じゅーす",
+      "simple_chinese": "果汁",
+      "full_explanation": "ジュース（じゅーす）：果汁。例：先生にジュースを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0299",
+      "japanese": "授業",
+      "hiragana": "じゅぎょう",
+      "simple_chinese": "（學校的）課，課程",
+      "full_explanation": "授業（じゅぎょう）：（學校的）課，課程。例：午後、駅で授業を買いました。"
+    },
+    {
+      "id": "vocab-n5-0300",
+      "japanese": "宿題",
+      "hiragana": "しゅくだい",
+      "simple_chinese": "作業",
+      "full_explanation": "宿題（しゅくだい）：作業。例：父から宿題をもらいました。"
+    },
+    {
+      "id": "vocab-n5-0301",
+      "japanese": "宿題 （を）します",
+      "hiragana": "しゅくだいをします",
+      "simple_chinese": "做作業",
+      "full_explanation": "宿題 （を）します（しゅくだいをします）：做作業。例：昼、喫茶店で宿題 をします。"
+    },
+    {
+      "id": "vocab-n5-0302",
+      "japanese": "しゅみ",
+      "hiragana": "しゅみ",
+      "simple_chinese": "興趣，愛好",
+      "full_explanation": "しゅみ（しゅみ）：興趣，愛好。例：店員さんからしゅみをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0303",
+      "japanese": "しゅるい",
+      "hiragana": "しゅるい",
+      "simple_chinese": "種類",
+      "full_explanation": "しゅるい（しゅるい）：種類。例：この店はパンのしゅるいが多いです。"
+    },
+    {
+      "id": "vocab-n5-0304",
+      "japanese": "じゅんばん",
+      "hiragana": "じゅんばん",
+      "simple_chinese": "順序",
+      "full_explanation": "じゅんばん（じゅんばん）：順序。例：昼、駅でじゅんばんを買いました。"
+    },
+    {
+      "id": "vocab-n5-0305",
+      "japanese": "上手",
+      "hiragana": "じょうず",
+      "simple_chinese": "擅長，拿手；好，高明",
+      "full_explanation": "上手（じょうず）：擅長，拿手；好，高明。例：日本語が上手ですね。"
+    },
+    {
+      "id": "vocab-n5-0306",
+      "japanese": "じょうぶ",
+      "hiragana": "じょうぶ",
+      "simple_chinese": "健康，健壯；結實，牢固",
+      "full_explanation": "じょうぶ（じょうぶ）：健康，健壯；結實，牢固。例：じょうぶな靴を買いたいです。"
+    },
+    {
+      "id": "vocab-n5-0307",
+      "japanese": "食事",
+      "hiragana": "しょくじ",
+      "simple_chinese": "餐，用餐",
+      "full_explanation": "食事（しょくじ）：餐，用餐。例：食事が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0308",
+      "japanese": "食事 （を）します",
+      "hiragana": "しょくじをします",
+      "simple_chinese": "吃飯，用餐",
+      "full_explanation": "食事 （を）します（しょくじをします）：吃飯，用餐。例：朝、喫茶店で食事 をします。"
+    },
+    {
+      "id": "vocab-n5-0309",
+      "japanese": "食堂",
+      "hiragana": "しょくどう",
+      "simple_chinese": "食堂",
+      "full_explanation": "食堂（しょくどう）：食堂。例：来週、病院で食堂を食べました。"
+    },
+    {
+      "id": "vocab-n5-0310",
+      "japanese": "しらべます",
+      "hiragana": "しらべます",
+      "simple_chinese": "調查，檢查；搜索，搜查",
+      "full_explanation": "しらべます（しらべます）：調查，檢查；搜索，搜查。例：わからない言葉を辞書で調べます。"
+    },
+    {
+      "id": "vocab-n5-0311",
+      "japanese": "資料",
+      "hiragana": "しりょう",
+      "simple_chinese": "資料",
+      "full_explanation": "資料（しりょう）：資料。例：店員さんに「資料はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0312",
+      "japanese": "白",
+      "hiragana": "しろ",
+      "simple_chinese": "白，白色",
+      "full_explanation": "白（しろ）：白，白色。例：白のペンで名前を書きました。"
+    },
+    {
+      "id": "vocab-n5-0313",
+      "japanese": "白い",
+      "hiragana": "しろい",
+      "simple_chinese": "白的",
+      "full_explanation": "白い（しろい）：白的。例：白いシャツは何にでも合います。"
+    },
+    {
+      "id": "vocab-n5-0314",
+      "japanese": "しんかんせん",
+      "hiragana": "しんかんせん",
+      "simple_chinese": "新幹線",
+      "full_explanation": "しんかんせん（しんかんせん）：新幹線。例：しんかんせんを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0315",
+      "japanese": "親切",
+      "hiragana": "しんせつ",
+      "simple_chinese": "親切，友善",
+      "full_explanation": "親切（しんせつ）：親切，友善。例：親切をかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0316",
+      "japanese": "心配",
+      "hiragana": "しんぱい",
+      "simple_chinese": "擔心",
+      "full_explanation": "心配（しんぱい）：擔心。例：心配を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0317",
+      "japanese": "心配します",
+      "hiragana": "しんぱいします",
+      "simple_chinese": "擔心",
+      "full_explanation": "心配します（しんぱいします）：擔心。例：遅いので、母が心配しています。"
+    },
+    {
+      "id": "vocab-n5-0318",
+      "japanese": "新聞",
+      "hiragana": "しんぶん",
+      "simple_chinese": "報紙",
+      "full_explanation": "新聞（しんぶん）：報紙。例：新聞をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0319",
+      "japanese": "水 （＝水曜日）",
+      "hiragana": "すいすいようび",
+      "simple_chinese": "星期三，週三",
+      "full_explanation": "水 （＝水曜日）（すいすいようび）：星期三，週三。例：時間割の「水」は水曜日のことです。"
+    },
+    {
+      "id": "vocab-n5-0320",
+      "japanese": "水泳",
+      "hiragana": "すいえい",
+      "simple_chinese": "游泳",
+      "full_explanation": "水泳（すいえい）：游泳。例：水泳が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0321",
+      "japanese": "（タバコを）すいます",
+      "hiragana": "たばこをすいます",
+      "simple_chinese": "吸，抽（菸）",
+      "full_explanation": "（タバコを）すいます（たばこをすいます）：吸，抽（菸）。例：今日、会社でタバコをすいます。"
+    },
+    {
+      "id": "vocab-n5-0322",
+      "japanese": "水曜日",
+      "hiragana": "すいようび",
+      "simple_chinese": "星期三",
+      "full_explanation": "水曜日（すいようび）：星期三。例：水曜日は日本語の授業があります。"
+    },
+    {
+      "id": "vocab-n5-0323",
+      "japanese": "スーツ",
+      "hiragana": "すーつ",
+      "simple_chinese": "西裝，套裝",
+      "full_explanation": "スーツ（すーつ）：西裝，套裝。例：駅はここからスーツです。"
+    },
+    {
+      "id": "vocab-n5-0324",
+      "japanese": "スーパー",
+      "hiragana": "すーぱー",
+      "simple_chinese": "超市，超級市場",
+      "full_explanation": "スーパー（すーぱー）：超市，超級市場。例：店員さんに「スーパーはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0325",
+      "japanese": "好き",
+      "hiragana": "すき",
+      "simple_chinese": "喜歡",
+      "full_explanation": "好き（すき）：喜歡。例：妹から好きをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0326",
+      "japanese": "～すぎ",
+      "hiragana": "すぎ",
+      "simple_chinese": "過～（例：過 7 點）",
+      "full_explanation": "～すぎ（すぎ）：過～（例：過 7 點）。例：食べすぎて、おなかが痛いです。"
+    },
+    {
+      "id": "vocab-n5-0327",
+      "japanese": "スキー",
+      "hiragana": "すきー",
+      "simple_chinese": "滑雪",
+      "full_explanation": "スキー（すきー）：滑雪。例：夜はスキーでしたが、午後は晴れました。"
+    },
+    {
+      "id": "vocab-n5-0328",
+      "japanese": "好きなもの",
+      "hiragana": "すきなもの",
+      "simple_chinese": "喜歡的東西",
+      "full_explanation": "好きなもの（すきなもの）：喜歡的東西。例：駅はここから好きなものです。"
+    },
+    {
+      "id": "vocab-n5-0329",
+      "japanese": "（おなかが）すきます",
+      "hiragana": "おなかがすきます",
+      "simple_chinese": "（肚子）餓",
+      "full_explanation": "（おなかが）すきます（おなかがすきます）：（肚子）餓。例：夜、おなかがすきます。"
+    },
+    {
+      "id": "vocab-n5-0330",
+      "japanese": "すぐ（＝すぐに）",
+      "hiragana": "すぐすぐに",
+      "simple_chinese": "馬上",
+      "full_explanation": "すぐ（＝すぐに）（すぐすぐに）：馬上。例：すぐ行きますから、ここで待っていてください。"
+    },
+    {
+      "id": "vocab-n5-0331",
+      "japanese": "すぐに（＝すぐ）",
+      "hiragana": "すぐにすぐ",
+      "simple_chinese": "馬上",
+      "full_explanation": "すぐに（＝すぐ）（すぐにすぐ）：馬上。例：すぐに電話をかけます。"
+    },
+    {
+      "id": "vocab-n5-0332",
+      "japanese": "スケート",
+      "hiragana": "すけーと",
+      "simple_chinese": "滑冰",
+      "full_explanation": "スケート（すけーと）：滑冰。例：店員さんに「スケートはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0333",
+      "japanese": "少し",
+      "hiragana": "すこし",
+      "simple_chinese": "一點兒，稍微，稍許",
+      "full_explanation": "少し（すこし）：一點兒，稍微，稍許。例：もう少しゆっくり話してください。"
+    },
+    {
+      "id": "vocab-n5-0334",
+      "japanese": "すずしい",
+      "hiragana": "すずしい",
+      "simple_chinese": "涼快",
+      "full_explanation": "すずしい（すずしい）：涼快。例：このへんは夜になるとすずしいです。"
+    },
+    {
+      "id": "vocab-n5-0335",
+      "japanese": "～ずつ",
+      "hiragana": "ずつ",
+      "simple_chinese": "每…；各…（表示分配）",
+      "full_explanation": "～ずつ（ずつ）：每…；各…（表示分配）。例：みんなに一つずつケーキをあげました。"
+    },
+    {
+      "id": "vocab-n5-0336",
+      "japanese": "ストーブ",
+      "hiragana": "すとーぶ",
+      "simple_chinese": "暖爐，火爐",
+      "full_explanation": "ストーブ（すとーぶ）：暖爐，火爐。例：店員さんに「ストーブはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0337",
+      "japanese": "スプーン",
+      "hiragana": "すぷーん",
+      "simple_chinese": "湯匙",
+      "full_explanation": "スプーン（すぷーん）：湯匙。例：公園でスプーンを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0338",
+      "japanese": "スポーツ",
+      "hiragana": "すぽーつ",
+      "simple_chinese": "運動",
+      "full_explanation": "スポーツ（すぽーつ）：運動。例：来週、スポーツがあります。"
+    },
+    {
+      "id": "vocab-n5-0339",
+      "japanese": "ズボン",
+      "hiragana": "ずぼん",
+      "simple_chinese": "褲子",
+      "full_explanation": "ズボン（ずぼん）：褲子。例：公園でズボンを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0340",
+      "japanese": "住みます",
+      "hiragana": "すみます",
+      "simple_chinese": "住",
+      "full_explanation": "住みます（すみます）：住。例：今は東京に住んでいます。"
+    },
+    {
+      "id": "vocab-n5-0341",
+      "japanese": "すわります",
+      "hiragana": "すわります",
+      "simple_chinese": "坐",
+      "full_explanation": "すわります（すわります）：坐。例：疲れたので、ここに座ってもいいですか。"
+    },
+    {
+      "id": "vocab-n5-0342",
+      "japanese": "せ",
+      "hiragana": "せ",
+      "simple_chinese": "個子，身高",
+      "full_explanation": "せ（せ）：個子，身高。例：友だちにせを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0343",
+      "japanese": "せいかつ",
+      "hiragana": "せいかつ",
+      "simple_chinese": "生活",
+      "full_explanation": "せいかつ（せいかつ）：生活。例：来週、せいかつがあります。"
+    },
+    {
+      "id": "vocab-n5-0344",
+      "japanese": "セーター",
+      "hiragana": "せーたー",
+      "simple_chinese": "毛衣",
+      "full_explanation": "セーター（せーたー）：毛衣。例：朝、駅でセーターを買いました。"
+    },
+    {
+      "id": "vocab-n5-0345",
+      "japanese": "ぜひ",
+      "hiragana": "ぜひ",
+      "simple_chinese": "一定，務必",
+      "full_explanation": "ぜひ（ぜひ）：一定，務必。例：時間があったら、ぜひ来てください。"
+    },
+    {
+      "id": "vocab-n5-0346",
+      "japanese": "せまい",
+      "hiragana": "せまい",
+      "simple_chinese": "狹小的，狹窄的",
+      "full_explanation": "せまい（せまい）：狹小的，狹窄的。例：この店はせまいので、となりの人に気をつけます。"
+    },
+    {
+      "id": "vocab-n5-0347",
+      "japanese": "先週",
+      "hiragana": "せんしゅう",
+      "simple_chinese": "上週，上星期",
+      "full_explanation": "先週（せんしゅう）：上週，上星期。例：先週は仕事がいそがしいです。"
+    },
+    {
+      "id": "vocab-n5-0348",
+      "japanese": "先生",
+      "hiragana": "せんせい",
+      "simple_chinese": "老師",
+      "full_explanation": "先生（せんせい）：老師。例：私の友だちは先生です。"
+    },
+    {
+      "id": "vocab-n5-0349",
+      "japanese": "ぜんぜん～ない",
+      "hiragana": "ぜんぜんない",
+      "simple_chinese": "完全沒有～，完全不～",
+      "full_explanation": "ぜんぜん～ない（ぜんぜんない）：完全沒有～，完全不～。例：昨日はぜんぜん寝られませんでした。"
+    },
+    {
+      "id": "vocab-n5-0350",
+      "japanese": "洗たく（を）します",
+      "hiragana": "せんたくをします",
+      "simple_chinese": "洗滌，洗衣服",
+      "full_explanation": "洗たく（を）します（せんたくをします）：洗滌，洗衣服。例：来週、駅で洗たくをします。"
+    },
+    {
+      "id": "vocab-n5-0351",
+      "japanese": "全部",
+      "hiragana": "ぜんぶ",
+      "simple_chinese": "全，全部",
+      "full_explanation": "全部（ぜんぶ）：全，全部。例：宿題は全部終わりました。"
+    },
+    {
+      "id": "vocab-n5-0352",
+      "japanese": "全部で",
+      "hiragana": "ぜんぶで",
+      "simple_chinese": "一共，總共",
+      "full_explanation": "全部で（ぜんぶで）：一共，總共。例：全部で三千円です。"
+    },
+    {
+      "id": "vocab-n5-0353",
+      "japanese": "ゾウ",
+      "hiragana": "ぞう",
+      "simple_chinese": "大象",
+      "full_explanation": "ゾウ（ぞう）：大象。例：ゾウをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0354",
+      "japanese": "そうじ",
+      "hiragana": "そうじ",
+      "simple_chinese": "掃除",
+      "full_explanation": "そうじ（そうじ）：掃除。例：そうじをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0355",
+      "japanese": "そうじ（を）します",
+      "hiragana": "そうじをします",
+      "simple_chinese": "打掃",
+      "full_explanation": "そうじ（を）します（そうじをします）：打掃。例：夜、家でそうじをします。"
+    },
+    {
+      "id": "vocab-n5-0356",
+      "japanese": "そこ",
+      "hiragana": "そこ",
+      "simple_chinese": "那兒，那裡",
+      "full_explanation": "そこ（そこ）：那兒，那裡。例：かばんはそこに置いてください。"
+    },
+    {
+      "id": "vocab-n5-0357",
+      "japanese": "そして",
+      "hiragana": "そして",
+      "simple_chinese": "而且，並且；然後",
+      "full_explanation": "そして（そして）：而且，並且；然後。例：駅で本を買いました。そして、家で読みました。"
+    },
+    {
+      "id": "vocab-n5-0358",
+      "japanese": "そちら①",
+      "hiragana": "そちら",
+      "simple_chinese": "你，您： 指對方或聽話者",
+      "full_explanation": "そちら①（そちら）：你，您： 指對方或聽話者。例：そちらはどう思いますか。"
+    },
+    {
+      "id": "vocab-n5-0359",
+      "japanese": "そちら②",
+      "hiragana": "そちら",
+      "simple_chinese": "你那邊，您那邊： 指對方或聽話者所在的地方",
+      "full_explanation": "そちら②（そちら）：你那邊，您那邊： 指對方或聽話者所在的地方。例：そちらは雨ですか。こちらは晴れです。"
+    },
+    {
+      "id": "vocab-n5-0360",
+      "japanese": "そっち",
+      "hiragana": "そっち",
+      "simple_chinese": "那邊：「そちら」的非正式口語說法",
+      "full_explanation": "そっち（そっち）：那邊：「そちら」的非正式口語說法。例：そっちは寒い？こっちはあたたかいよ。"
+    },
+    {
+      "id": "vocab-n5-0361",
+      "japanese": "祖父",
+      "hiragana": "そふ",
+      "simple_chinese": "爺爺，外公： 提及自己的爺爺或外公時用「祖父」",
+      "full_explanation": "祖父（そふ）：爺爺，外公： 提及自己的爺爺或外公時用「祖父」。例：祖父は毎朝さんぽします。"
+    },
+    {
+      "id": "vocab-n5-0362",
+      "japanese": "祖母",
+      "hiragana": "そぼ",
+      "simple_chinese": "奶奶，外婆： 提及自己的奶奶或外婆時用「祖母」",
+      "full_explanation": "祖母（そぼ）：奶奶，外婆： 提及自己的奶奶或外婆時用「祖母」。例：祖母は料理が上手です。"
+    },
+    {
+      "id": "vocab-n5-0363",
+      "japanese": "空",
+      "hiragana": "そら",
+      "simple_chinese": "天，天空",
+      "full_explanation": "空（そら）：天，天空。例：空をかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0364",
+      "japanese": "それ",
+      "hiragana": "それ",
+      "simple_chinese": "那，那個（離聽話者近的東西）",
+      "full_explanation": "それ（それ）：那，那個（離聽話者近的東西）。例：それは私のじゃありません。"
+    },
+    {
+      "id": "vocab-n5-0365",
+      "japanese": "それから",
+      "hiragana": "それから",
+      "simple_chinese": "然後，接著；而且，還有",
+      "full_explanation": "それから（それから）：然後，接著；而且，還有。例：それから、もう一度ゆっくり言ってください。"
+    },
+    {
+      "id": "vocab-n5-0366",
+      "japanese": "それでは",
+      "hiragana": "それでは",
+      "simple_chinese": "那麼",
+      "full_explanation": "それでは（それでは）：那麼。例：それでは、また来週。"
+    },
+    {
+      "id": "vocab-n5-0367",
+      "japanese": "大学",
+      "hiragana": "だいがく",
+      "simple_chinese": "大學",
+      "full_explanation": "大学（だいがく）：大學。例：母に大学を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0368",
+      "japanese": "大学 １年生",
+      "hiragana": "だいがくねんせい",
+      "simple_chinese": "大學 1 年級",
+      "full_explanation": "大学 １年生（だいがくねんせい）：大學 1 年級。例：私は大学１年生です。"
+    },
+    {
+      "id": "vocab-n5-0369",
+      "japanese": "だいじょうぶ",
+      "hiragana": "だいじょうぶ",
+      "simple_chinese": "沒問題",
+      "full_explanation": "だいじょうぶ（だいじょうぶ）：沒問題。例：転びましたが、だいじょうぶでした。"
+    },
+    {
+      "id": "vocab-n5-0370",
+      "japanese": "大好き",
+      "hiragana": "だいすき",
+      "simple_chinese": "非常喜歡，最喜歡",
+      "full_explanation": "大好き（だいすき）：非常喜歡，最喜歡。例：私は日本の音楽が大好きです。"
+    },
+    {
+      "id": "vocab-n5-0371",
+      "japanese": "大切",
+      "hiragana": "たいせつ",
+      "simple_chinese": "重要，寶貴；珍惜",
+      "full_explanation": "大切（たいせつ）：重要，寶貴；珍惜。例：パスポートは大切ですから、なくさないでください。"
+    },
+    {
+      "id": "vocab-n5-0372",
+      "japanese": "たいてい",
+      "hiragana": "たいてい",
+      "simple_chinese": "基本上，大約，一般",
+      "full_explanation": "たいてい（たいてい）：基本上，大約，一般。例：たいてい、朝はパンを食べます。"
+    },
+    {
+      "id": "vocab-n5-0373",
+      "japanese": "たいへん",
+      "hiragana": "たいへん",
+      "simple_chinese": "很，非常",
+      "full_explanation": "たいへん（たいへん）：很，非常。例：きょうは仕事が多くて、たいへんです。"
+    },
+    {
+      "id": "vocab-n5-0374",
+      "japanese": "大変",
+      "hiragana": "たいへん",
+      "simple_chinese": "嚴重，不得了；辛苦，費勁",
+      "full_explanation": "大変（たいへん）：嚴重，不得了；辛苦，費勁。例：店員さんに「大変はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0375",
+      "japanese": "台湾",
+      "hiragana": "たいわん",
+      "simple_chinese": "臺灣",
+      "full_explanation": "台湾（たいわん）：臺灣。例：公園で台湾を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0376",
+      "japanese": "（せが）高い①",
+      "hiragana": "たかせがい",
+      "simple_chinese": "（個子）高",
+      "full_explanation": "（せが）高い①（たかせがい）：（個子）高。例：兄はせが高いです。"
+    },
+    {
+      "id": "vocab-n5-0377",
+      "japanese": "（ねだんが）高い②",
+      "hiragana": "たかねだんがい",
+      "simple_chinese": "（價格）貴",
+      "full_explanation": "（ねだんが）高い②（たかねだんがい）：（價格）貴。例：この店のケーキはねだんが高いです。"
+    },
+    {
+      "id": "vocab-n5-0378",
+      "japanese": "たくさん",
+      "hiragana": "たくさん",
+      "simple_chinese": "很多",
+      "full_explanation": "たくさん（たくさん）：很多。例：野菜をたくさん食べます。"
+    },
+    {
+      "id": "vocab-n5-0379",
+      "japanese": "タクシー",
+      "hiragana": "たくしー",
+      "simple_chinese": "計程車",
+      "full_explanation": "タクシー（たくしー）：計程車。例：タクシーを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0380",
+      "japanese": "～だけ",
+      "hiragana": "だけ",
+      "simple_chinese": "只有～，僅僅～",
+      "full_explanation": "～だけ（だけ）：只有～，僅僅～。例：今日は水だけ飲みました。"
+    },
+    {
+      "id": "vocab-n5-0381",
+      "japanese": "（手紙を）出します①",
+      "hiragana": "てがみだ",
+      "simple_chinese": "寄（信）",
+      "full_explanation": "（手紙を）出します①（てがみだ）：寄（信）。例：郵便局で手紙を出しました。"
+    },
+    {
+      "id": "vocab-n5-0382",
+      "japanese": "（レポートを）出します②",
+      "hiragana": "だれぽーとをします",
+      "simple_chinese": "提交（報告）",
+      "full_explanation": "（レポートを）出します②（だれぽーとをします）：提交（報告）。例：きょう中にレポートを出します。"
+    },
+    {
+      "id": "vocab-n5-0383",
+      "japanese": "正しい",
+      "hiragana": "ただしい",
+      "simple_chinese": "對，對的，正確",
+      "full_explanation": "正しい（ただしい）：對，對的，正確。例：住所が正しいか、もう一度見てください。"
+    },
+    {
+      "id": "vocab-n5-0384",
+      "japanese": "～たち",
+      "hiragana": "たち",
+      "simple_chinese": "～們",
+      "full_explanation": "～たち（たち）：～們。例：学生たちは図書館で勉強しています。"
+    },
+    {
+      "id": "vocab-n5-0385",
+      "japanese": "立ちます",
+      "hiragana": "たちます",
+      "simple_chinese": "站，立",
+      "full_explanation": "立ちます（たちます）：站，立。例：次の駅で立って待ち合わせします。"
+    },
+    {
+      "id": "vocab-n5-0386",
+      "japanese": "建物",
+      "hiragana": "たてもの",
+      "simple_chinese": "建築物，房屋",
+      "full_explanation": "建物（たてもの）：建築物，房屋。例：建物をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0387",
+      "japanese": "たな",
+      "hiragana": "たな",
+      "simple_chinese": "架子；棚，櫃",
+      "full_explanation": "たな（たな）：架子；棚，櫃。例：弟にたなを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0388",
+      "japanese": "楽しい",
+      "hiragana": "たのしい",
+      "simple_chinese": "高興，愉快",
+      "full_explanation": "楽しい（たのしい）：高興，愉快。例：旅行は楽しいけど、準備が大変です。"
+    },
+    {
+      "id": "vocab-n5-0389",
+      "japanese": "楽しみ",
+      "hiragana": "たのしみ",
+      "simple_chinese": "興趣，樂趣；期望，期待",
+      "full_explanation": "楽しみ（たのしみ）：興趣，樂趣；期望，期待。例：楽しみを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0390",
+      "japanese": "たぶん",
+      "hiragana": "たぶん",
+      "simple_chinese": "也許，有可能，大概",
+      "full_explanation": "たぶん（たぶん）：也許，有可能，大概。例：たぶん、今日は早く帰ります。"
+    },
+    {
+      "id": "vocab-n5-0391",
+      "japanese": "食べます",
+      "hiragana": "たべます",
+      "simple_chinese": "吃",
+      "full_explanation": "食べます（たべます）：吃。例：昼にカレーを食べました。"
+    },
+    {
+      "id": "vocab-n5-0392",
+      "japanese": "食べ物",
+      "hiragana": "たもの",
+      "simple_chinese": "食物，吃的東西",
+      "full_explanation": "食べ物（たもの）：食物，吃的東西。例：午後、喫茶店で食べ物を食べました。"
+    },
+    {
+      "id": "vocab-n5-0393",
+      "japanese": "たまご",
+      "hiragana": "たまご",
+      "simple_chinese": "雞蛋，蛋",
+      "full_explanation": "たまご（たまご）：雞蛋，蛋。例：午後、家でたまごを食べました。"
+    },
+    {
+      "id": "vocab-n5-0394",
+      "japanese": "だめ①",
+      "hiragana": "だめ",
+      "simple_chinese": "不好，壞的",
+      "full_explanation": "だめ①（だめ）：不好，壞的。例：このやり方はだめです。別の方法にしましょう。"
+    },
+    {
+      "id": "vocab-n5-0395",
+      "japanese": "だめ②",
+      "hiragana": "だめ",
+      "simple_chinese": "不可以，不准",
+      "full_explanation": "だめ②（だめ）：不可以，不准。例：ここでタバコを吸ってはだめです。"
+    },
+    {
+      "id": "vocab-n5-0396",
+      "japanese": "だれ",
+      "hiragana": "だれ",
+      "simple_chinese": "誰",
+      "full_explanation": "だれ（だれ）：誰。例：だれを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0397",
+      "japanese": "だれか",
+      "hiragana": "だれか",
+      "simple_chinese": "某人，有人",
+      "full_explanation": "だれか（だれか）：某人，有人。例：だれかをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0398",
+      "japanese": "だれとも",
+      "hiragana": "だれとも",
+      "simple_chinese": "和任何人都～，和誰都～",
+      "full_explanation": "だれとも（だれとも）：和任何人都～，和誰都～。例：だれともが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0399",
+      "japanese": "だれにも",
+      "hiragana": "だれにも",
+      "simple_chinese": "對任何人都～，對誰都～",
+      "full_explanation": "だれにも（だれにも）：對任何人都～，對誰都～。例：だれにもをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0400",
+      "japanese": "だれも",
+      "hiragana": "だれも",
+      "simple_chinese": "任何人都～，任誰都～",
+      "full_explanation": "だれも（だれも）：任何人都～，任誰都～。例：だれもをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0401",
+      "japanese": "たんじょう日",
+      "hiragana": "びたんじょう",
+      "simple_chinese": "生日",
+      "full_explanation": "たんじょう日（びたんじょう）：生日。例：たんじょう日にケーキを食べます。"
+    },
+    {
+      "id": "vocab-n5-0402",
+      "japanese": "ダンス",
+      "hiragana": "だんす",
+      "simple_chinese": "舞蹈",
+      "full_explanation": "ダンス（だんす）：舞蹈。例：ダンスが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0403",
+      "japanese": "小さい",
+      "hiragana": "ちいさい",
+      "simple_chinese": "小的",
+      "full_explanation": "小さい（ちいさい）：小的。例：小さい声で話してください。"
+    },
+    {
+      "id": "vocab-n5-0404",
+      "japanese": "近い",
+      "hiragana": "ちかい",
+      "simple_chinese": "近的",
+      "full_explanation": "近い（ちかい）：近的。例：うちは駅から近いです。"
+    },
+    {
+      "id": "vocab-n5-0405",
+      "japanese": "ちがいます",
+      "hiragana": "ちがいます",
+      "simple_chinese": "不對，不是，錯了",
+      "full_explanation": "ちがいます（ちがいます）：不對，不是，錯了。例：それは私のかさじゃありません。ちがいます。"
+    },
+    {
+      "id": "vocab-n5-0406",
+      "japanese": "近く",
+      "hiragana": "ちかく",
+      "simple_chinese": "附近",
+      "full_explanation": "近く（ちかく）：附近。例：駅の近くにコンビニがあります。"
+    },
+    {
+      "id": "vocab-n5-0407",
+      "japanese": "地下鉄",
+      "hiragana": "ちかてつ",
+      "simple_chinese": "地鐵",
+      "full_explanation": "地下鉄（ちかてつ）：地鐵。例：店員さんに「地下鉄はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0408",
+      "japanese": "チケット",
+      "hiragana": "ちけっと",
+      "simple_chinese": "票",
+      "full_explanation": "チケット（ちけっと）：票。例：公園でチケットを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0409",
+      "japanese": "父",
+      "hiragana": "ちち",
+      "simple_chinese": "家父，我父親：提及自己的父親時用「父」",
+      "full_explanation": "父（ちち）：家父，我父親：提及自己的父親時用「父」。例：父は毎朝さんぽします。"
+    },
+    {
+      "id": "vocab-n5-0410",
+      "japanese": "注文します",
+      "hiragana": "します",
+      "simple_chinese": "點菜；下訂單",
+      "full_explanation": "注文します（します）：點菜；下訂單。例：この店でラーメンを注文します。"
+    },
+    {
+      "id": "vocab-n5-0411",
+      "japanese": "ちょうど",
+      "hiragana": "ちょうど",
+      "simple_chinese": "正好，剛好",
+      "full_explanation": "ちょうど（ちょうど）：正好，剛好。例：公園でちょうどを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0412",
+      "japanese": "ちょっと",
+      "hiragana": "ちょっと",
+      "simple_chinese": "一點點，稍微：「少し」的非正式口語說法",
+      "full_explanation": "ちょっと（ちょっと）：一點點，稍微：「少し」的非正式口語說法。例：ちょっと待ってください。すぐ行きます。"
+    },
+    {
+      "id": "vocab-n5-0413",
+      "japanese": "妻",
+      "hiragana": "つま",
+      "simple_chinese": "內人，我太太：提及自己的太太時用「妻」",
+      "full_explanation": "妻（つま）：內人，我太太：提及自己的太太時用「妻」。例：会社に妻がいます。"
+    },
+    {
+      "id": "vocab-n5-0414",
+      "japanese": "手",
+      "hiragana": "て",
+      "simple_chinese": "手",
+      "full_explanation": "手（て）：手。例：私の友だちは手です。"
+    },
+    {
+      "id": "vocab-n5-0415",
+      "japanese": "Tシャツ",
+      "hiragana": "てぃーしゃつ",
+      "simple_chinese": "T恤",
+      "full_explanation": "Tシャツ（てぃーしゃつ）：T恤。例：Tシャツを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0416",
+      "japanese": "ディズニーランド",
+      "hiragana": "でぃずにーらんど",
+      "simple_chinese": "迪士尼樂園",
+      "full_explanation": "ディズニーランド（でぃずにーらんど）：迪士尼樂園。例：公園でディズニーランドを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0417",
+      "japanese": "テーブル",
+      "hiragana": "てーぶる",
+      "simple_chinese": "桌子",
+      "full_explanation": "テーブル（てーぶる）：桌子。例：先週、駅でテーブルを買いました。"
+    },
+    {
+      "id": "vocab-n5-0418",
+      "japanese": "出かけます",
+      "hiragana": "でかけます",
+      "simple_chinese": "外出，出門，出去",
+      "full_explanation": "出かけます（でかけます）：外出，出門，出去。例：雨がやんだら、買い物に出かけます。"
+    },
+    {
+      "id": "vocab-n5-0419",
+      "japanese": "手紙",
+      "hiragana": "てがみ",
+      "simple_chinese": "信",
+      "full_explanation": "手紙（てがみ）：信。例：店員さんに「手紙はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0420",
+      "japanese": "できます①",
+      "hiragana": "できます",
+      "simple_chinese": "能，可以，可能",
+      "full_explanation": "できます①（できます）：能，可以，可能。例：日本語で簡単な会話ができます。"
+    },
+    {
+      "id": "vocab-n5-0421",
+      "japanese": "（地下鉄が）できます②",
+      "hiragana": "ちかてつができます",
+      "simple_chinese": "（地鐵）完工，完成",
+      "full_explanation": "（地下鉄が）できます②（ちかてつができます）：（地鐵）完工，完成。例：来年、この町に地下鉄ができます。"
+    },
+    {
+      "id": "vocab-n5-0422",
+      "japanese": "テスト",
+      "hiragana": "てすと",
+      "simple_chinese": "考試，測試",
+      "full_explanation": "テスト（てすと）：考試，測試。例：テストをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0423",
+      "japanese": "手伝います",
+      "hiragana": "てつだいます",
+      "simple_chinese": "幫助，幫忙",
+      "full_explanation": "手伝います（てつだいます）：幫助，幫忙。例：週末、引っ越しを手伝います。"
+    },
+    {
+      "id": "vocab-n5-0424",
+      "japanese": "テニス",
+      "hiragana": "てにす",
+      "simple_chinese": "網球",
+      "full_explanation": "テニス（てにす）：網球。例：店員さんに「テニスはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0425",
+      "japanese": "では（＝それでは）",
+      "hiragana": "ではそれでは",
+      "simple_chinese": "那麼",
+      "full_explanation": "では（＝それでは）（ではそれでは）：那麼。例：では、これで失礼します。"
+    },
+    {
+      "id": "vocab-n5-0426",
+      "japanese": "デパート",
+      "hiragana": "でぱーと",
+      "simple_chinese": "百貨商場",
+      "full_explanation": "デパート（でぱーと）：百貨商場。例：店員さんに「デパートはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0427",
+      "japanese": "（家を）出ます①",
+      "hiragana": "いえで",
+      "simple_chinese": "離開（家）",
+      "full_explanation": "（家を）出ます①（いえで）：離開（家）。例：家を出る前に、かぎを確認します。"
+    },
+    {
+      "id": "vocab-n5-0428",
+      "japanese": "（会議に／パーティーに）出ます②",
+      "hiragana": "かいぎで",
+      "simple_chinese": "參加，出席（會議／派對）",
+      "full_explanation": "（会議に／パーティーに）出ます②（かいぎで）：參加，出席（會議／派對）。例：来週、会社の会議に出ます。"
+    },
+    {
+      "id": "vocab-n5-0429",
+      "japanese": "（大学を）出ます③",
+      "hiragana": "だいがくで",
+      "simple_chinese": "（大學）畢業",
+      "full_explanation": "（大学を）出ます③（だいがくで）：（大學）畢業。例：来年、大学を出ます。"
+    },
+    {
+      "id": "vocab-n5-0430",
+      "japanese": "でも",
+      "hiragana": "でも",
+      "simple_chinese": "不過，但是，可是",
+      "full_explanation": "でも（でも）：不過，但是，可是。例：行きたいです。でも、時間がありません。"
+    },
+    {
+      "id": "vocab-n5-0431",
+      "japanese": "テレビ",
+      "hiragana": "てれび",
+      "simple_chinese": "電視",
+      "full_explanation": "テレビ（てれび）：電視。例：夜、駅でテレビを買いました。"
+    },
+    {
+      "id": "vocab-n5-0432",
+      "japanese": "天気",
+      "hiragana": "てんき",
+      "simple_chinese": "天氣",
+      "full_explanation": "天気（てんき）：天氣。例：天気を見て、あした出かけるか決めます。"
+    },
+    {
+      "id": "vocab-n5-0433",
+      "japanese": "天気の日",
+      "hiragana": "てんきひ",
+      "simple_chinese": "好天氣的時候",
+      "full_explanation": "天気の日（てんきひ）：好天氣的時候。例：天気の日は公園でさんぽします。"
+    },
+    {
+      "id": "vocab-n5-0434",
+      "japanese": "電子辞書",
+      "hiragana": "でんしじしょ",
+      "simple_chinese": "電子辭典",
+      "full_explanation": "電子辞書（でんしじしょ）：電子辭典。例：先週、駅で電子辞書を買いました。"
+    },
+    {
+      "id": "vocab-n5-0435",
+      "japanese": "てんらん会",
+      "hiragana": "かいてんらん",
+      "simple_chinese": "展覽會",
+      "full_explanation": "てんらん会（かいてんらん）：展覽會。例：店員さんからてんらん会をもらいました。"
+    },
+    {
+      "id": "vocab-n5-0436",
+      "japanese": "電話",
+      "hiragana": "でんわ",
+      "simple_chinese": "電話",
+      "full_explanation": "電話（でんわ）：電話。例：電話が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0437",
+      "japanese": "電話（を）します",
+      "hiragana": "でんわをします",
+      "simple_chinese": "打電話，通電話",
+      "full_explanation": "電話（を）します（でんわをします）：打電話，通電話。例：昨日、公園で電話をします。"
+    },
+    {
+      "id": "vocab-n5-0438",
+      "japanese": "土（＝土曜日）",
+      "hiragana": "どどようび",
+      "simple_chinese": "星期六，週六",
+      "full_explanation": "土（＝土曜日）（どどようび）：星期六，週六。例：時間割の「土」は土曜日のことです。"
+    },
+    {
+      "id": "vocab-n5-0439",
+      "japanese": "ドア",
+      "hiragana": "どあ",
+      "simple_chinese": "門",
+      "full_explanation": "ドア（どあ）：門。例：朝、駅でドアを買いました。"
+    },
+    {
+      "id": "vocab-n5-0440",
+      "japanese": "どう",
+      "hiragana": "どう",
+      "simple_chinese": "如何，怎麼樣",
+      "full_explanation": "どう（どう）：如何，怎麼樣。例：新しい店、どうでしたか。"
+    },
+    {
+      "id": "vocab-n5-0441",
+      "japanese": "どうして",
+      "hiragana": "どうして",
+      "simple_chinese": "為什麼",
+      "full_explanation": "どうして（どうして）：為什麼。例：どうして来なかったんですか。"
+    },
+    {
+      "id": "vocab-n5-0442",
+      "japanese": "動物",
+      "hiragana": "どうぶつ",
+      "simple_chinese": "動物",
+      "full_explanation": "動物（どうぶつ）：動物。例：動物園で動物を見ました。"
+    },
+    {
+      "id": "vocab-n5-0443",
+      "japanese": "動物園",
+      "hiragana": "どうぶつえん",
+      "simple_chinese": "動物園",
+      "full_explanation": "動物園（どうぶつえん）：動物園。例：子どもは動物が大好きです。"
+    },
+    {
+      "id": "vocab-n5-0444",
+      "japanese": "どうやって",
+      "hiragana": "どうやって",
+      "simple_chinese": "如何（做）",
+      "full_explanation": "どうやって（どうやって）：如何（做）。例：ここへはどうやって行きますか。"
+    },
+    {
+      "id": "vocab-n5-0445",
+      "japanese": "ときどき",
+      "hiragana": "ときどき",
+      "simple_chinese": "有時，有時候",
+      "full_explanation": "ときどき（ときどき）：有時，有時候。例：ときどき、友だちと映画を見に行きます。"
+    },
+    {
+      "id": "vocab-n5-0446",
+      "japanese": "時計",
+      "hiragana": "とけい",
+      "simple_chinese": "鐘，錶",
+      "full_explanation": "時計（とけい）：鐘，錶。例：時計を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0447",
+      "japanese": "どこ",
+      "hiragana": "どこ",
+      "simple_chinese": "哪兒，哪裡",
+      "full_explanation": "どこ（どこ）：哪兒，哪裡。例：駅はどこですか。"
+    },
+    {
+      "id": "vocab-n5-0448",
+      "japanese": "どこ（へ）も",
+      "hiragana": "どこへも",
+      "simple_chinese": "任何地方都～，哪裡都～",
+      "full_explanation": "どこ（へ）も（どこへも）：任何地方都～，哪裡都～。例：今週は忙しくて、どこへも行きません。"
+    },
+    {
+      "id": "vocab-n5-0449",
+      "japanese": "どこか",
+      "hiragana": "どこか",
+      "simple_chinese": "某處，有的地方",
+      "full_explanation": "どこか（どこか）：某處，有的地方。例：どこかをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0450",
+      "japanese": "ところ",
+      "hiragana": "ところ",
+      "simple_chinese": "地方，地點",
+      "full_explanation": "ところ（ところ）：地方，地點。例：ところを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0451",
+      "japanese": "図書館",
+      "hiragana": "としょかん",
+      "simple_chinese": "圖書館",
+      "full_explanation": "図書館（としょかん）：圖書館。例：放課後、図書館で勉強します。"
+    },
+    {
+      "id": "vocab-n5-0452",
+      "japanese": "図書室",
+      "hiragana": "としょしつ",
+      "simple_chinese": "圖書室",
+      "full_explanation": "図書室（としょしつ）：圖書室。例：放課後、図書室で勉強します。"
+    },
+    {
+      "id": "vocab-n5-0453",
+      "japanese": "どちら",
+      "hiragana": "どちら",
+      "simple_chinese": "哪個；哪邊；哪位",
+      "full_explanation": "どちら（どちら）：哪個；哪邊；哪位。例：駅はどちらですか。"
+    },
+    {
+      "id": "vocab-n5-0454",
+      "japanese": "どっち",
+      "hiragana": "どっち",
+      "simple_chinese": "哪個；哪邊： 「どちら」的非正式口語說法 非常，很",
+      "full_explanation": "どっち（どっち）：哪個；哪邊： 「どちら」的非正式口語說法 非常，很。例：右と左、どっちに行きますか。"
+    },
+    {
+      "id": "vocab-n5-0455",
+      "japanese": "とどきます",
+      "hiragana": "とどきます",
+      "simple_chinese": "到達，收到，到",
+      "full_explanation": "とどきます（とどきます）：到達，收到，到。例：注文した本は明日届きます。"
+    },
+    {
+      "id": "vocab-n5-0456",
+      "japanese": "どなた",
+      "hiragana": "どなた",
+      "simple_chinese": "哪位： 「だれ」的禮貌表達 旁邊，身邊",
+      "full_explanation": "どなた（どなた）：哪位： 「だれ」的禮貌表達 旁邊，身邊。例：妹にどなたを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0457",
+      "japanese": "どの～",
+      "hiragana": "どの",
+      "simple_chinese": "哪個～",
+      "full_explanation": "どの～（どの）：哪個～。例：どのかばんがあなたのですか。"
+    },
+    {
+      "id": "vocab-n5-0458",
+      "japanese": "どのくらい（＝どれくらい）",
+      "hiragana": "どのくらいどれくらい",
+      "simple_chinese": "多少",
+      "full_explanation": "どのくらい（＝どれくらい）（どのくらいどれくらい）：多少。例：駅からここまでどのくらいかかりますか。"
+    },
+    {
+      "id": "vocab-n5-0459",
+      "japanese": "友だち",
+      "hiragana": "ともだち",
+      "simple_chinese": "朋友",
+      "full_explanation": "友だち（ともだち）：朋友。例：友だちを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0460",
+      "japanese": "土曜日",
+      "hiragana": "どようび",
+      "simple_chinese": "星期六",
+      "full_explanation": "土曜日（どようび）：星期六。例：土曜日は日本語の授業があります。"
+    },
+    {
+      "id": "vocab-n5-0461",
+      "japanese": "鳥",
+      "hiragana": "とり",
+      "simple_chinese": "鳥",
+      "full_explanation": "鳥（とり）：鳥。例：公園で鳥を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0462",
+      "japanese": "（写真を）とります①",
+      "hiragana": "しゃしんをとります",
+      "simple_chinese": "拍（照）",
+      "full_explanation": "（写真を）とります①（しゃしんをとります）：拍（照）。例：旅行でたくさん写真をとりました。"
+    },
+    {
+      "id": "vocab-n5-0463",
+      "japanese": "（物を）とります②",
+      "hiragana": "ものをとります",
+      "simple_chinese": "拿，取（東西）",
+      "full_explanation": "（物を）とります②（ものをとります）：拿，取（東西）。例：棚からコップをとってください。"
+    },
+    {
+      "id": "vocab-n5-0464",
+      "japanese": "どれ",
+      "hiragana": "どれ",
+      "simple_chinese": "哪個",
+      "full_explanation": "どれ（どれ）：哪個。例：どれがあなたのかさですか。"
+    },
+    {
+      "id": "vocab-n5-0465",
+      "japanese": "どれか",
+      "hiragana": "どれか",
+      "simple_chinese": "某個，有一個",
+      "full_explanation": "どれか（どれか）：某個，有一個。例：どれかを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0466",
+      "japanese": "どれくらい（＝どのくらい）",
+      "hiragana": "どれくらいどのくらい",
+      "simple_chinese": "多少",
+      "full_explanation": "どれくらい（＝どのくらい）（どれくらいどのくらい）：多少。例：この宿にどれくらい泊まりますか。"
+    },
+    {
+      "id": "vocab-n5-0467",
+      "japanese": "どれでも",
+      "hiragana": "どれでも",
+      "simple_chinese": "任何一個都～，哪個都～",
+      "full_explanation": "どれでも（どれでも）：任何一個都～，哪個都～。例：どれでもいいですよ。好きなのを選んでください。"
+    },
+    {
+      "id": "vocab-n5-0468",
+      "japanese": "どんな",
+      "hiragana": "どんな",
+      "simple_chinese": "什麼樣的，怎樣的",
+      "full_explanation": "どんな（どんな）：什麼樣的，怎樣的。例：どんなを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0469",
+      "japanese": "（お金が）ない",
+      "hiragana": "かねおがない",
+      "simple_chinese": "無，沒有（錢）",
+      "full_explanation": "（お金が）ない（かねおがない）：無，沒有（錢）。例：この店はお金がないです。"
+    },
+    {
+      "id": "vocab-n5-0470",
+      "japanese": "ナイフ",
+      "hiragana": "ないふ",
+      "simple_chinese": "小刀",
+      "full_explanation": "ナイフ（ないふ）：小刀。例：店員さんに「ナイフはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0471",
+      "japanese": "（病気が）なおります",
+      "hiragana": "びょうきがなおります",
+      "simple_chinese": "（病）好，痊癒",
+      "full_explanation": "（病気が）なおります（びょうきがなおります）：（病）好，痊癒。例：先週、病気がなおります。"
+    },
+    {
+      "id": "vocab-n5-0472",
+      "japanese": "（建物の）中",
+      "hiragana": "たてものなか",
+      "simple_chinese": "（建築物的）裡面",
+      "full_explanation": "（建物の）中（たてものなか）：（建築物的）裡面。例：建物の中をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0473",
+      "japanese": "中",
+      "hiragana": "なか",
+      "simple_chinese": "之中，其中",
+      "full_explanation": "中（なか）：之中，其中。例：中を持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0474",
+      "japanese": "長い",
+      "hiragana": "ながい",
+      "simple_chinese": "長的",
+      "full_explanation": "長い（ながい）：長的。例：髪が長いので、切りたいです。"
+    },
+    {
+      "id": "vocab-n5-0475",
+      "japanese": "（物が）なくなります",
+      "hiragana": "ものがなくなります",
+      "simple_chinese": "（東西）遺失，消失，沒有了",
+      "full_explanation": "（物が）なくなります（ものがなくなります）：（東西）遺失，消失，沒有了。例：今日、物がなくなります。"
+    },
+    {
+      "id": "vocab-n5-0476",
+      "japanese": "なぜ（＝どうして）",
+      "hiragana": "なぜどうして",
+      "simple_chinese": "為什麼",
+      "full_explanation": "なぜ（＝どうして）（なぜどうして）：為什麼。例：なぜ遅れたんですか。"
+    },
+    {
+      "id": "vocab-n5-0477",
+      "japanese": "夏休み",
+      "hiragana": "なつやすみ",
+      "simple_chinese": "暑假",
+      "full_explanation": "夏休み（なつやすみ）：暑假。例：夏休みをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0478",
+      "japanese": "～など",
+      "hiragana": "など",
+      "simple_chinese": "～等",
+      "full_explanation": "～など（など）：～等。例：パンや牛乳などを買いました。"
+    },
+    {
+      "id": "vocab-n5-0479",
+      "japanese": "何",
+      "hiragana": "なに",
+      "simple_chinese": "什麼",
+      "full_explanation": "何（なに）：什麼。例：父に何を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0480",
+      "japanese": "何か",
+      "hiragana": "なにか",
+      "simple_chinese": "某些東西，有什麼",
+      "full_explanation": "何か（なにか）：某些東西，有什麼。例：駅はここから何かです。"
+    },
+    {
+      "id": "vocab-n5-0481",
+      "japanese": "何も",
+      "hiragana": "なにも",
+      "simple_chinese": "任何東西都～，什麼也～",
+      "full_explanation": "何も（なにも）：任何東西都～，什麼也～。例：駅はここから何もです。"
+    },
+    {
+      "id": "vocab-n5-0482",
+      "japanese": "名前",
+      "hiragana": "なまえ",
+      "simple_chinese": "名字，姓名",
+      "full_explanation": "名前（なまえ）：名字，姓名。例：名前を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0483",
+      "japanese": "ならいます",
+      "hiragana": "ならいます",
+      "simple_chinese": "學",
+      "full_explanation": "ならいます（ならいます）：學。例：週に一回、ピアノを習っています。"
+    },
+    {
+      "id": "vocab-n5-0484",
+      "japanese": "何時",
+      "hiragana": "なんじ",
+      "simple_chinese": "幾點",
+      "full_explanation": "何時（なんじ）：幾點。例：何時に家で会いましょう。"
+    },
+    {
+      "id": "vocab-n5-0485",
+      "japanese": "なんで（＝どうやって）",
+      "hiragana": "なんでどうやって",
+      "simple_chinese": "如何（做）",
+      "full_explanation": "なんで（＝どうやって）（なんでどうやって）：如何（做）。例：なんで遅れたんですか。"
+    },
+    {
+      "id": "vocab-n5-0486",
+      "japanese": "なんでも",
+      "hiragana": "なんでも",
+      "simple_chinese": "不管什麼都～，無論如何都～",
+      "full_explanation": "なんでも（なんでも）：不管什麼都～，無論如何都～。例：なんでもいいから、一つ選んでください。"
+    },
+    {
+      "id": "vocab-n5-0487",
+      "japanese": "にぎやか",
+      "hiragana": "にぎやか",
+      "simple_chinese": "熱鬧，熙熙攘攘，繁盛",
+      "full_explanation": "にぎやか（にぎやか）：熱鬧，熙熙攘攘，繁盛。例：公園はにぎやかで、歩きやすいです。"
+    },
+    {
+      "id": "vocab-n5-0488",
+      "japanese": "西",
+      "hiragana": "にし",
+      "simple_chinese": "西，西邊",
+      "full_explanation": "西（にし）：西，西邊。例：西の窓から海が見えます。"
+    },
+    {
+      "id": "vocab-n5-0489",
+      "japanese": "日 （＝日曜日）",
+      "hiragana": "にちにちようび",
+      "simple_chinese": "星期天，週日",
+      "full_explanation": "日 （＝日曜日）（にちにちようび）：星期天，週日。例：時間割の「日」は日曜日のことです。"
+    },
+    {
+      "id": "vocab-n5-0490",
+      "japanese": "日曜日",
+      "hiragana": "にちようび",
+      "simple_chinese": "星期天",
+      "full_explanation": "日曜日（にちようび）：星期天。例：日曜日は日本語の授業があります。"
+    },
+    {
+      "id": "vocab-n5-0491",
+      "japanese": "日本",
+      "hiragana": "にほん",
+      "simple_chinese": "日本",
+      "full_explanation": "日本（にほん）：日本。例：日本をかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0492",
+      "japanese": "日本語",
+      "hiragana": "にほんご",
+      "simple_chinese": "日語",
+      "full_explanation": "日本語（にほんご）：日語。例：日本語を持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0493",
+      "japanese": "日本語学校",
+      "hiragana": "にほんごがっこう",
+      "simple_chinese": "日語學校",
+      "full_explanation": "日本語学校（にほんごがっこう）：日語學校。例：日本語学校は駅の近くにあります。"
+    },
+    {
+      "id": "vocab-n5-0494",
+      "japanese": "日本人",
+      "hiragana": "にほんじん",
+      "simple_chinese": "日本人",
+      "full_explanation": "日本人（にほんじん）：日本人。例：私の友だちは日本人です。"
+    },
+    {
+      "id": "vocab-n5-0495",
+      "japanese": "日本料理",
+      "hiragana": "にほんりょうり",
+      "simple_chinese": "日本料理",
+      "full_explanation": "日本料理（にほんりょうり）：日本料理。例：今日、家で日本料理を食べました。"
+    },
+    {
+      "id": "vocab-n5-0496",
+      "japanese": "荷物",
+      "hiragana": "にもつ",
+      "simple_chinese": "行李；貨物；隨身物品",
+      "full_explanation": "荷物（にもつ）：行李；貨物；隨身物品。例：兄から荷物をもらいました。"
+    },
+    {
+      "id": "vocab-n5-0497",
+      "japanese": "ニューヨーク",
+      "hiragana": "にゅーよーく",
+      "simple_chinese": "紐約",
+      "full_explanation": "ニューヨーク（にゅーよーく）：紐約。例：ニューヨークを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0498",
+      "japanese": "にわ",
+      "hiragana": "にわ",
+      "simple_chinese": "院子，庭院",
+      "full_explanation": "にわ（にわ）：院子，庭院。例：父ににわを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0499",
+      "japanese": "ぬぎます",
+      "hiragana": "ぬぎます",
+      "simple_chinese": "脫，脫掉，摘掉",
+      "full_explanation": "ぬぎます（ぬぎます）：脫，脫掉，摘掉。例：家に入る前に、くつを脱ぎます。"
+    },
+    {
+      "id": "vocab-n5-0500",
+      "japanese": "ねこ",
+      "hiragana": "ねこ",
+      "simple_chinese": "貓",
+      "full_explanation": "ねこ（ねこ）：貓。例：店員さんに「ねこはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0501",
+      "japanese": "ねます",
+      "hiragana": "ねます",
+      "simple_chinese": "睡，睡覺",
+      "full_explanation": "ねます（ねます）：睡，睡覺。例：明日は早いので、もう寝ます。"
+    },
+    {
+      "id": "vocab-n5-0502",
+      "japanese": "ノート",
+      "hiragana": "のーと",
+      "simple_chinese": "筆記本",
+      "full_explanation": "ノート（のーと）：筆記本。例：ノートを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0503",
+      "japanese": "（山に）のぼります",
+      "hiragana": "やまにのぼります",
+      "simple_chinese": "爬，登（山）",
+      "full_explanation": "（山に）のぼります（やまにのぼります）：爬，登（山）。例：今朝、会社から山にのぼります。"
+    },
+    {
+      "id": "vocab-n5-0504",
+      "japanese": "飲みます",
+      "hiragana": "のみます",
+      "simple_chinese": "喝",
+      "full_explanation": "飲みます（のみます）：喝。例：朝はコーヒーを飲みます。"
+    },
+    {
+      "id": "vocab-n5-0505",
+      "japanese": "飲み物",
+      "hiragana": "のもの",
+      "simple_chinese": "飲料，喝的東西",
+      "full_explanation": "飲み物（のもの）：飲料，喝的東西。例：今朝、図書館で飲み物を食べました。"
+    },
+    {
+      "id": "vocab-n5-0506",
+      "japanese": "乗ります",
+      "hiragana": "のります",
+      "simple_chinese": "乘，坐；騎",
+      "full_explanation": "乗ります（のります）：乘，坐；騎。例：駅で電車に乗ります。"
+    },
+    {
+      "id": "vocab-n5-0507",
+      "japanese": "は",
+      "hiragana": "は",
+      "simple_chinese": "牙，牙齒",
+      "full_explanation": "は（は）：牙，牙齒。例：朝、はを洗ってから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0508",
+      "japanese": "パーティー",
+      "hiragana": "ぱーてぃー",
+      "simple_chinese": "派對，聚會",
+      "full_explanation": "パーティー（ぱーてぃー）：派對，聚會。例：来週、パーティーがあります。"
+    },
+    {
+      "id": "vocab-n5-0509",
+      "japanese": "はい",
+      "hiragana": "はい",
+      "simple_chinese": "對，好，是",
+      "full_explanation": "はい（はい）：對，好，是。例：はい、わかりました。"
+    },
+    {
+      "id": "vocab-n5-0510",
+      "japanese": "バイト（＝アルバイト）",
+      "hiragana": "ばいとあるばいと",
+      "simple_chinese": "打工，兼職",
+      "full_explanation": "バイト（＝アルバイト）（ばいとあるばいと）：打工，兼職。例：大学の近くのカフェでバイトをしています。"
+    },
+    {
+      "id": "vocab-n5-0511",
+      "japanese": "（おふろに）入ります①",
+      "hiragana": "はいおふろにります",
+      "simple_chinese": "入（浴）",
+      "full_explanation": "（おふろに）入ります①（はいおふろにります）：入（浴）。例：夜はおふろに入ってから寝ます。"
+    },
+    {
+      "id": "vocab-n5-0512",
+      "japanese": "（部屋に）入ります②",
+      "hiragana": "へやはい",
+      "simple_chinese": "進（房間）",
+      "full_explanation": "（部屋に）入ります②（へやはい）：進（房間）。例：どうぞ、この部屋に入ってください。"
+    },
+    {
+      "id": "vocab-n5-0513",
+      "japanese": "（くつ／ズボンを）はきます",
+      "hiragana": "くつずぼんをはきます",
+      "simple_chinese": "穿（鞋子／褲子）",
+      "full_explanation": "（くつ／ズボンを）はきます（くつずぼんをはきます）：穿（鞋子／褲子）。例：来週、コンビニでくつをはきます。"
+    },
+    {
+      "id": "vocab-n5-0514",
+      "japanese": "はこ",
+      "hiragana": "はこ",
+      "simple_chinese": "盒子，箱子",
+      "full_explanation": "はこ（はこ）：盒子，箱子。例：来週、駅ではこを買いました。"
+    },
+    {
+      "id": "vocab-n5-0515",
+      "japanese": "はさみ",
+      "hiragana": "はさみ",
+      "simple_chinese": "剪刀",
+      "full_explanation": "はさみ（はさみ）：剪刀。例：はさみが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0516",
+      "japanese": "始まります",
+      "hiragana": "はじまります",
+      "simple_chinese": "開始",
+      "full_explanation": "始まります（はじまります）：開始。例：授業は九時に始まります。"
+    },
+    {
+      "id": "vocab-n5-0517",
+      "japanese": "はじめて",
+      "hiragana": "はじめて",
+      "simple_chinese": "初次，首次，第一次",
+      "full_explanation": "はじめて（はじめて）：初次，首次，第一次。例：はじめてを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0518",
+      "japanese": "はじめに",
+      "hiragana": "はじめに",
+      "simple_chinese": "首先，最初；開頭，序",
+      "full_explanation": "はじめに（はじめに）：首先，最初；開頭，序。例：朝、はじめにを洗ってから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0519",
+      "japanese": "場所",
+      "hiragana": "ばしょ",
+      "simple_chinese": "地方，場所",
+      "full_explanation": "場所（ばしょ）：地方，場所。例：公園で場所を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0520",
+      "japanese": "走ります",
+      "hiragana": "ります",
+      "simple_chinese": "跑，跑步",
+      "full_explanation": "走ります（ります）：跑，跑步。例：バスに間に合わなくて、駅まで走りました。"
+    },
+    {
+      "id": "vocab-n5-0521",
+      "japanese": "バス",
+      "hiragana": "ばす",
+      "simple_chinese": "巴士，公共汽車",
+      "full_explanation": "バス（ばす）：巴士，公共汽車。例：店員さんに「バスはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0522",
+      "japanese": "パスタ",
+      "hiragana": "ぱすた",
+      "simple_chinese": "義大利麵",
+      "full_explanation": "パスタ（ぱすた）：義大利麵。例：今日、公園でパスタを食べました。"
+    },
+    {
+      "id": "vocab-n5-0523",
+      "japanese": "パソコン",
+      "hiragana": "ぱそこん",
+      "simple_chinese": "電腦",
+      "full_explanation": "パソコン（ぱそこん）：電腦。例：先週、駅でパソコンを買いました。"
+    },
+    {
+      "id": "vocab-n5-0524",
+      "japanese": "働きます",
+      "hiragana": "はたらきます",
+      "simple_chinese": "工作",
+      "full_explanation": "働きます（はたらきます）：工作。例：父は平日は会社で働きます。"
+    },
+    {
+      "id": "vocab-n5-0525",
+      "japanese": "花",
+      "hiragana": "はな",
+      "simple_chinese": "花",
+      "full_explanation": "花（はな）：花。例：公園で花を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0526",
+      "japanese": "はな",
+      "hiragana": "はな",
+      "simple_chinese": "鼻子",
+      "full_explanation": "はな（はな）：鼻子。例：はなをぶつけて、少し痛いです。"
+    },
+    {
+      "id": "vocab-n5-0527",
+      "japanese": "話",
+      "hiragana": "はなし",
+      "simple_chinese": "話，談話，講話；故事",
+      "full_explanation": "話（はなし）：話，談話，講話；故事。例：公園で話を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0528",
+      "japanese": "話します",
+      "hiragana": "はなします",
+      "simple_chinese": "說，說話",
+      "full_explanation": "話します（はなします）：說，說話。例：先週、駅で話します。"
+    },
+    {
+      "id": "vocab-n5-0529",
+      "japanese": "花屋",
+      "hiragana": "はなや",
+      "simple_chinese": "花店",
+      "full_explanation": "花屋（はなや）：花店。例：花屋が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0530",
+      "japanese": "母",
+      "hiragana": "はは",
+      "simple_chinese": "家母，我母親： 提及自己媽媽時用「母 」",
+      "full_explanation": "母（はは）：家母，我母親： 提及自己媽媽時用「母 」。例：母は料理が上手です。"
+    },
+    {
+      "id": "vocab-n5-0531",
+      "japanese": "早い",
+      "hiragana": "はやい",
+      "simple_chinese": "早的",
+      "full_explanation": "早い（はやい）：早的。例：明日は早いので、もう寝ます。"
+    },
+    {
+      "id": "vocab-n5-0532",
+      "japanese": "速い",
+      "hiragana": "はやい",
+      "simple_chinese": "快的",
+      "full_explanation": "速い（はやい）：快的。例：この電車は速いです。"
+    },
+    {
+      "id": "vocab-n5-0533",
+      "japanese": "（お金を）はらいます",
+      "hiragana": "かねおをはらいます",
+      "simple_chinese": "付（錢）",
+      "full_explanation": "（お金を）はらいます（かねおをはらいます）：付（錢）。例：夜、家でお金をはらいます。"
+    },
+    {
+      "id": "vocab-n5-0534",
+      "japanese": "（写真を）はります",
+      "hiragana": "しゃしんをはります",
+      "simple_chinese": "貼（照片）",
+      "full_explanation": "（写真を）はります（しゃしんをはります）：貼（照片）。例：午後、駅で写真をはります。"
+    },
+    {
+      "id": "vocab-n5-0535",
+      "japanese": "春",
+      "hiragana": "はる",
+      "simple_chinese": "春天",
+      "full_explanation": "春（はる）：春天。例：弟から春をもらいました。"
+    },
+    {
+      "id": "vocab-n5-0536",
+      "japanese": "晩",
+      "hiragana": "ばん",
+      "simple_chinese": "晚上",
+      "full_explanation": "晩（ばん）：晚上。例：晩を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0537",
+      "japanese": "パン",
+      "hiragana": "ぱん",
+      "simple_chinese": "麵包",
+      "full_explanation": "パン（ぱん）：麵包。例：先週、コンビニでパンを食べました。"
+    },
+    {
+      "id": "vocab-n5-0538",
+      "japanese": "半 （＝30分）",
+      "hiragana": "はんぷん",
+      "simple_chinese": "半，半點（30 分鐘）",
+      "full_explanation": "半 （＝30分）（はんぷん）：半，半點（30 分鐘）。例：九時半に駅の前で会いましょう。"
+    },
+    {
+      "id": "vocab-n5-0539",
+      "japanese": "ハンカチ",
+      "hiragana": "はんかち",
+      "simple_chinese": "手帕",
+      "full_explanation": "ハンカチ（はんかち）：手帕。例：朝、ハンカチを洗ってから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0540",
+      "japanese": "晩ご飯",
+      "hiragana": "ばんはん",
+      "simple_chinese": "晚飯，晚餐",
+      "full_explanation": "晩ご飯（ばんはん）：晚飯，晚餐。例：昨日、コンビニで晩ご飯を食べました。"
+    },
+    {
+      "id": "vocab-n5-0541",
+      "japanese": "パンダ",
+      "hiragana": "ぱんだ",
+      "simple_chinese": "熊貓",
+      "full_explanation": "パンダ（ぱんだ）：熊貓。例：昼、駅でパンダを買いました。"
+    },
+    {
+      "id": "vocab-n5-0542",
+      "japanese": "パン屋",
+      "hiragana": "やぱん",
+      "simple_chinese": "麵包店",
+      "full_explanation": "パン屋（やぱん）：麵包店。例：昨日、スーパーでパン屋を食べました。"
+    },
+    {
+      "id": "vocab-n5-0543",
+      "japanese": "ピアノ",
+      "hiragana": "ぴあの",
+      "simple_chinese": "鋼琴",
+      "full_explanation": "ピアノ（ぴあの）：鋼琴。例：公園でピアノを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0544",
+      "japanese": "ビール",
+      "hiragana": "びーる",
+      "simple_chinese": "啤酒",
+      "full_explanation": "ビール（びーる）：啤酒。例：店員さんに「ビールはどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0545",
+      "japanese": "東",
+      "hiragana": "ひがし",
+      "simple_chinese": "東，東邊",
+      "full_explanation": "東（ひがし）：東，東邊。例：駅はここから東です。"
+    },
+    {
+      "id": "vocab-n5-0546",
+      "japanese": "（ギター／ピアノを）ひきます",
+      "hiragana": "ぎたーぴあのをひきます",
+      "simple_chinese": "彈（吉他／鋼琴）",
+      "full_explanation": "（ギター／ピアノを）ひきます（ぎたーぴあのをひきます）：彈（吉他／鋼琴）。例：午後、学校でピアノをひきます。"
+    },
+    {
+      "id": "vocab-n5-0547",
+      "japanese": "飛行機",
+      "hiragana": "ひこうき",
+      "simple_chinese": "飛機",
+      "full_explanation": "飛行機（ひこうき）：飛機。例：公園で飛行機を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0548",
+      "japanese": "びじゅつ館",
+      "hiragana": "かんびじゅつ",
+      "simple_chinese": "美術館",
+      "full_explanation": "びじゅつ館（かんびじゅつ）：美術館。例：公園でびじゅつ館を見つけました。"
+    },
+    {
+      "id": "vocab-n5-0549",
+      "japanese": "左",
+      "hiragana": "ひだり",
+      "simple_chinese": "左，左邊",
+      "full_explanation": "左（ひだり）：左，左邊。例：店員さんに「左はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0550",
+      "japanese": "左がわ",
+      "hiragana": "ひだりがわ",
+      "simple_chinese": "左側",
+      "full_explanation": "左がわ（ひだりがわ）：左側。例：弟に左がわを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0551",
+      "japanese": "人",
+      "hiragana": "ひと",
+      "simple_chinese": "人",
+      "full_explanation": "人（ひと）：人。例：私の友だちは人です。"
+    },
+    {
+      "id": "vocab-n5-0552",
+      "japanese": "ひま",
+      "hiragana": "ひま",
+      "simple_chinese": "空，空閒；有空",
+      "full_explanation": "ひま（ひま）：空，空閒；有空。例：昼、駅でひまを買いました。"
+    },
+    {
+      "id": "vocab-n5-0553",
+      "japanese": "病院",
+      "hiragana": "びょういん",
+      "simple_chinese": "醫院",
+      "full_explanation": "病院（びょういん）：醫院。例：放課後、病院で勉強します。"
+    },
+    {
+      "id": "vocab-n5-0554",
+      "japanese": "病気",
+      "hiragana": "びょうき",
+      "simple_chinese": "病，疾病；生病",
+      "full_explanation": "病気（びょうき）：病，疾病；生病。例：先生に病気を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0555",
+      "japanese": "昼",
+      "hiragana": "ひる",
+      "simple_chinese": "白天，白晝；中午",
+      "full_explanation": "昼（ひる）：白天，白晝；中午。例：昼に病院へ行きます。"
+    },
+    {
+      "id": "vocab-n5-0556",
+      "japanese": "ビル",
+      "hiragana": "びる",
+      "simple_chinese": "大樓，高樓",
+      "full_explanation": "ビル（びる）：大樓，高樓。例：ビルを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0557",
+      "japanese": "昼ご飯",
+      "hiragana": "ひるはん",
+      "simple_chinese": "午飯，午餐",
+      "full_explanation": "昼ご飯（ひるはん）：午飯，午餐。例：今朝、図書館で昼ご飯を食べました。"
+    },
+    {
+      "id": "vocab-n5-0558",
+      "japanese": "昼休み",
+      "hiragana": "ひるやすみ",
+      "simple_chinese": "午休",
+      "full_explanation": "昼休み（ひるやすみ）：午休。例：昼休みを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0559",
+      "japanese": "広い",
+      "hiragana": "ひろい",
+      "simple_chinese": "寬敞的",
+      "full_explanation": "広い（ひろい）：寬敞的。例：この部屋は広いので、そうじが大変です。"
+    },
+    {
+      "id": "vocab-n5-0560",
+      "japanese": "プール",
+      "hiragana": "ぷーる",
+      "simple_chinese": "游泳池",
+      "full_explanation": "プール（ぷーる）：游泳池。例：プールは駅の近くにあります。"
+    },
+    {
+      "id": "vocab-n5-0561",
+      "japanese": "ふくろ",
+      "hiragana": "ふくろ",
+      "simple_chinese": "袋子，口袋",
+      "full_explanation": "ふくろ（ふくろ）：袋子，口袋。例：朝、ふくろを洗ってから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0562",
+      "japanese": "富士山",
+      "hiragana": "ふじさん",
+      "simple_chinese": "富士山",
+      "full_explanation": "富士山（ふじさん）：富士山。例：富士山をかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0563",
+      "japanese": "ふね",
+      "hiragana": "ふね",
+      "simple_chinese": "船",
+      "full_explanation": "ふね（ふね）：船。例：先生からふねをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0564",
+      "japanese": "ふみます",
+      "hiragana": "ふみます",
+      "simple_chinese": "踩，踏",
+      "full_explanation": "ふみます（ふみます）：踩，踏。例：雪の上を踏むと、ぎゅっぎゅっと音がします。"
+    },
+    {
+      "id": "vocab-n5-0565",
+      "japanese": "冬",
+      "hiragana": "ふゆ",
+      "simple_chinese": "冬天",
+      "full_explanation": "冬（ふゆ）：冬天。例：冬を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0566",
+      "japanese": "冬休み",
+      "hiragana": "ふゆやすみ",
+      "simple_chinese": "寒假",
+      "full_explanation": "冬休み（ふゆやすみ）：寒假。例：母に冬休みを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0567",
+      "japanese": "（雨が）降ります",
+      "hiragana": "あめふ",
+      "simple_chinese": "下（雨）",
+      "full_explanation": "（雨が）降ります（あめふ）：下（雨）。例：昼、雨が降ります。"
+    },
+    {
+      "id": "vocab-n5-0568",
+      "japanese": "古い",
+      "hiragana": "ふるい",
+      "simple_chinese": "老的，舊的，陳腐的",
+      "full_explanation": "古い（ふるい）：老的，舊的，陳腐的。例：この時計は古いですが、まだ使えます。"
+    },
+    {
+      "id": "vocab-n5-0569",
+      "japanese": "プレゼント",
+      "hiragana": "ぷれぜんと",
+      "simple_chinese": "禮物，禮品",
+      "full_explanation": "プレゼント（ぷれぜんと）：禮物，禮品。例：プレゼントをなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0570",
+      "japanese": "北京",
+      "hiragana": "ぺきん",
+      "simple_chinese": "北京",
+      "full_explanation": "北京（ぺきん）：北京。例：駅はここから北京です。"
+    },
+    {
+      "id": "vocab-n5-0571",
+      "japanese": "へた",
+      "hiragana": "へた",
+      "simple_chinese": "不擅長，拙劣",
+      "full_explanation": "へた（へた）：不擅長，拙劣。例：私は歌がへたです。"
+    },
+    {
+      "id": "vocab-n5-0572",
+      "japanese": "ベトナム",
+      "hiragana": "べとなむ",
+      "simple_chinese": "越南",
+      "full_explanation": "ベトナム（べとなむ）：越南。例：ベトナムの窓から海が見えます。"
+    },
+    {
+      "id": "vocab-n5-0573",
+      "japanese": "部屋",
+      "hiragana": "へや",
+      "simple_chinese": "房間",
+      "full_explanation": "部屋（へや）：房間。例：部屋をかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0574",
+      "japanese": "変",
+      "hiragana": "へん",
+      "simple_chinese": "奇怪，古怪，異常",
+      "full_explanation": "変（へん）：奇怪，古怪，異常。例：今日、駅で変を買いました。"
+    },
+    {
+      "id": "vocab-n5-0575",
+      "japanese": "ペン",
+      "hiragana": "ぺん",
+      "simple_chinese": "筆",
+      "full_explanation": "ペン（ぺん）：筆。例：ペンを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0576",
+      "japanese": "勉強",
+      "hiragana": "べんきょう",
+      "simple_chinese": "學習",
+      "full_explanation": "勉強（べんきょう）：學習。例：店員さんに「勉強はどこですか」と聞きました。"
+    },
+    {
+      "id": "vocab-n5-0577",
+      "japanese": "勉強 （を）します",
+      "hiragana": "べんきょうをします",
+      "simple_chinese": "學習，讀書",
+      "full_explanation": "勉強 （を）します（べんきょうをします）：學習，讀書。例：午後、病院で勉強 をします。"
+    },
+    {
+      "id": "vocab-n5-0578",
+      "japanese": "便利",
+      "hiragana": "べんり",
+      "simple_chinese": "方便",
+      "full_explanation": "便利（べんり）：方便。例：今日は便利な所でゆっくりしました。"
+    },
+    {
+      "id": "vocab-n5-0579",
+      "japanese": "ぼうし",
+      "hiragana": "ぼうし",
+      "simple_chinese": "帽子",
+      "full_explanation": "ぼうし（ぼうし）：帽子。例：私にぼうしを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0580",
+      "japanese": "ボールペン",
+      "hiragana": "ぼーるぺん",
+      "simple_chinese": "原子筆，圓珠筆",
+      "full_explanation": "ボールペン（ぼーるぺん）：原子筆，圓珠筆。例：ボールペンが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0581",
+      "japanese": "ほか",
+      "hiragana": "ほか",
+      "simple_chinese": "其他",
+      "full_explanation": "ほか（ほか）：其他。例：友だちにほかを貸しました。"
+    },
+    {
+      "id": "vocab-n5-0582",
+      "japanese": "ほかの人",
+      "hiragana": "ひとほかの",
+      "simple_chinese": "其他人",
+      "full_explanation": "ほかの人（ひとほかの）：其他人。例：あの人はほかの人です。"
+    },
+    {
+      "id": "vocab-n5-0583",
+      "japanese": "ぼく",
+      "hiragana": "ぼく",
+      "simple_chinese": "我：「私」的非正式口語說法（男性常用）",
+      "full_explanation": "ぼく（ぼく）：我：「私」的非正式口語說法（男性常用）。例：朝、ぼくを洗ってから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0584",
+      "japanese": "本",
+      "hiragana": "ほん",
+      "simple_chinese": "書",
+      "full_explanation": "本（ほん）：書。例：店員さんに本を貸しました。"
+    },
+    {
+      "id": "vocab-n5-0585",
+      "japanese": "本当",
+      "hiragana": "ほんとう",
+      "simple_chinese": "真的，真正的",
+      "full_explanation": "本当（ほんとう）：真的，真正的。例：本当ですか。信じられません。"
+    },
+    {
+      "id": "vocab-n5-0586",
+      "japanese": "本当に",
+      "hiragana": "ほんとうに",
+      "simple_chinese": "真的，實在，確實",
+      "full_explanation": "本当に（ほんとうに）：真的，實在，確實。例：本当においしいから、また食べたいです。"
+    },
+    {
+      "id": "vocab-n5-0587",
+      "japanese": "毎朝",
+      "hiragana": "まいあさ",
+      "simple_chinese": "每天早上",
+      "full_explanation": "毎朝（まいあさ）：每天早上。例：毎朝に図書館へ行きます。"
+    },
+    {
+      "id": "vocab-n5-0588",
+      "japanese": "毎週",
+      "hiragana": "まいしゅう",
+      "simple_chinese": "每星期，每週",
+      "full_explanation": "毎週（まいしゅう）：每星期，每週。例：毎週に図書館へ行きます。"
+    },
+    {
+      "id": "vocab-n5-0589",
+      "japanese": "毎日",
+      "hiragana": "まいにち",
+      "simple_chinese": "每天",
+      "full_explanation": "毎日（まいにち）：每天。例：毎日にケーキを食べます。"
+    },
+    {
+      "id": "vocab-n5-0590",
+      "japanese": "毎晩",
+      "hiragana": "まいばん",
+      "simple_chinese": "每天晚上",
+      "full_explanation": "毎晩（まいばん）：每天晚上。例：毎晩に駅へ行きます。"
+    },
+    {
+      "id": "vocab-n5-0591",
+      "japanese": "前",
+      "hiragana": "まえ",
+      "simple_chinese": "前面",
+      "full_explanation": "前（まえ）：前面。例：弟から前をもらいました。"
+    },
+    {
+      "id": "vocab-n5-0592",
+      "japanese": "～前",
+      "hiragana": "まえ",
+      "simple_chinese": "～之前，～以前",
+      "full_explanation": "～前（まえ）：～之前，～以前。例：寝る前に歯をみがきます。"
+    },
+    {
+      "id": "vocab-n5-0593",
+      "japanese": "また",
+      "hiragana": "また",
+      "simple_chinese": "又，再，還",
+      "full_explanation": "また（また）：又，再，還。例：今朝、駅でまたを買いました。"
+    },
+    {
+      "id": "vocab-n5-0594",
+      "japanese": "町",
+      "hiragana": "まち",
+      "simple_chinese": "鎮，城市",
+      "full_explanation": "町（まち）：鎮，城市。例：町をかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0595",
+      "japanese": "まちがえます",
+      "hiragana": "まちがえます",
+      "simple_chinese": "搞錯，弄錯",
+      "full_explanation": "まちがえます（まちがえます）：搞錯，弄錯。例：漢字を一つまちがえました。"
+    },
+    {
+      "id": "vocab-n5-0596",
+      "japanese": "待ちます",
+      "hiragana": "まちます",
+      "simple_chinese": "等待，等候",
+      "full_explanation": "待ちます（まちます）：等待，等候。例：ここで十分待ってください。"
+    },
+    {
+      "id": "vocab-n5-0597",
+      "japanese": "まっすぐ",
+      "hiragana": "まっすぐ",
+      "simple_chinese": "筆直，一直；坦率，直率（的人）",
+      "full_explanation": "まっすぐ（まっすぐ）：筆直，一直；坦率，直率（的人）。例：この道をまっすぐ行くと、駅に着きます。"
+    },
+    {
+      "id": "vocab-n5-0598",
+      "japanese": "～まで",
+      "hiragana": "まで",
+      "simple_chinese": "到～，～為止",
+      "full_explanation": "～まで（まで）：到～，～為止。例：駅まで歩いてから、タクシーに乗りました。"
+    },
+    {
+      "id": "vocab-n5-0599",
+      "japanese": "マレーシア",
+      "hiragana": "まれーしあ",
+      "simple_chinese": "馬來西亞",
+      "full_explanation": "マレーシア（まれーしあ）：馬來西亞。例：駅はここからマレーシアです。"
+    },
+    {
+      "id": "vocab-n5-0600",
+      "japanese": "まんが",
+      "hiragana": "まんが",
+      "simple_chinese": "漫畫",
+      "full_explanation": "まんが（まんが）：漫畫。例：まんがが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0601",
+      "japanese": "（はを）みがきます",
+      "hiragana": "はをみがきます",
+      "simple_chinese": "刷（牙）",
+      "full_explanation": "（はを）みがきます（はをみがきます）：刷（牙）。例：昼、駅ではをみがきます。"
+    },
+    {
+      "id": "vocab-n5-0602",
+      "japanese": "右",
+      "hiragana": "みぎ",
+      "simple_chinese": "右，右邊",
+      "full_explanation": "右（みぎ）：右，右邊。例：今日、駅で右を買いました。"
+    },
+    {
+      "id": "vocab-n5-0603",
+      "japanese": "右がわ",
+      "hiragana": "みぎがわ",
+      "simple_chinese": "右側",
+      "full_explanation": "右がわ（みぎがわ）：右側。例：右がわを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0604",
+      "japanese": "みじかい",
+      "hiragana": "みじかい",
+      "simple_chinese": "短，短的",
+      "full_explanation": "みじかい（みじかい）：短，短的。例：休みはみじかいので、すぐ終わります。"
+    },
+    {
+      "id": "vocab-n5-0605",
+      "japanese": "水",
+      "hiragana": "みず",
+      "simple_chinese": "水",
+      "full_explanation": "水（みず）：水。例：来週、病院で水を食べました。"
+    },
+    {
+      "id": "vocab-n5-0606",
+      "japanese": "店",
+      "hiragana": "みせ",
+      "simple_chinese": "店，商店",
+      "full_explanation": "店（みせ）：店，商店。例：放課後、店で勉強します。"
+    },
+    {
+      "id": "vocab-n5-0607",
+      "japanese": "見せます",
+      "hiragana": "みせます",
+      "simple_chinese": "給（別人）看；出示，展現",
+      "full_explanation": "見せます（みせます）：給（別人）看；出示，展現。例：写真を家族に見せました。"
+    },
+    {
+      "id": "vocab-n5-0608",
+      "japanese": "道",
+      "hiragana": "みち",
+      "simple_chinese": "路，道路",
+      "full_explanation": "道（みち）：路，道路。例：道が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0609",
+      "japanese": "みなさん",
+      "hiragana": "みなさん",
+      "simple_chinese": "大家，各位",
+      "full_explanation": "みなさん（みなさん）：大家，各位。例：あの人はみなさんです。"
+    },
+    {
+      "id": "vocab-n5-0610",
+      "japanese": "南",
+      "hiragana": "みなみ",
+      "simple_chinese": "南，南邊",
+      "full_explanation": "南（みなみ）：南，南邊。例：駅はここから南です。"
+    },
+    {
+      "id": "vocab-n5-0611",
+      "japanese": "見ます",
+      "hiragana": "みます",
+      "simple_chinese": "看",
+      "full_explanation": "見ます（みます）：看。例：夜、家でニュースを見ます。"
+    },
+    {
+      "id": "vocab-n5-0612",
+      "japanese": "耳",
+      "hiragana": "みみ",
+      "simple_chinese": "耳朵",
+      "full_explanation": "耳（みみ）：耳朵。例：朝、耳を洗ってから出かけます。"
+    },
+    {
+      "id": "vocab-n5-0613",
+      "japanese": "みんな",
+      "hiragana": "みんな",
+      "simple_chinese": "大家；都，一切，全體",
+      "full_explanation": "みんな（みんな）：大家；都，一切，全體。例：みんなが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0614",
+      "japanese": "向こう",
+      "hiragana": "むこう",
+      "simple_chinese": "正前方，對面；那邊，那兒",
+      "full_explanation": "向こう（むこう）：正前方，對面；那邊，那兒。例：向こうにスーパーがあります。"
+    },
+    {
+      "id": "vocab-n5-0615",
+      "japanese": "むずかしい",
+      "hiragana": "むずかしい",
+      "simple_chinese": "難的",
+      "full_explanation": "むずかしい（むずかしい）：難的。例：むずかしい問題は先生に聞きます。"
+    },
+    {
+      "id": "vocab-n5-0616",
+      "japanese": "目",
+      "hiragana": "め",
+      "simple_chinese": "眼睛",
+      "full_explanation": "目（め）：眼睛。例：目がわるいので、めがねをかけます。"
+    },
+    {
+      "id": "vocab-n5-0617",
+      "japanese": "メール",
+      "hiragana": "めーる",
+      "simple_chinese": "郵件，電子郵件",
+      "full_explanation": "メール（めーる）：郵件，電子郵件。例：メールを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0618",
+      "japanese": "めがね",
+      "hiragana": "めがね",
+      "simple_chinese": "眼鏡",
+      "full_explanation": "めがね（めがね）：眼鏡。例：めがねをぶつけて、少し痛いです。"
+    },
+    {
+      "id": "vocab-n5-0619",
+      "japanese": "メロン",
+      "hiragana": "めろん",
+      "simple_chinese": "哈密瓜，甜瓜",
+      "full_explanation": "メロン（めろん）：哈密瓜，甜瓜。例：公園でメロンを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0620",
+      "japanese": "もういちど",
+      "hiragana": "もういちど",
+      "simple_chinese": "再一次，再次",
+      "full_explanation": "もういちど（もういちど）：再一次，再次。例：もういちどが見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0621",
+      "japanese": "もう少し",
+      "hiragana": "すこもうし",
+      "simple_chinese": "再稍許，再一點",
+      "full_explanation": "もう少し（すこもうし）：再稍許，再一點。例：もう少しゆっくり話してください。"
+    },
+    {
+      "id": "vocab-n5-0622",
+      "japanese": "木 （＝木曜日）",
+      "hiragana": "もくもくようび",
+      "simple_chinese": "星期四，週四",
+      "full_explanation": "木 （＝木曜日）（もくもくようび）：星期四，週四。例：時間割の「木」は木曜日のことです。"
+    },
+    {
+      "id": "vocab-n5-0623",
+      "japanese": "木曜日",
+      "hiragana": "もくようび",
+      "simple_chinese": "星期四",
+      "full_explanation": "木曜日（もくようび）：星期四。例：木曜日は日本語の授業があります。"
+    },
+    {
+      "id": "vocab-n5-0624",
+      "japanese": "もしもし",
+      "hiragana": "もしもし",
+      "simple_chinese": "喂：接起電話應答時用",
+      "full_explanation": "もしもし（もしもし）：喂：接起電話應答時用。例：もしもしをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0625",
+      "japanese": "持っていきます",
+      "hiragana": "っていきます",
+      "simple_chinese": "拿去",
+      "full_explanation": "持っていきます（っていきます）：拿去。例：雨が降りそうなので、かさを持っていきます。"
+    },
+    {
+      "id": "vocab-n5-0626",
+      "japanese": "持ってきます",
+      "hiragana": "もってきます",
+      "simple_chinese": "拿來",
+      "full_explanation": "持ってきます（もってきます）：拿來。例：資料を明日持ってきてください。"
+    },
+    {
+      "id": "vocab-n5-0627",
+      "japanese": "もっと",
+      "hiragana": "もっと",
+      "simple_chinese": "更，更加，愈發",
+      "full_explanation": "もっと（もっと）：更，更加，愈發。例：公園でもっとを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0628",
+      "japanese": "物",
+      "hiragana": "もの",
+      "simple_chinese": "東西",
+      "full_explanation": "物（もの）：東西。例：物の窓から海が見えます。"
+    },
+    {
+      "id": "vocab-n5-0629",
+      "japanese": "もらいます",
+      "hiragana": "もらいます",
+      "simple_chinese": "得到，領受",
+      "full_explanation": "もらいます（もらいます）：得到，領受。例：友だちからおみやげをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0630",
+      "japanese": "八百屋",
+      "hiragana": "やおや",
+      "simple_chinese": "蔬果店",
+      "full_explanation": "八百屋（やおや）：蔬果店。例：八百屋をなくしてしまって、困りました。"
+    },
+    {
+      "id": "vocab-n5-0631",
+      "japanese": "野球",
+      "hiragana": "やきゅう",
+      "simple_chinese": "棒球",
+      "full_explanation": "野球（やきゅう）：棒球。例：昨日、駅で野球を買いました。"
+    },
+    {
+      "id": "vocab-n5-0632",
+      "japanese": "野菜",
+      "hiragana": "やさい",
+      "simple_chinese": "蔬菜",
+      "full_explanation": "野菜（やさい）：蔬菜。例：昼、喫茶店で野菜を食べました。"
+    },
+    {
+      "id": "vocab-n5-0633",
+      "japanese": "安い",
+      "hiragana": "やすい",
+      "simple_chinese": "便宜的",
+      "full_explanation": "安い（やすい）：便宜的。例：安いホテルを探しています。"
+    },
+    {
+      "id": "vocab-n5-0634",
+      "japanese": "休みます",
+      "hiragana": "やすみます",
+      "simple_chinese": "休息；休假",
+      "full_explanation": "休みます（やすみます）：休息；休假。例：少し頭が痛いので、今日は休みます。"
+    },
+    {
+      "id": "vocab-n5-0635",
+      "japanese": "山",
+      "hiragana": "やま",
+      "simple_chinese": "山",
+      "full_explanation": "山（やま）：山。例：山が見つからなくて、部屋をさがしました。"
+    },
+    {
+      "id": "vocab-n5-0636",
+      "japanese": "（映画を）やります①",
+      "hiragana": "えいがをやります",
+      "simple_chinese": "（電影）上映",
+      "full_explanation": "（映画を）やります①（えいがをやります）：（電影）上映。例：今夜テレビで映画をやります。"
+    },
+    {
+      "id": "vocab-n5-0637",
+      "japanese": "（宿題／ゲームを）やります②",
+      "hiragana": "しゅくだいげーむをやります",
+      "simple_chinese": "做（作業／遊戲）",
+      "full_explanation": "（宿題／ゲームを）やります②（しゅくだいげーむをやります）：做（作業／遊戲）。例：夕飯のあとで宿題をやります。"
+    },
+    {
+      "id": "vocab-n5-0638",
+      "japanese": "夕方",
+      "hiragana": "ゆうがた",
+      "simple_chinese": "傍晚，黃昏",
+      "full_explanation": "夕方（ゆうがた）：傍晚，黃昏。例：夕方を家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0639",
+      "japanese": "ゆうびんきょく",
+      "hiragana": "ゆうびんきょく",
+      "simple_chinese": "郵局",
+      "full_explanation": "ゆうびんきょく（ゆうびんきょく）：郵局。例：母からゆうびんきょくをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0640",
+      "japanese": "有名",
+      "hiragana": "ゆうめい",
+      "simple_chinese": "有名",
+      "full_explanation": "有名（ゆうめい）：有名。例：この店はケーキが有名です。"
+    },
+    {
+      "id": "vocab-n5-0641",
+      "japanese": "雪",
+      "hiragana": "ゆき",
+      "simple_chinese": "雪",
+      "full_explanation": "雪（ゆき）：雪。例：雪なので、電車が少し遅れました。"
+    },
+    {
+      "id": "vocab-n5-0642",
+      "japanese": "ゆっくり①",
+      "hiragana": "ゆっくり",
+      "simple_chinese": "悠閒自得地",
+      "full_explanation": "ゆっくり①（ゆっくり）：悠閒自得地。例：休みの日は家でゆっくりします。"
+    },
+    {
+      "id": "vocab-n5-0643",
+      "japanese": "ゆっくり②",
+      "hiragana": "ゆっくり",
+      "simple_chinese": "慢慢地",
+      "full_explanation": "ゆっくり②（ゆっくり）：慢慢地。例：ゆっくり話してください。"
+    },
+    {
+      "id": "vocab-n5-0644",
+      "japanese": "洋服",
+      "hiragana": "ようふく",
+      "simple_chinese": "衣服",
+      "full_explanation": "洋服（ようふく）：衣服。例：洋服を持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0645",
+      "japanese": "よく①",
+      "hiragana": "よく",
+      "simple_chinese": "好好地",
+      "full_explanation": "よく①（よく）：好好地。例：説明をよく聞いてください。"
+    },
+    {
+      "id": "vocab-n5-0646",
+      "japanese": "よく②",
+      "hiragana": "よく",
+      "simple_chinese": "經常",
+      "full_explanation": "よく②（よく）：經常。例：その店にはよく行きます。"
+    },
+    {
+      "id": "vocab-n5-0647",
+      "japanese": "よてい",
+      "hiragana": "よてい",
+      "simple_chinese": "計畫；約定",
+      "full_explanation": "よてい（よてい）：計畫；約定。例：来週のよていはもう決まりました。"
+    },
+    {
+      "id": "vocab-n5-0648",
+      "japanese": "よびます",
+      "hiragana": "よびます",
+      "simple_chinese": "叫，叫喚；邀請",
+      "full_explanation": "よびます（よびます）：叫，叫喚；邀請。例：先生を呼んで、質問しました。"
+    },
+    {
+      "id": "vocab-n5-0649",
+      "japanese": "読みます",
+      "hiragana": "よみます",
+      "simple_chinese": "讀，閱讀",
+      "full_explanation": "読みます（よみます）：讀，閱讀。例：寝る前に本を読みます。"
+    },
+    {
+      "id": "vocab-n5-0650",
+      "japanese": "よやくします",
+      "hiragana": "よやくします",
+      "simple_chinese": "預約，預訂",
+      "full_explanation": "よやくします（よやくします）：預約，預訂。例：今日、図書館でよやくします。"
+    },
+    {
+      "id": "vocab-n5-0651",
+      "japanese": "夜",
+      "hiragana": "よる",
+      "simple_chinese": "晚上，夜裡",
+      "full_explanation": "夜（よる）：晚上，夜裡。例：夜に学校へ行きます。"
+    },
+    {
+      "id": "vocab-n5-0652",
+      "japanese": "ラーメン",
+      "hiragana": "らーめん",
+      "simple_chinese": "拉麵",
+      "full_explanation": "ラーメン（らーめん）：拉麵。例：昼、スーパーでラーメンを食べました。"
+    },
+    {
+      "id": "vocab-n5-0653",
+      "japanese": "来月",
+      "hiragana": "らいげつ",
+      "simple_chinese": "下個月",
+      "full_explanation": "来月（らいげつ）：下個月。例：来月、兄と旅行に行きます。"
+    },
+    {
+      "id": "vocab-n5-0654",
+      "japanese": "来週",
+      "hiragana": "らいしゅう",
+      "simple_chinese": "下星期，下週",
+      "full_explanation": "来週（らいしゅう）：下星期，下週。例：来週は仕事がいそがしいです。"
+    },
+    {
+      "id": "vocab-n5-0655",
+      "japanese": "来年",
+      "hiragana": "らいねん",
+      "simple_chinese": "明年",
+      "full_explanation": "来年（らいねん）：明年。例：来年は新しいことを始めたいです。"
+    },
+    {
+      "id": "vocab-n5-0656",
+      "japanese": "りょう",
+      "hiragana": "りょう",
+      "simple_chinese": "宿舍",
+      "full_explanation": "りょう（りょう）：宿舍。例：公園でりょうを見つけました。"
+    },
+    {
+      "id": "vocab-n5-0657",
+      "japanese": "両親",
+      "hiragana": "りょうしん",
+      "simple_chinese": "父母，雙親",
+      "full_explanation": "両親（りょうしん）：父母，雙親。例：両親に電話をかけました。"
+    },
+    {
+      "id": "vocab-n5-0658",
+      "japanese": "料理",
+      "hiragana": "りょうり",
+      "simple_chinese": "料理，菜",
+      "full_explanation": "料理（りょうり）：料理，菜。例：今日、図書館で料理を食べました。"
+    },
+    {
+      "id": "vocab-n5-0659",
+      "japanese": "料理 （を）します",
+      "hiragana": "りょうりをします",
+      "simple_chinese": "做料理，做菜",
+      "full_explanation": "料理 （を）します（りょうりをします）：做料理，做菜。例：午後、駅で料理 をします。"
+    },
+    {
+      "id": "vocab-n5-0660",
+      "japanese": "旅行",
+      "hiragana": "りょこう",
+      "simple_chinese": "旅行",
+      "full_explanation": "旅行（りょこう）：旅行。例：来週、旅行があります。"
+    },
+    {
+      "id": "vocab-n5-0661",
+      "japanese": "旅行 （を）します",
+      "hiragana": "りょこうをします",
+      "simple_chinese": "旅行，去旅行",
+      "full_explanation": "旅行 （を）します（りょこうをします）：旅行，去旅行。例：昨日、コンビニで旅行 をします。"
+    },
+    {
+      "id": "vocab-n5-0662",
+      "japanese": "リンゴ",
+      "hiragana": "りんご",
+      "simple_chinese": "蘋果",
+      "full_explanation": "リンゴ（りんご）：蘋果。例：リンゴを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0663",
+      "japanese": "れいぞうこ",
+      "hiragana": "れいぞうこ",
+      "simple_chinese": "冰箱",
+      "full_explanation": "れいぞうこ（れいぞうこ）：冰箱。例：れいぞうこを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0664",
+      "japanese": "レジ",
+      "hiragana": "れじ",
+      "simple_chinese": "收銀處；收銀機",
+      "full_explanation": "レジ（れじ）：收銀處；收銀機。例：私からレジをもらいました。"
+    },
+    {
+      "id": "vocab-n5-0665",
+      "japanese": "レストラン",
+      "hiragana": "れすとらん",
+      "simple_chinese": "餐廳",
+      "full_explanation": "レストラン（れすとらん）：餐廳。例：レストランを持っていくのを忘れました。"
+    },
+    {
+      "id": "vocab-n5-0666",
+      "japanese": "レポート",
+      "hiragana": "れぽーと",
+      "simple_chinese": "報告",
+      "full_explanation": "レポート（れぽーと）：報告。例：今日、駅でレポートを買いました。"
+    },
+    {
+      "id": "vocab-n5-0667",
+      "japanese": "練習 （を）します",
+      "hiragana": "れんしゅうをします",
+      "simple_chinese": "練習",
+      "full_explanation": "練習 （を）します（れんしゅうをします）：練習。例：午後、会社で練習 をします。"
+    },
+    {
+      "id": "vocab-n5-0668",
+      "japanese": "ロビー",
+      "hiragana": "ろびー",
+      "simple_chinese": "大廳，門廳",
+      "full_explanation": "ロビー（ろびー）：大廳，門廳。例：ロビーは駅の近くにあります。"
+    },
+    {
+      "id": "vocab-n5-0669",
+      "japanese": "ワイン",
+      "hiragana": "わいん",
+      "simple_chinese": "葡萄酒",
+      "full_explanation": "ワイン（わいん）：葡萄酒。例：ワインをかばんに入れておきます。"
+    },
+    {
+      "id": "vocab-n5-0670",
+      "japanese": "わかります",
+      "hiragana": "わかります",
+      "simple_chinese": "知道，明白，理解，懂得",
+      "full_explanation": "わかります（わかります）：知道，明白，理解，懂得。例：もう一度言ってください。よくわかりません。"
+    },
+    {
+      "id": "vocab-n5-0671",
+      "japanese": "わさび",
+      "hiragana": "わさび",
+      "simple_chinese": "芥末",
+      "full_explanation": "わさび（わさび）：芥末。例：わさびを家に忘れて、取りに帰りました。"
+    },
+    {
+      "id": "vocab-n5-0672",
+      "japanese": "わすれます",
+      "hiragana": "わすれます",
+      "simple_chinese": "忘，忘記",
+      "full_explanation": "わすれます（わすれます）：忘，忘記。例：家にスマホを忘れてしまいました。"
+    },
+    {
+      "id": "vocab-n5-0673",
+      "japanese": "私",
+      "hiragana": "わたし",
+      "simple_chinese": "我",
+      "full_explanation": "私（わたし）：我。例：私を持っていくのを忘れました。"
+    }
+  ]
+}
