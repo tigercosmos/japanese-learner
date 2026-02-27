@@ -20,6 +20,7 @@ export function buildVocabCard(item: VocabItem, mode: VocabTestMode): FlashcardC
         front: { primary: item.japanese },
         back: {
           primary: item.simple_chinese,
+          pronunciation: item.japanese,
           secondary: item.hiragana,
           detail: item.full_explanation || undefined,
         },
@@ -29,6 +30,7 @@ export function buildVocabCard(item: VocabItem, mode: VocabTestMode): FlashcardC
         front: { primary: item.hiragana },
         back: {
           primary: item.simple_chinese,
+          pronunciation: item.japanese,
           detail: item.full_explanation || undefined,
         },
       };
@@ -37,6 +39,7 @@ export function buildVocabCard(item: VocabItem, mode: VocabTestMode): FlashcardC
         front: { primary: item.simple_chinese },
         back: {
           primary: item.japanese,
+          pronunciation: item.japanese,
           secondary: item.hiragana,
           detail: item.full_explanation || undefined,
         },

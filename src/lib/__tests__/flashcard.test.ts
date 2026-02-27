@@ -57,6 +57,24 @@ describe("buildVocabCard", () => {
     const card = buildVocabCard(vocab, "kanji-to-chinese");
     expect(card.back.detail).toBeUndefined();
   });
+
+  describe("pronunciation field", () => {
+    it("kanji-to-chinese sets pronunciation to japanese word", () => {
+      const card = buildVocabCard(sampleVocab, "kanji-to-chinese");
+      expect(card.back.pronunciation).toBe("経済");
+    });
+
+    it("hiragana-to-chinese sets pronunciation to japanese word", () => {
+      const card = buildVocabCard(sampleVocab, "hiragana-to-chinese");
+      expect(card.back.pronunciation).toBe("経済");
+    });
+
+    it("chinese-to-japanese sets pronunciation equal to back.primary", () => {
+      const card = buildVocabCard(sampleVocab, "chinese-to-japanese");
+      expect(card.back.pronunciation).toBe("経済");
+      expect(card.back.pronunciation).toBe(card.back.primary);
+    });
+  });
 });
 
 describe("buildGrammarCard", () => {
@@ -107,5 +125,18 @@ describe("buildGrammarCard", () => {
     const card = buildGrammarCard(grammar, "example-to-chinese");
     // Falls back to japanese when no examples
     expect(card.front.primary).toContain(grammar.japanese);
+  });
+
+  it("grammar cards do not set pronunciation", () => {
+    const modes: Parameters<typeof buildGrammarCard>[1][] = [
+      "grammar-to-chinese",
+      "example-to-chinese",
+      "chinese-to-grammar",
+      "fill-in-grammar",
+    ];
+    for (const mode of modes) {
+      const card = buildGrammarCard(sampleGrammar, mode, 0);
+      expect(card.back.pronunciation).toBeUndefined();
+    }
   });
 });

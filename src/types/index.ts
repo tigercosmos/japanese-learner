@@ -72,6 +72,8 @@ export interface FlashcardContent {
     primary: string;
     secondary?: string;
     detail?: string;
+    /** Japanese text to display and speak on the back face */
+    pronunciation?: string;
   };
 }
 
