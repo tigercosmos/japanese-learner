@@ -36,6 +36,12 @@ function SpeakButton({ text }: { text: string }) {
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "ja-JP";
+    // Explicitly pick a Japanese voice so iOS doesn't fall back to the
+    // system-language voice (e.g. Chinese) when lang alone is insufficient.
+    const japaneseVoice = window.speechSynthesis
+      .getVoices()
+      .find((v) => v.lang.startsWith("ja"));
+    if (japaneseVoice) utterance.voice = japaneseVoice;
     utterance.onstart = () => setSpeaking(true);
     utterance.onend = () => setSpeaking(false);
     utterance.onerror = () => setSpeaking(false);
