@@ -6,6 +6,7 @@ import StudyPage from "./pages/StudyPage";
 import LearnSetupPage from "./pages/LearnSetupPage";
 import LearnPage from "./pages/LearnPage";
 import SettingsPage from "./pages/SettingsPage";
+import AboutPage from "./pages/AboutPage";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/learn/:datasetId" element={<LearnSetupPage />} />
           <Route path="/learn/:datasetId/session" element={<LearnPage />} />
           <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

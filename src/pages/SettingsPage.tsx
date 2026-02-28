@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { useDarkMode } from "../hooks/useDarkMode";
 import { useSettings } from "../hooks/useSettings";
 
@@ -21,6 +22,7 @@ function ToggleSwitch({ checked, onChange }: { checked: boolean; onChange: () =>
 }
 
 export default function SettingsPage() {
+  const navigate = useNavigate();
   const { isDark, toggle: toggleDark } = useDarkMode();
   const { settings, updateSettings } = useSettings();
 
@@ -37,7 +39,7 @@ export default function SettingsPage() {
           <ToggleSwitch checked={isDark} onChange={toggleDark} />
         </div>
 
-        <div className="flex items-center justify-between py-4 px-4 bg-white dark:bg-gray-800 rounded-b-xl border border-t-0 border-gray-200 dark:border-gray-700">
+        <div className="flex items-center justify-between py-4 px-4 bg-white dark:bg-gray-800 border border-t-0 border-gray-200 dark:border-gray-700">
           <div>
             <div className="font-medium text-gray-900 dark:text-gray-50">滑動提示</div>
             <div className="text-sm text-gray-500 dark:text-gray-400">滑動卡片時顯示顏色與文字提示</div>
@@ -47,6 +49,16 @@ export default function SettingsPage() {
             onChange={() => updateSettings({ showSwipeAssist: !settings.showSwipeAssist })}
           />
         </div>
+
+        <button
+          onClick={() => navigate("/about")}
+          className="flex items-center justify-between w-full py-4 px-4 bg-white dark:bg-gray-800 rounded-b-xl border border-t-0 border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-left"
+        >
+          <div className="font-medium text-gray-900 dark:text-gray-50">更多資訊</div>
+          <svg className="w-5 h-5 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
       </div>
     </div>
   );

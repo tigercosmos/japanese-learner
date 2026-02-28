@@ -25,28 +25,20 @@ export default function LearnPage() {
   const [currentDayIndex, setCurrentDayIndex] = useState(initialDayIndex);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Reset card index when day changes
-  useEffect(() => {
+  const selectDay = useCallback((day: number) => {
+    setCurrentDayIndex(day);
     setCurrentIndex(0);
-  }, [currentDayIndex]);
+  }, []);
 
-  if (!dataset) {
-    return (
-      <div className="text-center py-12 text-gray-400 dark:text-gray-500">
-        <p>找不到學習集</p>
-      </div>
-    );
-  }
-
-  const isDaily = planType === "daily" && !!plan;
+  const isDaily = planType === "daily" && !!plan && !!dataset;
 
   // Determine cards for the current view
-  const allDataItems = dataset.data;
+  const allDataItems = dataset?.data ?? [];
   let dayCards = allDataItems;
   let dayCardIds: string[] = allDataItems.map((item) => item.id);
 
   if (isDaily) {
-    const dayCardIdSet = plan.cardIds[currentDayIndex] ?? [];
+    const dayCardIdSet = plan!.cardIds[currentDayIndex] ?? [];
     const idToIndex = new Map(dayCardIdSet.map((id, i) => [id, i]));
     const filtered = allDataItems
       .filter((item) => idToIndex.has(item.id))
@@ -58,7 +50,7 @@ export default function LearnPage() {
   const totalCards = dayCards.length;
   const currentItem = dayCards[currentIndex];
   const isComplete = currentIndex >= totalCards;
-  const hasNextDay = isDaily && currentDayIndex + 1 < plan.totalDays;
+  const hasNextDay = isDaily && currentDayIndex + 1 < plan!.totalDays;
 
   const goNext = useCallback(() => {
     if (currentIndex < totalCards) {
@@ -89,6 +81,7 @@ export default function LearnPage() {
   }, [goNext, goPrev]);
 
   const navigateToExam = useCallback(() => {
+    if (!dataset) return;
     const category = dataset.category;
     const modes = category === "vocabulary" ? VOCAB_TEST_MODES : GRAMMAR_TEST_MODES;
     const savedMode = loadTestMode(category);
@@ -107,14 +100,22 @@ export default function LearnPage() {
           : undefined,
       },
     });
-  }, [dataset.category, datasetId, dayCardIds, isDaily, currentDayIndex, plan, navigate]);
+  }, [dataset, datasetId, dayCardIds, isDaily, currentDayIndex, plan, navigate]);
+
+  if (!dataset) {
+    return (
+      <div className="text-center py-12 text-gray-400 dark:text-gray-500">
+        <p>找不到學習集</p>
+      </div>
+    );
+  }
 
   // Day completion screen
   if (isComplete) {
     return (
       <div>
         {/* Day tabs (daily mode only) */}
-        {isDaily && <DayTabs plan={plan!} currentDayIndex={currentDayIndex} onSelectDay={setCurrentDayIndex} />}
+        {isDaily && <DayTabs plan={plan!} currentDayIndex={currentDayIndex} onSelectDay={selectDay} />}
 
         <div className="text-center py-8">
           <div className="text-4xl mb-2">📖</div>
@@ -141,7 +142,7 @@ export default function LearnPage() {
             </button>
             {hasNextDay && (
               <button
-                onClick={() => setCurrentDayIndex((d) => d + 1)}
+                onClick={() => selectDay(currentDayIndex + 1)}
                 className="py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors tap-active"
               >
                 下一天 →
@@ -156,7 +157,7 @@ export default function LearnPage() {
   return (
     <div>
       {/* Day tabs (daily mode only) */}
-      {isDaily && <DayTabs plan={plan!} currentDayIndex={currentDayIndex} onSelectDay={setCurrentDayIndex} />}
+      {isDaily && <DayTabs plan={plan!} currentDayIndex={currentDayIndex} onSelectDay={selectDay} />}
 
       <ProgressBar current={currentIndex + 1} total={totalCards} />
 

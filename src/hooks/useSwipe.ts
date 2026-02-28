@@ -50,16 +50,17 @@ export function useSwipe({ onSwipe, enabled, threshold = THRESHOLD_DEFAULT, key 
   const currentDirection = useRef<Rating | null>(null);
   const targetRef = useRef<HTMLDivElement>(null);
   const onSwipeRef = useRef(onSwipe);
-  onSwipeRef.current = onSwipe;
+  useEffect(() => {
+    onSwipeRef.current = onSwipe;
+  }, [onSwipe]);
 
-  // Reset when disabled
+  // Reset refs when disabled
   useEffect(() => {
     if (!enabled) {
       isDragging.current = false;
       startPos.current = null;
       currentDirection.current = null;
       hasMoved.current = false;
-      setSwipeState({ offsetX: 0, offsetY: 0, swiping: false, direction: null });
     }
   }, [enabled]);
 
@@ -162,8 +163,8 @@ export function useSwipe({ onSwipe, enabled, threshold = THRESHOLD_DEFAULT, key 
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("mouseup", onMouseUp);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [enabled, threshold, key]);
 
-  return { targetRef, swipeState };
+  const defaultState: SwipeState = { offsetX: 0, offsetY: 0, swiping: false, direction: null };
+  return { targetRef, swipeState: enabled ? swipeState : defaultState };
 }
