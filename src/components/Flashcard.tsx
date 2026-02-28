@@ -15,6 +15,7 @@ interface FlashcardProps {
   isFlipped: boolean;
   onFlip: () => void;
   swipe?: SwipeVisual;
+  showSwipeAssist?: boolean;
 }
 
 function renderText(text: string) {
@@ -71,8 +72,8 @@ const DIRECTION_COLORS: Record<Rating, string> = {
   good: "rgba(16, 185, 129, 0.25)",
 };
 
-export default function Flashcard({ content, isFlipped, onFlip, swipe }: FlashcardProps) {
-  const isSwiping = swipe?.swiping && swipe.direction;
+export default function Flashcard({ content, isFlipped, onFlip, swipe, showSwipeAssist = true }: FlashcardProps) {
+  const isSwiping = showSwipeAssist && swipe?.swiping && swipe.direction;
 
   const swipeTransform = swipe?.swiping
     ? `translate(${swipe.offsetX * 0.5}px, ${swipe.offsetY * 0.3}px) rotate(${swipe.offsetX * 0.05}deg)`

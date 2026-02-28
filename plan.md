@@ -255,6 +255,7 @@ SummaryPage
 ### 6.3 Navigation Bar
 
 - Simple top bar with app title "日語學習卡" and back button when inside a session
+- Dark mode toggle button and settings gear icon on the right
 - Minimal — the focus is on the cards
 
 ---
@@ -265,7 +266,7 @@ Key prefix: `jp-learner:`
 
 ```
 jp-learner:progress         → { [cardId: string]: CardProgress }
-jp-learner:settings         → { defaultSessionSize: number }
+jp-learner:settings         → { defaultSessionSize: number, showSwipeAssist: boolean }
 ```
 
 ---
@@ -434,5 +435,44 @@ src/pages/LearnPage.tsx         # Learning mode page
 /                                → HomePage
 /study/:datasetId                → SetupPage (mode + session config)
 /study/:datasetId/session        → StudyPage (flashcard test session)
-/learn/:datasetId                → LearnPage (browse cards with full content)
+/learn/:datasetId                → LearnSetupPage (choose learn mode)
+/learn/:datasetId/session        → LearnPage (browse cards with full content)
+/settings                        → SettingsPage (dark mode, swipe assist toggles)
+```
+
+---
+
+## 14. Settings Page (Phase 6)
+
+A dedicated settings page accessible via a gear icon in the header navigation bar.
+
+### 14.1 Route
+
+```
+/settings → SettingsPage
+```
+
+### 14.2 Settings
+
+| Setting | Key | Default | Description |
+|---------|-----|---------|-------------|
+| 深色模式 | (dark mode via CSS class) | system | Toggle dark/light theme |
+| 滑動提示 | `showSwipeAssist` | `true` | Show color overlay + label text on card during swipe gestures |
+
+### 14.3 Swipe Assist Behavior
+
+When **enabled** (default):
+- Swiping a card shows a colored overlay (green/red/yellow) with a text label (記住了/不會/還好)
+- Mobile hint text "← 不會 · ↓ 還好 · → 記住了" is shown below the card
+
+When **disabled**:
+- Swiping still works — cards move with drag and trigger ratings normally
+- The color overlay and text label are hidden
+- The mobile hint text is hidden
+
+### 14.4 Files
+
+```
+src/pages/SettingsPage.tsx       # Settings page with toggle rows
+src/hooks/useSettings.ts         # React hook wrapping loadSettings/saveSettings
 ```

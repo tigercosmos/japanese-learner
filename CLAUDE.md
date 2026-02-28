@@ -56,3 +56,9 @@ JSON files in `data/` → loaded at build time via `import.meta.glob()` in `useD
 ### Data Format
 
 Two categories in `data/*.json`: vocabulary (`category: "vocabulary"`) and grammar (`category: "grammar"`). Vocabulary items have `japanese`, `hiragana`, `simple_chinese`, `full_explanation`. Grammar items additionally have `examples` with `sentence` (using `【】` brackets around grammar points) and `chinese` translation.
+
+## Document
+
+The system design should be in `plan.md`, always update it when there is big features or big refactoring.
+
+Update README.md if there is any changes that may affect the users or developers.

@@ -3,6 +3,7 @@ import { useDatasetById } from "../hooks/useDatasets";
 import { useStudySession } from "../hooks/useStudySession";
 import { useKeyboard } from "../hooks/useKeyboard";
 import { useSwipe } from "../hooks/useSwipe";
+import { useSettings } from "../hooks/useSettings";
 import Flashcard from "../components/Flashcard";
 import RatingButtons from "../components/RatingButtons";
 import ProgressBar from "../components/ProgressBar";
@@ -49,6 +50,8 @@ export default function StudyPage() {
     onRate: rate,
     enabled: !isSessionComplete && !!currentCard,
   });
+
+  const { settings } = useSettings();
 
   const { targetRef: swipeRef, swipeState } = useSwipe({
     onSwipe: rate,
@@ -107,27 +110,30 @@ export default function StudyPage() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col" style={{ minHeight: "calc(100dvh - 56px - 48px)" }}>
       <ProgressBar current={currentIndex} total={totalCards} />
 
-      <div key={currentIndex} className="slide-in" ref={swipeRef}>
+      <div key={currentIndex} className="slide-in flex-1" ref={swipeRef}>
         <Flashcard
           content={currentCard.flashcard}
           isFlipped={isFlipped}
           onFlip={flip}
           swipe={swipeState}
+          showSwipeAssist={settings.showSwipeAssist}
         />
       </div>
 
       <RatingButtons onRate={rate} visible={isFlipped} />
 
       {/* Swipe hint (mobile) */}
-      <div className="sm:hidden text-center mt-4 text-xs text-gray-400 dark:text-gray-500">
-        ← 不會 · ↓ 還好 · → 記住了
-      </div>
+      {settings.showSwipeAssist && (
+        <div className="sm:hidden text-center mt-2 text-xs text-gray-400 dark:text-gray-500">
+          ← 不會 · ↓ 還好 · → 記住了
+        </div>
+      )}
 
       {/* Keyboard hint (desktop only) */}
-      <div className="hidden sm:block text-center mt-4 text-xs text-gray-400 dark:text-gray-500">
+      <div className="hidden sm:block text-center mt-2 text-xs text-gray-400 dark:text-gray-500">
         空白鍵翻面 · 1 不會 · 2 還好 · 3 記住了 · 可拖曳卡片
       </div>
     </div>

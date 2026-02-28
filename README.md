@@ -9,13 +9,15 @@ A flashcard web app for learning Japanese vocabulary and grammar, built for Trad
 - **Spaced Repetition** - SM-2 algorithm (Anki-style) schedules cards based on your performance, surfacing difficult cards more often
 - **Multiple Test Modes** - Vocabulary: Kanji-to-Chinese, Hiragana-to-Chinese, Chinese-to-Japanese. Grammar: Pattern-to-Chinese, Example-to-Chinese, Chinese-to-Grammar, Fill-in-the-blank
 - **Learning Mode** - Browse cards sequentially with full content visible (no flipping, no rating) for initial study
-- **Swipe Gestures** - Swipe left (don't know), up (hard), right (got it) as an alternative to tapping rating buttons
+- **Swipe Gestures** - Swipe left (don't know), down (hard), right (got it) as an alternative to tapping rating buttons; optional color overlay + text assist (toggleable in settings)
 - **Keyboard Shortcuts** - Navigate and rate cards with keyboard for efficient desktop use
+- **Settings Page** - Configure dark mode and swipe assist (color overlay + hint text during swipe)
 - **Grammar Highlighting** - Bracket notation (e.g., `【grammar】`) renders grammar parts with colored highlights or blanks for fill-in mode
 - **Dataset Filtering** - Filter datasets by category (vocabulary/grammar) and JLPT level
 - **Progress Statistics** - Track learned, due, and mastered cards per dataset with visual progress bars
 - **Random Review** - Review all cards in a shuffled order even when no cards are due
 - **Offline-First** - All progress stored in browser localStorage; no backend required
+- **Dark Mode** - Toggle between light and dark themes via header or settings page
 - **Responsive Design** - Mobile-friendly with centered layout on desktop
 
 ## Tech Stack
@@ -80,7 +82,7 @@ src/
   components/           Reusable UI components (Flashcard, RatingButtons, etc.)
   hooks/                Custom React hooks (useStudySession, useProgress, etc.)
   lib/                  Core logic (SM-2 algorithm, grammar parser, storage)
-  pages/                Route-level page components
+  pages/                Route-level page components (HomePage, SetupPage, StudyPage, LearnPage, SettingsPage)
   types/                TypeScript type definitions
 e2e/                    Playwright end-to-end tests
 ```
