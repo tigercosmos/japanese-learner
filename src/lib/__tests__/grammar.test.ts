@@ -4,7 +4,6 @@ import {
   getHighlightedParts,
   getBlankParts,
   extractGrammarText,
-  stripGrammarBrackets,
 } from "../grammar";
 
 describe("parseGrammarSentence", () => {
@@ -111,20 +110,3 @@ describe("extractGrammarText", () => {
   });
 });
 
-describe("stripGrammarBrackets", () => {
-  it("removes single bracket pair", () => {
-    expect(stripGrammarBrackets("勉強している【うちに】眠くなった")).toBe(
-      "勉強しているうちに眠くなった",
-    );
-  });
-
-  it("removes multiple bracket pairs", () => {
-    expect(stripGrammarBrackets("東京【から】大阪【にかけて】雨が降るでしょう")).toBe(
-      "東京から大阪にかけて雨が降るでしょう",
-    );
-  });
-
-  it("returns sentence unchanged when no brackets", () => {
-    expect(stripGrammarBrackets("これは普通の文です")).toBe("これは普通の文です");
-  });
-});

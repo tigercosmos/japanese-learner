@@ -16,7 +16,7 @@ function VocabLearnCard({ item }: { item: VocabItem }) {
       <div className="text-center">
         <div className="flex items-center justify-center gap-1.5">
           <div className="text-4xl font-bold text-gray-900 dark:text-gray-50">{item.japanese}</div>
-          <SpeakButton text={item.japanese} />
+          <SpeakButton text={item.japanese} label={item.japanese} />
         </div>
         <div className="text-lg text-gray-500 dark:text-gray-400 mt-1">{item.hiragana}</div>
       </div>
@@ -46,7 +46,7 @@ function GrammarLearnCard({ item }: { item: GrammarItem }) {
       <div className="text-center">
         <div className="flex items-center justify-center gap-1.5">
           <div className="text-3xl font-bold text-gray-900 dark:text-gray-50">{item.japanese}</div>
-          <SpeakButton text={item.japanese} />
+          <SpeakButton text={item.japanese} label={item.japanese} />
         </div>
       </div>
 
@@ -71,17 +71,20 @@ function GrammarLearnCard({ item }: { item: GrammarItem }) {
           <div className="border-t border-gray-100 dark:border-gray-700" />
           <div className="space-y-3">
             <div className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider">例句</div>
-            {item.examples.map((ex, i) => (
-              <div key={i} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
-                <div className="flex items-start gap-1.5">
-                  <div className="text-base text-gray-900 dark:text-gray-50 leading-relaxed flex-1">
-                    <GrammarHighlight sentence={ex.sentence} mode="highlight" />
+            {item.examples.map((ex, i) => {
+              const speakable = stripGrammarBrackets(ex.sentence);
+              return (
+                <div key={i} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
+                  <div className="flex items-center gap-1.5">
+                    <div className="text-base text-gray-900 dark:text-gray-50 leading-relaxed flex-1 min-w-0">
+                      <GrammarHighlight sentence={ex.sentence} mode="highlight" />
+                    </div>
+                    <SpeakButton text={speakable} size="sm" label={speakable} />
                   </div>
-                  <SpeakButton text={stripGrammarBrackets(ex.sentence)} size="sm" />
+                  <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">{ex.chinese}</div>
                 </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">{ex.chinese}</div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </>
       )}

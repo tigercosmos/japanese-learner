@@ -1,12 +1,19 @@
 import { test, expect } from "@playwright/test";
+import grammarFixture from "./fixtures/test-grammar.json" with { type: "json" };
+import vocabFixture from "./fixtures/test-vocab.json" with { type: "json" };
 
-// Fixture grammar examples (with bracket-stripped expected forms for speech)
-// From e2e/fixtures/test-grammar.json
-const GRAMMAR_EXAMPLES_STRIPPED = [
-  "本を読んている",
-  "東京から大阪まで新幹線で行く",
-];
-const GRAMMAR_PATTERNS = ["ている", "～から～まで"];
+const SPEAK_LABEL_RE = /播放發音/;
+
+const FIRST_GRAMMAR_ITEM = grammarFixture.data[0];
+const FIRST_GRAMMAR_PATTERN = FIRST_GRAMMAR_ITEM.japanese;
+const FIRST_GRAMMAR_EXAMPLE_COUNT = FIRST_GRAMMAR_ITEM.examples.length;
+
+// Bracket-stripped versions of every fixture example (any one may be picked by random review)
+const GRAMMAR_EXAMPLES_STRIPPED = grammarFixture.data.flatMap((g) =>
+  g.examples.map((e) => e.sentence.replace(/[【】]/g, "")),
+);
+const GRAMMAR_PATTERNS = grammarFixture.data.map((g) => g.japanese);
+const VOCAB_JAPANESE = vocabFixture.data.map((v) => v.japanese);
 
 /**
  * Mock window.speechSynthesis. Same approach as pronunciation.spec.ts:
@@ -93,14 +100,21 @@ async function flipCard(page: Parameters<Parameters<typeof test>[1]>[0]) {
   await expect(page.getByRole("button", { name: "記住了" })).toBeVisible({ timeout: 3000 });
 }
 
+/** Locate speakers within the front face only (excludes the back face). */
+function frontFaceSpeakers(page: Parameters<Parameters<typeof test>[1]>[0]) {
+  return page.locator(".card-face:not(.card-back)").getByLabel(SPEAK_LABEL_RE);
+}
+function backFaceSpeakers(page: Parameters<Parameters<typeof test>[1]>[0]) {
+  return page.locator(".card-face.card-back").getByLabel(SPEAK_LABEL_RE);
+}
+
 // ---------------------------------------------------------------------------
 
-test.describe("Grammar pronunciation – example-to-chinese mode (front sentence)", () => {
-  test("speaker button is visible on the front before flipping", async ({ page }) => {
+test.describe("Grammar pronunciation – example-to-chinese (front sentence)", () => {
+  test("front has exactly one speaker; back has none", async ({ page }) => {
     await startGrammarSession(page, "example-to-chinese");
-    await expect(page.getByLabel("播放發音").first()).toBeVisible();
-    // Rating buttons should NOT be visible (we haven't flipped)
-    await expect(page.getByRole("button", { name: "記住了" })).not.toBeVisible();
+    await expect(frontFaceSpeakers(page)).toHaveCount(1);
+    await expect(backFaceSpeakers(page)).toHaveCount(0);
   });
 
   test("clicking the front speaker speaks the bracket-stripped sentence with lang ja-JP", async ({
@@ -109,46 +123,34 @@ test.describe("Grammar pronunciation – example-to-chinese mode (front sentence
     await mockSpeechSynthesis(page);
     await startGrammarSession(page, "example-to-chinese");
 
-    await page.getByLabel("播放發音").first().click();
+    await frontFaceSpeakers(page).click();
 
     const spoken = await readSpoken(page);
     expect(spoken).toHaveLength(1);
     expect(spoken[0].lang).toBe("ja-JP");
-    // The spoken sentence must NOT contain the 【】 bracket characters
     expect(spoken[0].text).not.toContain("【");
     expect(spoken[0].text).not.toContain("】");
-    // It must match one of the fixture sentences (after stripping)
     expect(GRAMMAR_EXAMPLES_STRIPPED).toContain(spoken[0].text);
   });
 
   test("clicking the front speaker does NOT flip the card", async ({ page }) => {
     await startGrammarSession(page, "example-to-chinese");
 
-    // Pre-condition: rating buttons not visible
     await expect(page.getByRole("button", { name: "記住了" })).not.toBeVisible();
-
-    await page.getByLabel("播放發音").first().click();
-
-    // Card must remain on the front: rating buttons still hidden
+    await frontFaceSpeakers(page).click();
     await expect(page.getByRole("button", { name: "記住了" })).not.toBeVisible();
   });
 });
 
 // ---------------------------------------------------------------------------
 
-test.describe("Grammar pronunciation – fill-in-grammar mode (back full sentence)", () => {
-  test("no speaker on the front (blanked sentence is not speakable)", async ({ page }) => {
+test.describe("Grammar pronunciation – fill-in-grammar (back full sentence)", () => {
+  test("front has no speaker (blanked sentence is not speakable); back has exactly one", async ({
+    page,
+  }) => {
     await startGrammarSession(page, "fill-in-grammar");
-    // The card front shows the sentence with blanks → no front pronunciation
-    // The back is hidden by 3D transform; speaker on back exists in DOM but visually hidden.
-    // We'll verify by flipping.
-    await expect(page.locator(".perspective")).toBeVisible();
-  });
-
-  test("speaker button appears next to the full sentence after flipping", async ({ page }) => {
-    await startGrammarSession(page, "fill-in-grammar");
-    await flipCard(page);
-    await expect(page.getByLabel("播放發音").first()).toBeVisible();
+    await expect(frontFaceSpeakers(page)).toHaveCount(0);
+    await expect(backFaceSpeakers(page)).toHaveCount(1);
   });
 
   test("clicking the back speaker speaks the bracket-stripped sentence", async ({ page }) => {
@@ -156,7 +158,7 @@ test.describe("Grammar pronunciation – fill-in-grammar mode (back full sentenc
     await startGrammarSession(page, "fill-in-grammar");
     await flipCard(page);
 
-    await page.getByLabel("播放發音").first().click();
+    await backFaceSpeakers(page).click();
 
     const spoken = await readSpoken(page);
     expect(spoken).toHaveLength(1);
@@ -170,25 +172,41 @@ test.describe("Grammar pronunciation – fill-in-grammar mode (back full sentenc
     await startGrammarSession(page, "fill-in-grammar");
     await flipCard(page);
 
-    await page.getByLabel("播放發音").first().click();
-    // Rating buttons remain visible → still on back
+    await backFaceSpeakers(page).click();
     await expect(page.getByRole("button", { name: "記住了" })).toBeVisible();
   });
 });
 
 // ---------------------------------------------------------------------------
 
-test.describe("Grammar pronunciation – grammar-to-chinese mode has no sentence speaker", () => {
-  test("no speaker on the front (grammar pattern only)", async ({ page }) => {
+test.describe("Grammar pronunciation – grammar-to-chinese (no sentence speaker)", () => {
+  test("front has no speaker; back also has none (only Chinese meaning)", async ({ page }) => {
     await startGrammarSession(page, "grammar-to-chinese");
-    // Front shows just the pattern (e.g. "ている") — no Japanese sentence, no speaker.
-    await expect(page.getByLabel("播放發音")).not.toBeVisible();
+    await expect(frontFaceSpeakers(page)).toHaveCount(0);
+    await expect(backFaceSpeakers(page)).toHaveCount(0);
+  });
+});
+
+// ---------------------------------------------------------------------------
+
+test.describe("Grammar pronunciation – chinese-to-grammar (pattern speaker on back)", () => {
+  test("front has no speaker; back has one next to the grammar pattern", async ({ page }) => {
+    await startGrammarSession(page, "chinese-to-grammar");
+    await expect(frontFaceSpeakers(page)).toHaveCount(0);
+    await expect(backFaceSpeakers(page)).toHaveCount(1);
   });
 
-  test("no speaker after flipping either (back has Chinese only)", async ({ page }) => {
-    await startGrammarSession(page, "grammar-to-chinese");
+  test("clicking the back speaker speaks the grammar pattern", async ({ page }) => {
+    await mockSpeechSynthesis(page);
+    await startGrammarSession(page, "chinese-to-grammar");
     await flipCard(page);
-    await expect(page.getByLabel("播放發音")).not.toBeVisible();
+
+    await backFaceSpeakers(page).click();
+
+    const spoken = await readSpoken(page);
+    expect(spoken).toHaveLength(1);
+    expect(spoken[0].lang).toBe("ja-JP");
+    expect(GRAMMAR_PATTERNS).toContain(spoken[0].text);
   });
 });
 
@@ -204,23 +222,25 @@ test.describe("LearnPage grammar – speakers next to pattern and each example",
     await expect(page).toHaveURL(/\/learn\/test-grammar\/session$/);
   });
 
-  test("speaker buttons appear (one for the pattern + one per example)", async ({ page }) => {
-    // First grammar item has 1 example → 2 speakers total
-    await expect(page.getByLabel("播放發音")).toHaveCount(2);
+  test("one speaker for the pattern + one per example (computed from fixture)", async ({
+    page,
+  }) => {
+    const expected = 1 + FIRST_GRAMMAR_EXAMPLE_COUNT;
+    await expect(page.getByLabel(SPEAK_LABEL_RE)).toHaveCount(expected);
   });
 
   test("clicking the pattern speaker speaks the grammar pattern", async ({ page }) => {
     await mockSpeechSynthesis(page);
     await page.reload();
 
-    const speakers = page.getByLabel("播放發音");
+    const speakers = page.getByLabel(SPEAK_LABEL_RE);
     await expect(speakers.first()).toBeVisible();
     await speakers.first().click();
 
     const spoken = await readSpoken(page);
     expect(spoken).toHaveLength(1);
     expect(spoken[0].lang).toBe("ja-JP");
-    expect(GRAMMAR_PATTERNS).toContain(spoken[0].text);
+    expect(spoken[0].text).toBe(FIRST_GRAMMAR_PATTERN);
   });
 
   test("clicking the example speaker speaks the bracket-stripped example sentence", async ({
@@ -229,9 +249,8 @@ test.describe("LearnPage grammar – speakers next to pattern and each example",
     await mockSpeechSynthesis(page);
     await page.reload();
 
-    const speakers = page.getByLabel("播放發音");
-    await expect(speakers).toHaveCount(2);
-    // Second speaker = the example
+    const speakers = page.getByLabel(SPEAK_LABEL_RE);
+    // Speaker index 0 = pattern; 1..N = examples
     await speakers.nth(1).click();
 
     const spoken = await readSpoken(page);
@@ -254,7 +273,7 @@ test.describe("LearnPage vocab – speaker next to Japanese word", () => {
     await page.getByRole("button", { name: "開始學習" }).click();
     await expect(page).toHaveURL(/\/learn\/test-vocab\/session$/);
 
-    await expect(page.getByLabel("播放發音")).toHaveCount(1);
+    await expect(page.getByLabel(SPEAK_LABEL_RE)).toHaveCount(1);
   });
 
   test("clicking it speaks the Japanese word", async ({ page }) => {
@@ -265,11 +284,44 @@ test.describe("LearnPage vocab – speaker next to Japanese word", () => {
     await page.getByText("學習模式（瀏覽全部卡片）").click();
     await page.getByRole("button", { name: "開始學習" }).click();
 
-    await page.getByLabel("播放發音").click();
+    await page.getByLabel(SPEAK_LABEL_RE).click();
 
     const spoken = await readSpoken(page);
     expect(spoken).toHaveLength(1);
     expect(spoken[0].lang).toBe("ja-JP");
-    expect(["勉強", "天気", "食べる"]).toContain(spoken[0].text);
+    expect(VOCAB_JAPANESE).toContain(spoken[0].text);
+  });
+});
+
+// ---------------------------------------------------------------------------
+
+test.describe("Back-face a11y – the inactive face is inert", () => {
+  test("before flip: back face has `inert`, front does not", async ({ page }) => {
+    await startGrammarSession(page, "chinese-to-grammar");
+
+    const frontInert = await page
+      .locator(".card-face:not(.card-back)")
+      .evaluate((el) => el.hasAttribute("inert"));
+    const backInert = await page
+      .locator(".card-face.card-back")
+      .evaluate((el) => el.hasAttribute("inert"));
+
+    expect(frontInert).toBe(false);
+    expect(backInert).toBe(true);
+  });
+
+  test("after flip: front face has `inert`, back does not", async ({ page }) => {
+    await startGrammarSession(page, "chinese-to-grammar");
+    await flipCard(page);
+
+    const frontInert = await page
+      .locator(".card-face:not(.card-back)")
+      .evaluate((el) => el.hasAttribute("inert"));
+    const backInert = await page
+      .locator(".card-face.card-back")
+      .evaluate((el) => el.hasAttribute("inert"));
+
+    expect(frontInert).toBe(true);
+    expect(backInert).toBe(false);
   });
 });

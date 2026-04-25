@@ -68,5 +68,5 @@ export function extractGrammarText(sentence: string): string {
  * suitable for speech synthesis.
  */
 export function stripGrammarBrackets(sentence: string): string {
-  return sentence.replace(/【/g, "").replace(/】/g, "");
+  return sentence.replace(/[【】]/g, "");
 }

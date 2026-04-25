@@ -89,7 +89,6 @@ describe("buildGrammarCard", () => {
     const card = buildGrammarCard(sampleGrammar, "example-to-chinese", 0);
     expect(card.front.primary).toContain("__GRAMMAR_HIGHLIGHT__");
     expect(card.front.primary).toContain("勉強している【うちに】眠くなった");
-    expect(card.front.pronunciation).toBe("勉強しているうちに眠くなった");
     expect(card.back.primary).toBe("讀書讀著讀著就睏了");
     expect(card.back.secondary).toBe("うちに：在～過程中／趁～");
   });
@@ -104,6 +103,8 @@ describe("buildGrammarCard", () => {
     const card = buildGrammarCard(sampleGrammar, "chinese-to-grammar");
     expect(card.front.primary).toBe("在～過程中／趁～");
     expect(card.back.primary).toBe("うちに");
+    // Back has a speaker so the user can hear the pattern they were asked to recall
+    expect(card.back.pronunciation).toBe("うちに");
   });
 
   it("should build fill-in-grammar card", () => {
@@ -111,9 +112,9 @@ describe("buildGrammarCard", () => {
     expect(card.front.primary).toContain("__GRAMMAR_BLANK__");
     expect(card.front.secondary).toBe("讀書讀著讀著就睏了");
     expect(card.back.primary).toBe("うちに");
-    // Back secondary should have brackets removed
+    // Back secondary should have brackets removed and be flagged as Japanese
     expect(card.back.secondary).toBe("勉強しているうちに眠くなった");
-    expect(card.back.secondaryPronunciation).toBe("勉強しているうちに眠くなった");
+    expect(card.back.secondaryIsJapanese).toBe(true);
   });
 
   it("should handle grammar with empty explanation", () => {
@@ -129,46 +130,34 @@ describe("buildGrammarCard", () => {
     expect(card.front.primary).toContain(grammar.japanese);
   });
 
-  it("grammar cards do not set back.pronunciation", () => {
-    const modes: Parameters<typeof buildGrammarCard>[1][] = [
-      "grammar-to-chinese",
-      "example-to-chinese",
-      "chinese-to-grammar",
-      "fill-in-grammar",
-    ];
-    for (const mode of modes) {
-      const card = buildGrammarCard(sampleGrammar, mode, 0);
-      expect(card.back.pronunciation).toBeUndefined();
-    }
-  });
-
-  describe("sentence pronunciation field", () => {
-    it("example-to-chinese sets front.pronunciation to bracket-stripped sentence", () => {
-      const card = buildGrammarCard(sampleGrammar, "example-to-chinese", 0);
-      expect(card.front.pronunciation).toBe("勉強しているうちに眠くなった");
-    });
-
-    it("fill-in-grammar sets back.secondaryPronunciation to bracket-stripped sentence", () => {
-      const card = buildGrammarCard(sampleGrammar, "fill-in-grammar", 0);
-      expect(card.back.secondaryPronunciation).toBe("勉強しているうちに眠くなった");
-    });
-
-    it("grammar-to-chinese has no sentence pronunciation", () => {
+  describe("speaker fields", () => {
+    it("grammar-to-chinese sets no speaker fields", () => {
       const card = buildGrammarCard(sampleGrammar, "grammar-to-chinese");
-      expect(card.front.pronunciation).toBeUndefined();
-      expect(card.back.secondaryPronunciation).toBeUndefined();
+      expect(card.back.pronunciation).toBeUndefined();
+      expect(card.back.secondaryIsJapanese).toBeFalsy();
     });
 
-    it("chinese-to-grammar has no sentence pronunciation", () => {
-      const card = buildGrammarCard(sampleGrammar, "chinese-to-grammar");
-      expect(card.front.pronunciation).toBeUndefined();
-      expect(card.back.secondaryPronunciation).toBeUndefined();
+    it("example-to-chinese back has no speaker (back is Chinese translation)", () => {
+      const card = buildGrammarCard(sampleGrammar, "example-to-chinese", 0);
+      expect(card.back.pronunciation).toBeUndefined();
+      expect(card.back.secondaryIsJapanese).toBeFalsy();
     });
 
-    it("example-to-chinese without examples does not set front.pronunciation", () => {
+    it("fill-in-grammar flags back.secondary as Japanese when an example is present", () => {
+      const card = buildGrammarCard(sampleGrammar, "fill-in-grammar", 0);
+      expect(card.back.secondaryIsJapanese).toBe(true);
+    });
+
+    it("fill-in-grammar without examples does not flag back.secondary", () => {
       const grammar: GrammarItem = { ...sampleGrammar, examples: [] };
-      const card = buildGrammarCard(grammar, "example-to-chinese");
-      expect(card.front.pronunciation).toBeUndefined();
+      const card = buildGrammarCard(grammar, "fill-in-grammar");
+      expect(card.back.secondary).toBeUndefined();
+      expect(card.back.secondaryIsJapanese).toBe(false);
+    });
+
+    it("chinese-to-grammar back.pronunciation matches the grammar pattern", () => {
+      const card = buildGrammarCard(sampleGrammar, "chinese-to-grammar");
+      expect(card.back.pronunciation).toBe(sampleGrammar.japanese);
     });
   });
 });

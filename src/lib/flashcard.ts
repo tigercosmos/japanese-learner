@@ -83,7 +83,6 @@ export function buildGrammarCard(
       return {
         front: {
           primary: example ? `__GRAMMAR_HIGHLIGHT__${example.sentence}` : item.japanese,
-          pronunciation: example ? stripGrammarBrackets(example.sentence) : undefined,
         },
         back: {
           primary: example?.chinese ?? item.simple_chinese,
@@ -97,6 +96,7 @@ export function buildGrammarCard(
         front: { primary: item.simple_chinese },
         back: {
           primary: item.japanese,
+          pronunciation: item.japanese,
           detail: item.full_explanation || undefined,
         },
       };
@@ -110,7 +110,7 @@ export function buildGrammarCard(
         back: {
           primary: item.japanese,
           secondary: example ? stripGrammarBrackets(example.sentence) : undefined,
-          secondaryPronunciation: example ? stripGrammarBrackets(example.sentence) : undefined,
+          secondaryIsJapanese: example !== undefined,
           detail: item.full_explanation || undefined,
         },
       };

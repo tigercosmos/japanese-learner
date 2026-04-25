@@ -109,8 +109,6 @@ export interface FlashcardContent {
   front: {
     primary: string;
     secondary?: string;
-    /** Japanese sentence to speak (button rendered alongside front primary) */
-    pronunciation?: string;
   };
   back: {
     primary: string;
@@ -118,8 +116,8 @@ export interface FlashcardContent {
     detail?: string;
     /** Japanese text to display and speak on the back face */
     pronunciation?: string;
-    /** Japanese sentence to speak alongside the back secondary text */
-    secondaryPronunciation?: string;
+    /** When true, render a speak button next to back.secondary (treats secondary as Japanese) */
+    secondaryIsJapanese?: boolean;
   };
 }
 

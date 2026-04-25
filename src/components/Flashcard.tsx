@@ -1,5 +1,6 @@
 import type { FlashcardContent, Rating } from "../types";
 import { RATING_CONFIG } from "../types";
+import { stripGrammarBrackets } from "../lib/grammar";
 import GrammarHighlight from "./GrammarHighlight";
 import SpeakButton from "./SpeakButton";
 
@@ -18,14 +19,25 @@ interface FlashcardProps {
   showSwipeAssist?: boolean;
 }
 
-function renderText(text: string) {
+/**
+ * Render the primary text of a face, returning the React node plus an optional
+ * speakable string when the text is a highlighted Japanese sentence.
+ */
+function renderPrimary(text: string): { node: React.ReactNode; speakable: string | null } {
   if (text.startsWith("__GRAMMAR_HIGHLIGHT__")) {
-    return <GrammarHighlight sentence={text.replace("__GRAMMAR_HIGHLIGHT__", "")} mode="highlight" />;
+    const sentence = text.replace("__GRAMMAR_HIGHLIGHT__", "");
+    return {
+      node: <GrammarHighlight sentence={sentence} mode="highlight" />,
+      speakable: stripGrammarBrackets(sentence),
+    };
   }
   if (text.startsWith("__GRAMMAR_BLANK__")) {
-    return <GrammarHighlight sentence={text.replace("__GRAMMAR_BLANK__", "")} mode="blank" />;
+    return {
+      node: <GrammarHighlight sentence={text.replace("__GRAMMAR_BLANK__", "")} mode="blank" />,
+      speakable: null,
+    };
   }
-  return text;
+  return { node: text, speakable: null };
 }
 
 const DIRECTION_COLORS: Record<Rating, string> = {
@@ -45,6 +57,9 @@ export default function Flashcard({ content, isFlipped, onFlip, swipe, showSwipe
   const { pronunciation } = content.back;
   // When primary IS the Japanese word (chinese-to-japanese), show speaker inline with primary
   const pronunciationIsPrimary = pronunciation !== undefined && pronunciation === content.back.primary;
+
+  const front = renderPrimary(content.front.primary);
+  const back = renderPrimary(content.back.primary);
 
   return (
     <div className="perspective w-full relative" style={{ minHeight: "280px" }}>
@@ -67,12 +82,16 @@ export default function Flashcard({ content, isFlipped, onFlip, swipe, showSwipe
         <div className={`card-flip absolute inset-0 ${isFlipped ? "flipped" : ""}`}>
 
           {/* Front */}
-          <div className="card-face absolute inset-0 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center p-8">
-            <div className="flex items-start justify-center gap-1.5">
-              <div className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center leading-relaxed">
-                {renderText(content.front.primary)}
+          <div
+            className="card-face absolute inset-0 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center p-8"
+            // `inert` removes the inactive face from tab order and a11y tree
+            inert={isFlipped}
+          >
+            <div className="flex items-center justify-center gap-1.5 max-w-full">
+              <div className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center leading-relaxed min-w-0">
+                {front.node}
               </div>
-              {content.front.pronunciation && <SpeakButton text={content.front.pronunciation} />}
+              {front.speakable && <SpeakButton text={front.speakable} label={front.speakable} />}
             </div>
             {content.front.secondary && (
               <div className="text-base text-gray-500 dark:text-gray-400 mt-3 text-center">
@@ -83,41 +102,48 @@ export default function Flashcard({ content, isFlipped, onFlip, swipe, showSwipe
           </div>
 
           {/* Back */}
-          <div className="card-face card-back absolute inset-0 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center p-8">
+          <div
+            className="card-face card-back absolute inset-0 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center p-8"
+            inert={!isFlipped}
+          >
 
             {/* Primary — if it IS the Japanese word, show speaker inline */}
             {pronunciationIsPrimary ? (
-              <div className="flex items-center justify-center gap-1.5">
-                <div className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center leading-relaxed">
-                  {renderText(content.back.primary)}
+              <div className="flex items-center justify-center gap-1.5 max-w-full">
+                <div className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center leading-relaxed min-w-0">
+                  {back.node}
                 </div>
-                <SpeakButton text={pronunciation} />
+                <SpeakButton text={pronunciation} label={pronunciation} />
               </div>
             ) : (
               <div className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center leading-relaxed">
-                {renderText(content.back.primary)}
+                {back.node}
               </div>
             )}
 
             {/* Pronunciation row — Japanese word + speaker (when primary is Chinese) */}
             {pronunciation && !pronunciationIsPrimary && (
-              <div className="flex items-center justify-center gap-1.5 mt-3">
-                <span className="text-2xl font-bold text-gray-900 dark:text-gray-50">
+              <div className="flex items-center justify-center gap-1.5 mt-3 max-w-full">
+                <span className="text-2xl font-bold text-gray-900 dark:text-gray-50 min-w-0">
                   {pronunciation}
                 </span>
-                <SpeakButton text={pronunciation} />
+                <SpeakButton text={pronunciation} label={pronunciation} />
               </div>
             )}
 
             {content.back.secondary && (
-              <div className="flex items-start justify-center gap-1.5 mt-3">
-                <div className="text-lg text-gray-600 dark:text-gray-300 text-center">
+              content.back.secondaryIsJapanese ? (
+                <div className="flex items-center justify-center gap-1.5 mt-3 max-w-full">
+                  <div className="text-lg text-gray-600 dark:text-gray-300 text-center min-w-0">
+                    {content.back.secondary}
+                  </div>
+                  <SpeakButton text={content.back.secondary} size="sm" label={content.back.secondary} />
+                </div>
+              ) : (
+                <div className="text-lg text-gray-600 dark:text-gray-300 mt-3 text-center">
                   {content.back.secondary}
                 </div>
-                {content.back.secondaryPronunciation && (
-                  <SpeakButton text={content.back.secondaryPronunciation} size="sm" />
-                )}
-              </div>
+              )
             )}
             {content.back.detail && (
               <div className="text-sm text-gray-400 dark:text-gray-500 mt-4 text-center max-w-sm leading-relaxed">
