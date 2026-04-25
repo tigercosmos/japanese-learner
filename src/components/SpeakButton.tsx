@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface SpeakButtonProps {
   text: string;
@@ -7,8 +7,46 @@ interface SpeakButtonProps {
   label?: string;
 }
 
+// Known female Japanese voices across platforms.
+// Apple: Kyoko. Windows: Haruka/Ayumi/Sayaka/Nanami/Aoi. Android: often labelled "ja-JP-female" or named female voices.
+const FEMALE_NAMES = /kyoko|haruka|ayumi|sayaka|nanami|aoi|mizuki|female/i;
+// Known male Japanese voices to avoid. "Google 日本語" is male on most Chrome installs.
+const MALE_NAMES = /otoya|ichiro|hattori|ken|keita|takumi|google|male/i;
+
+interface VoiceChoice {
+  voice: SpeechSynthesisVoice | undefined;
+  /** True when we fell back to a non-female voice; consumer should pitch-shift to feminize. */
+  needsPitchBoost: boolean;
+}
+
+function pickFemaleJapaneseVoice(): VoiceChoice {
+  const japaneseVoices = window.speechSynthesis
+    .getVoices()
+    .filter((v) => v.lang.toLowerCase().startsWith("ja"));
+  if (japaneseVoices.length === 0) return { voice: undefined, needsPitchBoost: false };
+  const female = japaneseVoices.find((v) => FEMALE_NAMES.test(v.name));
+  if (female) return { voice: female, needsPitchBoost: false };
+  const nonMale = japaneseVoices.find((v) => !MALE_NAMES.test(v.name));
+  if (nonMale) return { voice: nonMale, needsPitchBoost: false };
+  // Only male voices available — pitch-shift to feminize.
+  return { voice: japaneseVoices[0], needsPitchBoost: true };
+}
+
 export default function SpeakButton({ text, size = "md", label }: SpeakButtonProps) {
   const [speaking, setSpeaking] = useState(false);
+  const choiceRef = useRef<VoiceChoice>({ voice: undefined, needsPitchBoost: false });
+
+  useEffect(() => {
+    if (!window.speechSynthesis) return;
+    const update = () => {
+      choiceRef.current = pickFemaleJapaneseVoice();
+    };
+    update();
+    window.speechSynthesis.addEventListener?.("voiceschanged", update);
+    return () => {
+      window.speechSynthesis.removeEventListener?.("voiceschanged", update);
+    };
+  }, []);
 
   const handleSpeak = (e: React.MouseEvent) => {
     e.stopPropagation(); // prevent card flip
@@ -18,10 +56,10 @@ export default function SpeakButton({ text, size = "md", label }: SpeakButtonPro
     utterance.lang = "ja-JP";
     // Explicitly pick a Japanese voice so iOS doesn't fall back to the
     // system-language voice (e.g. Chinese) when lang alone is insufficient.
-    const japaneseVoice = window.speechSynthesis
-      .getVoices()
-      .find((v) => v.lang.startsWith("ja"));
-    if (japaneseVoice) utterance.voice = japaneseVoice;
+    // Prefer a female voice; voices may load async, so re-check on click as a fallback.
+    const choice = choiceRef.current.voice ? choiceRef.current : pickFemaleJapaneseVoice();
+    if (choice.voice) utterance.voice = choice.voice;
+    if (choice.needsPitchBoost) utterance.pitch = 1.5;
     utterance.onstart = () => setSpeaking(true);
     utterance.onend = () => setSpeaking(false);
     utterance.onerror = () => setSpeaking(false);
