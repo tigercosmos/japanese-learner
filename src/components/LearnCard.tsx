@@ -1,6 +1,8 @@
 import type { VocabItem, GrammarItem, DataItem, Category } from "../types";
 import { isVocabItem } from "../types";
+import { stripGrammarBrackets } from "../lib/grammar";
 import GrammarHighlight from "./GrammarHighlight";
+import SpeakButton from "./SpeakButton";
 
 interface LearnCardProps {
   item: DataItem;
@@ -12,7 +14,10 @@ function VocabLearnCard({ item }: { item: VocabItem }) {
     <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm p-6 space-y-4">
       {/* Japanese */}
       <div className="text-center">
-        <div className="text-4xl font-bold text-gray-900 dark:text-gray-50">{item.japanese}</div>
+        <div className="flex items-center justify-center gap-1.5">
+          <div className="text-4xl font-bold text-gray-900 dark:text-gray-50">{item.japanese}</div>
+          <SpeakButton text={item.japanese} />
+        </div>
         <div className="text-lg text-gray-500 dark:text-gray-400 mt-1">{item.hiragana}</div>
       </div>
 
@@ -39,7 +44,10 @@ function GrammarLearnCard({ item }: { item: GrammarItem }) {
     <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm p-6 space-y-4">
       {/* Grammar pattern */}
       <div className="text-center">
-        <div className="text-3xl font-bold text-gray-900 dark:text-gray-50">{item.japanese}</div>
+        <div className="flex items-center justify-center gap-1.5">
+          <div className="text-3xl font-bold text-gray-900 dark:text-gray-50">{item.japanese}</div>
+          <SpeakButton text={item.japanese} />
+        </div>
       </div>
 
       <div className="border-t border-gray-100 dark:border-gray-700" />
@@ -65,8 +73,11 @@ function GrammarLearnCard({ item }: { item: GrammarItem }) {
             <div className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider">例句</div>
             {item.examples.map((ex, i) => (
               <div key={i} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
-                <div className="text-base text-gray-900 dark:text-gray-50 leading-relaxed">
-                  <GrammarHighlight sentence={ex.sentence} mode="highlight" />
+                <div className="flex items-start gap-1.5">
+                  <div className="text-base text-gray-900 dark:text-gray-50 leading-relaxed flex-1">
+                    <GrammarHighlight sentence={ex.sentence} mode="highlight" />
+                  </div>
+                  <SpeakButton text={stripGrammarBrackets(ex.sentence)} size="sm" />
                 </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">{ex.chinese}</div>
               </div>

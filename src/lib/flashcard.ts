@@ -5,6 +5,7 @@ import type {
   GrammarTestMode,
   FlashcardContent,
 } from "../types";
+import { stripGrammarBrackets } from "./grammar";
 
 /**
  * Build flashcard content for a vocabulary item based on the test mode.
@@ -82,6 +83,7 @@ export function buildGrammarCard(
       return {
         front: {
           primary: example ? `__GRAMMAR_HIGHLIGHT__${example.sentence}` : item.japanese,
+          pronunciation: example ? stripGrammarBrackets(example.sentence) : undefined,
         },
         back: {
           primary: example?.chinese ?? item.simple_chinese,
@@ -107,7 +109,8 @@ export function buildGrammarCard(
         },
         back: {
           primary: item.japanese,
-          secondary: example?.sentence.replace(/【/g, "").replace(/】/g, ""),
+          secondary: example ? stripGrammarBrackets(example.sentence) : undefined,
+          secondaryPronunciation: example ? stripGrammarBrackets(example.sentence) : undefined,
           detail: item.full_explanation || undefined,
         },
       };

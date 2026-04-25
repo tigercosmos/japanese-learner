@@ -89,6 +89,7 @@ describe("buildGrammarCard", () => {
     const card = buildGrammarCard(sampleGrammar, "example-to-chinese", 0);
     expect(card.front.primary).toContain("__GRAMMAR_HIGHLIGHT__");
     expect(card.front.primary).toContain("勉強している【うちに】眠くなった");
+    expect(card.front.pronunciation).toBe("勉強しているうちに眠くなった");
     expect(card.back.primary).toBe("讀書讀著讀著就睏了");
     expect(card.back.secondary).toBe("うちに：在～過程中／趁～");
   });
@@ -112,6 +113,7 @@ describe("buildGrammarCard", () => {
     expect(card.back.primary).toBe("うちに");
     // Back secondary should have brackets removed
     expect(card.back.secondary).toBe("勉強しているうちに眠くなった");
+    expect(card.back.secondaryPronunciation).toBe("勉強しているうちに眠くなった");
   });
 
   it("should handle grammar with empty explanation", () => {
@@ -127,7 +129,7 @@ describe("buildGrammarCard", () => {
     expect(card.front.primary).toContain(grammar.japanese);
   });
 
-  it("grammar cards do not set pronunciation", () => {
+  it("grammar cards do not set back.pronunciation", () => {
     const modes: Parameters<typeof buildGrammarCard>[1][] = [
       "grammar-to-chinese",
       "example-to-chinese",
@@ -138,5 +140,35 @@ describe("buildGrammarCard", () => {
       const card = buildGrammarCard(sampleGrammar, mode, 0);
       expect(card.back.pronunciation).toBeUndefined();
     }
+  });
+
+  describe("sentence pronunciation field", () => {
+    it("example-to-chinese sets front.pronunciation to bracket-stripped sentence", () => {
+      const card = buildGrammarCard(sampleGrammar, "example-to-chinese", 0);
+      expect(card.front.pronunciation).toBe("勉強しているうちに眠くなった");
+    });
+
+    it("fill-in-grammar sets back.secondaryPronunciation to bracket-stripped sentence", () => {
+      const card = buildGrammarCard(sampleGrammar, "fill-in-grammar", 0);
+      expect(card.back.secondaryPronunciation).toBe("勉強しているうちに眠くなった");
+    });
+
+    it("grammar-to-chinese has no sentence pronunciation", () => {
+      const card = buildGrammarCard(sampleGrammar, "grammar-to-chinese");
+      expect(card.front.pronunciation).toBeUndefined();
+      expect(card.back.secondaryPronunciation).toBeUndefined();
+    });
+
+    it("chinese-to-grammar has no sentence pronunciation", () => {
+      const card = buildGrammarCard(sampleGrammar, "chinese-to-grammar");
+      expect(card.front.pronunciation).toBeUndefined();
+      expect(card.back.secondaryPronunciation).toBeUndefined();
+    });
+
+    it("example-to-chinese without examples does not set front.pronunciation", () => {
+      const grammar: GrammarItem = { ...sampleGrammar, examples: [] };
+      const card = buildGrammarCard(grammar, "example-to-chinese");
+      expect(card.front.pronunciation).toBeUndefined();
+    });
   });
 });
