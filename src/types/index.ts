@@ -116,6 +116,8 @@ export interface FlashcardContent {
     detail?: string;
     /** Japanese text to display and speak on the back face */
     pronunciation?: string;
+    /** When true, render a speak button next to back.secondary (treats secondary as Japanese) */
+    secondaryIsJapanese?: boolean;
   };
 }
 

@@ -62,3 +62,11 @@ export function extractGrammarText(sentence: string): string {
     .map((p) => p.text)
     .join("");
 }
+
+/**
+ * Remove the 【】 brackets from a sentence, returning a plain Japanese sentence
+ * suitable for speech synthesis.
+ */
+export function stripGrammarBrackets(sentence: string): string {
+  return sentence.replace(/[【】]/g, "");
+}

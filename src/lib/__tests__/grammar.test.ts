@@ -109,3 +109,4 @@ describe("extractGrammarText", () => {
     expect(extractGrammarText("これは普通の文です")).toBe("");
   });
 });
+
