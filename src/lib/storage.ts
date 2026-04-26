@@ -27,11 +27,13 @@ export function saveProgress(progress: ProgressStore): void {
 export interface AppSettings {
   defaultSessionSize: number;
   showSwipeAssist: boolean;
+  showFurigana: boolean;
 }
 
 const DEFAULT_SETTINGS: AppSettings = {
   defaultSessionSize: 20,
   showSwipeAssist: true,
+  showFurigana: false,
 };
 
 export function loadSettings(): AppSettings {

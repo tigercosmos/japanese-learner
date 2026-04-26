@@ -31,6 +31,7 @@ japanese-learner/
 │   │   ├── ModeSelector.tsx        # Test mode picker (supports grouped modes for mix)
 │   │   ├── FilterBar.tsx           # Category/level filter
 │   │   ├── GrammarHighlight.tsx    # Render bracket-marked grammar
+│   │   ├── Furigana.tsx            # Hiragana ruby above kanji (gated by showFurigana setting)
 │   │   ├── LearnCard.tsx           # Full-content card for learning mode
 │   │   ├── ItemForm.tsx            # Form for vocab/grammar items (with type selector for mix)
 │   │   ├── ConfirmDialog.tsx       # Delete confirmation modal
@@ -45,7 +46,7 @@ japanese-learner/
 │   │   ├── DatasetCreatePage.tsx   # Create new dataset
 │   │   ├── DatasetEditPage.tsx     # List/manage items in a dataset
 │   │   ├── ItemEditPage.tsx        # Add or edit a single item
-│   │   ├── SettingsPage.tsx        # Dark mode, swipe assist toggles
+│   │   ├── SettingsPage.tsx        # Dark mode, swipe assist, furigana toggles
 │   │   └── AboutPage.tsx           # About page
 │   ├── hooks/
 │   │   ├── useDatasets.ts          # Load and merge JSON + custom datasets
@@ -63,6 +64,7 @@ japanese-learner/
 │   │   ├── shuffle.ts              # Fisher-Yates shuffle
 │   │   ├── grammar.ts              # Parse bracket markers in sentences
 │   │   ├── flashcard.ts            # Build front/back card content per mode
+│   │   ├── furigana.ts             # Lazy kuroshiro/kuromoji loader + ruby HTML conversion
 │   │   ├── storage.ts              # localStorage helpers (progress, settings, custom data, sync)
 │   │   ├── stats.ts                # Dataset statistics computation
 │   │   ├── category.ts             # Shared category labels and colors
@@ -147,7 +149,7 @@ Item type detection for mix datasets uses `isVocabItem(item)` which checks `"hir
       "full_explanation": "表示在某狀態持續期間做某事...",
       "examples": [
         {
-          "sentence": "勉強している【うちに】眠くなった",
+          "sentence": "{勉強|べんきょう}している【うちに】{眠|ねむ}くなった",
           "chinese": "讀書讀著讀著就睏了"
         }
       ]
@@ -155,6 +157,20 @@ Item type detection for mix datasets uses `isVocabItem(item)` which checks `"hir
   ]
 }
 ```
+
+#### Sentence syntax
+
+Two annotation forms are supported inside `examples[].sentence`:
+
+- `【...】` — wraps the **grammar pattern** for highlight / fill-in rendering.
+- `{kanji|reading}` — supplies a **manual hiragana reading** for the kanji
+  word, used as a furigana ruby annotation when the user enables the toggle.
+  This overrides the kuroshiro auto-reader, which fixes context-sensitive
+  cases that a static dictionary gets wrong (e.g. 「方」 = かた vs ほう).
+  Words without `{|}` annotations fall back to kuroshiro at render time.
+
+The two forms can interleave or nest; e.g.
+`{私|わたし}【は】{学生|がくせい}【です】。`
 
 ### 2.4 Mix Dataset
 
@@ -374,7 +390,7 @@ Key prefix: `jp-learner:`
 
 ```
 jp-learner:progress         → { [cardId: string]: CardProgress }
-jp-learner:settings         → { defaultSessionSize: number, showSwipeAssist: boolean }
+jp-learner:settings         → { defaultSessionSize: number, showSwipeAssist: boolean, showFurigana: boolean }
 jp-learner:custom-data      → { datasets: { [datasetId: string]: Dataset } }
 jp-learner:test-modes:*     → saved test mode selections per category
 jp-learner:study-plan:*     → daily learning plans per dataset
@@ -412,6 +428,7 @@ jp-learner:study-plan:*     → daily learning plans per dataset
 |---------|-----|---------|-------------|
 | 深色模式 | CSS class toggle | system | Toggle dark/light theme |
 | 滑動提示 | `showSwipeAssist` | `true` | Show color overlay + label text on card during swipe gestures |
+| 日文標假名 | `showFurigana` | `false` | Render hiragana ruby above kanji in Japanese sentences (kuroshiro + kuromoji, lazy-loaded) |
 
 ---
 

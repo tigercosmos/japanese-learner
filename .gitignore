@@ -15,6 +15,9 @@ dist-ssr
 # Test fixture data copied into data/ during e2e runs
 data/test-*.json
 
+# Kuromoji dictionary copied from node_modules by scripts/copy-dict.cjs
+public/dict/
+
 # Playwright
 /test-results/
 /playwright-report/

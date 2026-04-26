@@ -13,7 +13,8 @@ A flashcard web app for learning Japanese vocabulary and grammar, built for Trad
 - **Dataset Management** - Create, edit, and delete custom datasets and items; modify built-in datasets with reset-to-default option
 - **Swipe Gestures** - Swipe left (don't know), down (hard), right (got it) as an alternative to tapping rating buttons; optional color overlay + text assist (toggleable in settings)
 - **Keyboard Shortcuts** - Navigate and rate cards with keyboard for efficient desktop use
-- **Settings Page** - Configure dark mode and swipe assist (color overlay + hint text during swipe)
+- **Settings Page** - Configure dark mode, swipe assist, and furigana display
+- **Furigana (假名標註)** - Optional hiragana ruby above kanji in example sentences (toggle in Settings). Datasets may carry hand-curated readings inline as `{漢字|かんじ}`; for unannotated kanji it falls back to kuroshiro + kuromoji, lazy-loaded on first use
 - **Grammar Highlighting** - Bracket notation (e.g., `【grammar】`) renders grammar parts with colored highlights or blanks for fill-in mode
 - **Dataset Filtering** - Filter datasets by category (vocabulary/grammar/mix) and JLPT level
 - **Progress Statistics** - Track learned, due, and mastered cards per dataset with visual progress bars
@@ -47,6 +48,10 @@ git clone https://github.com/tigercosmos/japanese-learner.git
 cd japanese-learner
 npm install
 ```
+
+`npm install` runs `scripts/copy-dict.cjs` to copy the kuromoji dictionary
+files into `public/dict/` (used by the furigana feature). The dictionary is
+not committed; if `public/dict/` ever goes missing, run `node scripts/copy-dict.cjs`.
 
 ### Development
 

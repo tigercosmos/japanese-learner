@@ -1,6 +1,6 @@
 import type { FlashcardContent, Rating } from "../types";
 import { RATING_CONFIG } from "../types";
-import { stripGrammarBrackets } from "../lib/grammar";
+import { toSpeechText } from "../lib/grammar";
 import GrammarHighlight from "./GrammarHighlight";
 import SpeakButton from "./SpeakButton";
 
@@ -28,7 +28,7 @@ function renderPrimary(text: string): { node: React.ReactNode; speakable: string
     const sentence = text.replace("__GRAMMAR_HIGHLIGHT__", "");
     return {
       node: <GrammarHighlight sentence={sentence} mode="highlight" />,
-      speakable: stripGrammarBrackets(sentence),
+      speakable: toSpeechText(sentence),
     };
   }
   if (text.startsWith("__GRAMMAR_BLANK__")) {
@@ -135,9 +135,13 @@ export default function Flashcard({ content, isFlipped, onFlip, swipe, showSwipe
               content.back.secondaryIsJapanese ? (
                 <div className="flex items-center justify-center gap-1.5 mt-3 max-w-full">
                   <div className="text-lg text-gray-600 dark:text-gray-300 text-center min-w-0">
-                    {content.back.secondary}
+                    <GrammarHighlight sentence={content.back.secondary} mode="highlight" />
                   </div>
-                  <SpeakButton text={content.back.secondary} size="sm" label={content.back.secondary} />
+                  <SpeakButton
+                    text={toSpeechText(content.back.secondary)}
+                    size="sm"
+                    label={toSpeechText(content.back.secondary)}
+                  />
                 </div>
               ) : (
                 <div className="text-lg text-gray-600 dark:text-gray-300 mt-3 text-center">

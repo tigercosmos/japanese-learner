@@ -26,6 +26,18 @@
           "chinese": "從東京到大阪搭新幹線"
         }
       ]
+    },
+    {
+      "id": "test-grammar-003",
+      "japanese": "あの方は",
+      "simple_chinese": "那位是～（敬語）",
+      "full_explanation": "敬語表達，「方」此處讀作「かた」表示對人的尊稱。",
+      "examples": [
+        {
+          "sentence": "あの{方|かた}【は】{先生|せんせい}です。",
+          "chinese": "那位是老師。"
+        }
+      ]
     }
   ]
 }

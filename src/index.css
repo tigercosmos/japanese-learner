@@ -62,3 +62,13 @@ body {
   -webkit-user-select: none;
   user-select: none;
 }
+
+/* Furigana ruby annotations: keep the kana legible above kanji */
+ruby > rt {
+  font-size: 0.55em;
+  font-weight: 400;
+  color: rgb(107 114 128); /* gray-500 */
+}
+.dark ruby > rt {
+  color: rgb(156 163 175); /* gray-400 */
+}

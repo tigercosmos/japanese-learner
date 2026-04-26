@@ -59,6 +59,17 @@ export default function SettingsPage() {
           />
         </div>
 
+        <div className="flex items-center justify-between py-4 px-4 bg-white dark:bg-gray-800 border border-t-0 border-gray-200 dark:border-gray-700">
+          <div>
+            <div className="font-medium text-gray-900 dark:text-gray-50">日文標假名</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">在例句的漢字上方標註假名（首次啟用會下載辭典）</div>
+          </div>
+          <ToggleSwitch
+            checked={settings.showFurigana}
+            onChange={() => updateSettings({ showFurigana: !settings.showFurigana })}
+          />
+        </div>
+
         <button
           onClick={() => navigate("/about")}
           className="flex items-center justify-between w-full py-4 px-4 bg-white dark:bg-gray-800 rounded-b-xl border border-t-0 border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-left"

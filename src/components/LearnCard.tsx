@@ -1,6 +1,6 @@
 import type { VocabItem, GrammarItem, DataItem, Category } from "../types";
 import { isVocabItem } from "../types";
-import { stripGrammarBrackets } from "../lib/grammar";
+import { toSpeechText } from "../lib/grammar";
 import GrammarHighlight from "./GrammarHighlight";
 import SpeakButton from "./SpeakButton";
 
@@ -72,7 +72,7 @@ function GrammarLearnCard({ item }: { item: GrammarItem }) {
           <div className="space-y-3">
             <div className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider">例句</div>
             {item.examples.map((ex, i) => {
-              const speakable = stripGrammarBrackets(ex.sentence);
+              const speakable = toSpeechText(ex.sentence);
               return (
                 <div key={i} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
                   <div className="flex items-center gap-1.5">

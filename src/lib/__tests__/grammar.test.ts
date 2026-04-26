@@ -1,9 +1,12 @@
 import { describe, it, expect } from "vitest";
 import {
   parseGrammarSentence,
+  parseChunks,
   getHighlightedParts,
   getBlankParts,
   extractGrammarText,
+  stripGrammarBrackets,
+  toSpeechText,
 } from "../grammar";
 
 describe("parseGrammarSentence", () => {
@@ -94,6 +97,47 @@ describe("getBlankParts", () => {
       { text: "雨が降るでしょう", isGrammar: false },
     ]);
   });
+
+  it("emits exactly one blank per 【】 even when furigana fragments the inside", () => {
+    // 【{読んで|よんで}ください】 splits into two grammar parts in the parser
+    // (because of the inner furigana). The fill-in quiz must still show ONE
+    // blank for the whole bracket, not two.
+    const result = getBlankParts("本を【{読んで|よんで}ください】");
+    expect(result).toEqual([
+      { text: "本を", isGrammar: false },
+      { text: "____", isGrammar: true },
+    ]);
+  });
+
+  it("collapses runs across multiple inner annotations", () => {
+    const result = getBlankParts("A【{X|x}{Y|y}Z】B");
+    expect(result).toEqual([
+      { text: "A", isGrammar: false },
+      { text: "____", isGrammar: true },
+      { text: "B", isGrammar: false },
+    ]);
+  });
+
+  it("emits TWO blanks for adjacent 【X】【Y】 with no separator", () => {
+    // Regression: previous collapse-by-isGrammar logic merged adjacent
+    // brackets into a single blank. The chunk-based parser must keep them
+    // distinct so the fill-in quiz shows one blank per bracket.
+    const result = getBlankParts("A【X】【Y】B");
+    expect(result).toEqual([
+      { text: "A", isGrammar: false },
+      { text: "____", isGrammar: true },
+      { text: "____", isGrammar: true },
+      { text: "B", isGrammar: false },
+    ]);
+  });
+
+  it("handles two adjacent annotated brackets", () => {
+    const result = getBlankParts("【{知って|しって}いる】【かもしれない】");
+    expect(result).toEqual([
+      { text: "____", isGrammar: true },
+      { text: "____", isGrammar: true },
+    ]);
+  });
 });
 
 describe("extractGrammarText", () => {
@@ -107,6 +151,139 @@ describe("extractGrammarText", () => {
 
   it("should return empty string for no brackets", () => {
     expect(extractGrammarText("これは普通の文です")).toBe("");
+  });
+});
+
+describe("parseGrammarSentence — manual furigana annotations", () => {
+  it("attaches reading to a single {kanji|reading} segment", () => {
+    expect(parseGrammarSentence("{私|わたし}は学生です")).toEqual([
+      { text: "私", reading: "わたし", isGrammar: false },
+      { text: "は学生です", isGrammar: false },
+    ]);
+  });
+
+  it("annotates multiple words and preserves the rest", () => {
+    expect(parseGrammarSentence("{私|わたし}は{学生|がくせい}です")).toEqual([
+      { text: "私", reading: "わたし", isGrammar: false },
+      { text: "は", isGrammar: false },
+      { text: "学生", reading: "がくせい", isGrammar: false },
+      { text: "です", isGrammar: false },
+    ]);
+  });
+
+  it("interleaves furigana and grammar 【】 markers", () => {
+    expect(parseGrammarSentence("{私|わたし}【は】{学生|がくせい}【です】。")).toEqual([
+      { text: "私", reading: "わたし", isGrammar: false },
+      { text: "は", isGrammar: true },
+      { text: "学生", reading: "がくせい", isGrammar: false },
+      { text: "です", isGrammar: true },
+      { text: "。", isGrammar: false },
+    ]);
+  });
+
+  it("supports furigana inside a grammar bracket", () => {
+    expect(parseGrammarSentence("【{知って|しって}いる】")).toEqual([
+      { text: "知って", reading: "しって", isGrammar: true },
+      { text: "いる", isGrammar: true },
+    ]);
+  });
+
+  it("supports word-level annotations including okurigana", () => {
+    expect(parseGrammarSentence("{食べる|たべる}のが好き")).toEqual([
+      { text: "食べる", reading: "たべる", isGrammar: false },
+      { text: "のが好き", isGrammar: false },
+    ]);
+  });
+
+  it("ignores unmatched braces", () => {
+    expect(parseGrammarSentence("{not a furigana}")).toEqual([
+      { text: "{not a furigana}", isGrammar: false },
+    ]);
+  });
+});
+
+describe("stripGrammarBrackets", () => {
+  it("removes 【】 but keeps {kanji|reading} intact for downstream rendering", () => {
+    expect(stripGrammarBrackets("{私|わたし}【は】{学生|がくせい}【です】。"))
+      .toBe("{私|わたし}は{学生|がくせい}です。");
+  });
+
+  it("returns text unchanged when there are no brackets", () => {
+    expect(stripGrammarBrackets("普通の文")).toBe("普通の文");
+  });
+});
+
+describe("parseChunks", () => {
+  it("returns empty array for empty input", () => {
+    expect(parseChunks("")).toEqual([]);
+  });
+
+  it("returns a single non-grammar chunk for plain text", () => {
+    expect(parseChunks("普通の文")).toEqual([
+      { isGrammar: false, parts: [{ text: "普通の文", isGrammar: false }] },
+    ]);
+  });
+
+  it("emits separate grammar chunks for adjacent 【X】【Y】", () => {
+    expect(parseChunks("A【X】【Y】B")).toEqual([
+      { isGrammar: false, parts: [{ text: "A", isGrammar: false }] },
+      { isGrammar: true, parts: [{ text: "X", isGrammar: true }] },
+      { isGrammar: true, parts: [{ text: "Y", isGrammar: true }] },
+      { isGrammar: false, parts: [{ text: "B", isGrammar: false }] },
+    ]);
+  });
+
+  it("handles brackets at start and end with non-grammar in between", () => {
+    expect(parseChunks("【X】mid【Y】")).toEqual([
+      { isGrammar: true, parts: [{ text: "X", isGrammar: true }] },
+      { isGrammar: false, parts: [{ text: "mid", isGrammar: false }] },
+      { isGrammar: true, parts: [{ text: "Y", isGrammar: true }] },
+    ]);
+  });
+
+  it("preserves inner furigana annotations as multiple parts within one chunk", () => {
+    expect(parseChunks("【{知って|しって}いる】")).toEqual([
+      {
+        isGrammar: true,
+        parts: [
+          { text: "知って", reading: "しって", isGrammar: true },
+          { text: "いる", isGrammar: true },
+        ],
+      },
+    ]);
+  });
+
+  it("emits a chunk for an empty 【】 bracket", () => {
+    expect(parseChunks("【】")).toEqual([
+      { isGrammar: true, parts: [] },
+    ]);
+  });
+
+  it("preserves furigana annotations in non-grammar text", () => {
+    expect(parseChunks("{私|わたし}は学生")).toEqual([
+      {
+        isGrammar: false,
+        parts: [
+          { text: "私", reading: "わたし", isGrammar: false },
+          { text: "は学生", isGrammar: false },
+        ],
+      },
+    ]);
+  });
+});
+
+describe("toSpeechText", () => {
+  it("strips both 【】 and collapses {kanji|reading} to the kanji", () => {
+    expect(toSpeechText("{私|わたし}【は】{学生|がくせい}【です】。"))
+      .toBe("私は学生です。");
+  });
+
+  it("preserves a sentence with neither annotation type", () => {
+    expect(toSpeechText("これは普通の文です。")).toBe("これは普通の文です。");
+  });
+
+  it("handles okurigana in the kanji portion", () => {
+    expect(toSpeechText("{食べる|たべる}のが好き")).toBe("食べるのが好き");
   });
 });
 
