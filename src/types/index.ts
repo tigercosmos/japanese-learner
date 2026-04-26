@@ -162,6 +162,14 @@ export interface StudyPlan {
   createdAt: string;     // ISO date
 }
 
+export interface LearnPosition {
+  datasetId: string;
+  planType: "all" | "daily";
+  dayIndex: number;      // 0 for "all" mode
+  cardIndex: number;
+  updatedAt: string;     // ISO date
+}
+
 // ========== Custom Data Store ==========
 
 export interface CustomDataStore {

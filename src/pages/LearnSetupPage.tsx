@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDatasetById } from "../hooks/useDatasets";
 import { useStudyPlan } from "../hooks/useStudyPlan";
+import { clearLearnPosition, loadLearnPosition } from "../lib/storage";
 
 const DAY_OPTIONS = [5, 10, 20, 30, 40, 50, 60];
 
@@ -14,6 +15,8 @@ export default function LearnSetupPage() {
   const [showFreshSetup, setShowFreshSetup] = useState(false);
   const [planTypeChoice, setPlanTypeChoice] = useState<"all" | "daily">("all");
   const [selectedDays, setSelectedDays] = useState(5);
+
+  const savedPosition = loadLearnPosition(datasetId ?? "");
 
   if (!dataset) {
     return (
@@ -28,17 +31,28 @@ export default function LearnSetupPage() {
 
   const cardsPerDay = selectedDays > 0 ? Math.ceil(totalCards / selectedDays) : totalCards;
 
-  // Show resume view if plan exists and user hasn't clicked "重新計畫"
-  const showResume = !!plan && !showFreshSetup;
+  // Resume mode: prefer daily plan; otherwise resume an in-progress "all" session.
+  const resumeMode: "daily" | "all" | null = plan
+    ? "daily"
+    : savedPosition && savedPosition.planType === "all" && savedPosition.cardIndex > 0
+      ? "all"
+      : null;
+  const showResume = !!resumeMode && !showFreshSetup;
 
   const handleStart = () => {
     if (showResume) {
-      // Resume existing plan from day 0
+      // Resume — LearnPage will restore the saved position
       navigate(`/learn/${datasetId}/session`, {
-        state: { planType: "daily", dayIndex: 0 },
+        state:
+          resumeMode === "daily"
+            ? { planType: "daily", dayIndex: 0 }
+            : { planType: "all" },
       });
       return;
     }
+
+    // Fresh setup discards any prior position so the user starts at the first card
+    clearLearnPosition(datasetId ?? "");
 
     if (planTypeChoice === "all") {
       createPlan(allCardIds, 0); // clears any existing plan
@@ -55,6 +69,7 @@ export default function LearnSetupPage() {
 
   const handleReplan = () => {
     clearPlan();
+    clearLearnPosition(datasetId ?? "");
     setShowFreshSetup(true);
     setPlanTypeChoice("all");
   };
@@ -70,15 +85,19 @@ export default function LearnSetupPage() {
       </div>
 
       {showResume ? (
-        /* Existing plan — show resume option */
+        /* Existing plan or in-progress session — show resume option */
         <div>
           <div className="bg-blue-50 dark:bg-blue-900/30 border-2 border-blue-200 dark:border-blue-800 rounded-xl p-5 mb-4">
             <div className="flex items-center gap-3 mb-2">
               <span className="text-2xl">📅</span>
               <div>
-                <div className="font-semibold text-blue-900 dark:text-blue-200">已有學習計畫</div>
+                <div className="font-semibold text-blue-900 dark:text-blue-200">
+                  {resumeMode === "daily" ? "已有學習計畫" : "上次學到一半"}
+                </div>
                 <div className="text-sm text-blue-700 dark:text-blue-300 mt-0.5">
-                  共 {plan!.totalDays} 天 · 每天約 {Math.ceil(totalCards / plan!.totalDays)} 張
+                  {resumeMode === "daily"
+                    ? `共 ${plan!.totalDays} 天 · 每天約 ${Math.ceil(totalCards / plan!.totalDays)} 張`
+                    : `已看到第 ${Math.min((savedPosition?.cardIndex ?? 0) + 1, totalCards)} / ${totalCards} 張`}
                 </div>
               </div>
             </div>
@@ -88,14 +107,14 @@ export default function LearnSetupPage() {
             onClick={handleStart}
             className="w-full py-4 rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-lg font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors tap-active mb-3"
           >
-            繼續計畫
+            {resumeMode === "daily" ? "繼續計畫" : "繼續學習"}
           </button>
 
           <button
             onClick={handleReplan}
             className="w-full py-3 rounded-xl border-2 border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors tap-active"
           >
-            重新計畫
+            {resumeMode === "daily" ? "重新計畫" : "重新開始"}
           </button>
         </div>
       ) : (

@@ -8,6 +8,9 @@ import {
   parseProgressKey,
   loadTestModes,
   saveTestModes,
+  loadLearnPosition,
+  saveLearnPosition,
+  clearLearnPosition,
 } from "../storage";
 import type { ProgressStore } from "../../types";
 
@@ -171,5 +174,82 @@ describe("storage - test modes", () => {
     // Simulate old format stored by saveTestMode
     localStorage.setItem("jp-learner:test-mode", JSON.stringify({ vocabulary: "random" }));
     expect(loadTestModes("vocabulary")).toBe("random");
+  });
+});
+
+describe("storage - learn position", () => {
+  beforeEach(() => {
+    localStorage.clear();
+  });
+
+  it("returns null when no position stored", () => {
+    expect(loadLearnPosition("ds-1")).toBeNull();
+  });
+
+  it("saves and loads a position", () => {
+    saveLearnPosition({
+      datasetId: "ds-1",
+      planType: "daily",
+      dayIndex: 2,
+      cardIndex: 7,
+      updatedAt: "2026-04-26T12:00:00.000Z",
+    });
+    expect(loadLearnPosition("ds-1")).toEqual({
+      datasetId: "ds-1",
+      planType: "daily",
+      dayIndex: 2,
+      cardIndex: 7,
+      updatedAt: "2026-04-26T12:00:00.000Z",
+    });
+  });
+
+  it("scopes positions per dataset", () => {
+    saveLearnPosition({ datasetId: "ds-1", planType: "all", dayIndex: 0, cardIndex: 5, updatedAt: "x" });
+    saveLearnPosition({ datasetId: "ds-2", planType: "daily", dayIndex: 1, cardIndex: 2, updatedAt: "y" });
+    expect(loadLearnPosition("ds-1")?.cardIndex).toBe(5);
+    expect(loadLearnPosition("ds-2")?.cardIndex).toBe(2);
+  });
+
+  it("clearLearnPosition removes the stored entry", () => {
+    saveLearnPosition({ datasetId: "ds-1", planType: "all", dayIndex: 0, cardIndex: 3, updatedAt: "x" });
+    clearLearnPosition("ds-1");
+    expect(loadLearnPosition("ds-1")).toBeNull();
+  });
+
+  it("handles corrupted JSON gracefully", () => {
+    localStorage.setItem("jp-learner:learn-position-ds-1", "not valid json{{{");
+    expect(loadLearnPosition("ds-1")).toBeNull();
+  });
+
+  it("rejects payloads with wrong types", () => {
+    localStorage.setItem(
+      "jp-learner:learn-position-ds-1",
+      JSON.stringify({ datasetId: "ds-1", planType: "daily", dayIndex: "2", cardIndex: 1, updatedAt: "x" }),
+    );
+    expect(loadLearnPosition("ds-1")).toBeNull();
+  });
+
+  it("rejects payloads with negative indices", () => {
+    localStorage.setItem(
+      "jp-learner:learn-position-ds-1",
+      JSON.stringify({ datasetId: "ds-1", planType: "all", dayIndex: 0, cardIndex: -1, updatedAt: "x" }),
+    );
+    expect(loadLearnPosition("ds-1")).toBeNull();
+  });
+
+  it("rejects payloads with unknown planType", () => {
+    localStorage.setItem(
+      "jp-learner:learn-position-ds-1",
+      JSON.stringify({ datasetId: "ds-1", planType: "weekly", dayIndex: 0, cardIndex: 0, updatedAt: "x" }),
+    );
+    expect(loadLearnPosition("ds-1")).toBeNull();
+  });
+
+  it("rejects payloads missing required fields", () => {
+    localStorage.setItem(
+      "jp-learner:learn-position-ds-1",
+      JSON.stringify({ datasetId: "ds-1", planType: "all" }),
+    );
+    expect(loadLearnPosition("ds-1")).toBeNull();
   });
 });

@@ -6,7 +6,7 @@ import { useStudyPlan } from "../hooks/useStudyPlan";
 import LearnCard from "../components/LearnCard";
 import ProgressBar from "../components/ProgressBar";
 import ConfirmDialog from "../components/ConfirmDialog";
-import { loadTestModes } from "../lib/storage";
+import { loadTestModes, loadLearnPosition, saveLearnPosition } from "../lib/storage";
 import { VOCAB_TEST_MODES, GRAMMAR_TEST_MODES, MIX_TEST_MODES, MIX_DEFAULT_MODES } from "../types";
 
 interface LearnLocationState {
@@ -24,11 +24,46 @@ export default function LearnPage() {
 
   const [deleteItemId, setDeleteItemId] = useState<string | null>(null);
 
-  const { planType = "all", dayIndex: initialDayIndex = 0 } =
-    (location.state as LearnLocationState) ?? {};
+  // Resolve planType + initial position once per mount. We prefer location.state
+  // (the normal entry path), but fall back to saved.planType so a page reload
+  // still resumes correctly. cardIndex is clamped against current data so a
+  // saved index past the end (after item deletion / plan shrink / completion)
+  // doesn't drop the user straight into the completion screen.
+  const [init] = useState(() => {
+    const locationState = (location.state as LearnLocationState | null) ?? null;
+    const saved = loadLearnPosition(datasetId ?? "");
+    const planType: "all" | "daily" =
+      locationState?.planType ?? saved?.planType ?? "all";
+    const fallbackDay = locationState?.dayIndex ?? 0;
 
-  const [currentDayIndex, setCurrentDayIndex] = useState(initialDayIndex);
-  const [currentIndex, setCurrentIndex] = useState(0);
+    const savedMatches =
+      !!saved &&
+      saved.planType === planType &&
+      !(planType === "daily" && plan && saved.dayIndex >= plan.totalDays);
+
+    if (!savedMatches) {
+      return { planType, dayIndex: fallbackDay, cardIndex: 0 };
+    }
+
+    const items = dataset?.data ?? [];
+    let dayCount: number;
+    if (planType === "daily" && plan) {
+      const ids = new Set(items.map((it) => it.id));
+      dayCount = (plan.cardIds[saved!.dayIndex] ?? []).filter((id) => ids.has(id)).length;
+    } else {
+      dayCount = items.length;
+    }
+
+    return {
+      planType,
+      dayIndex: saved!.dayIndex,
+      cardIndex: dayCount > 0 ? Math.min(saved!.cardIndex, dayCount - 1) : 0,
+    };
+  });
+
+  const planType = init.planType;
+  const [currentDayIndex, setCurrentDayIndex] = useState(init.dayIndex);
+  const [currentIndex, setCurrentIndex] = useState(init.cardIndex);
 
   const selectDay = useCallback((day: number) => {
     setCurrentDayIndex(day);
@@ -84,6 +119,18 @@ export default function LearnPage() {
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [goNext, goPrev]);
+
+  // Persist position so the user can resume from where they left off
+  useEffect(() => {
+    if (!datasetId || !dataset) return;
+    saveLearnPosition({
+      datasetId,
+      planType,
+      dayIndex: currentDayIndex,
+      cardIndex: currentIndex,
+      updatedAt: new Date().toISOString(),
+    });
+  }, [datasetId, dataset, planType, currentDayIndex, currentIndex]);
 
   const navigateToExam = useCallback(() => {
     if (!dataset) return;

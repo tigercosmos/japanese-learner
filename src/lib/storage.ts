@@ -1,4 +1,4 @@
-import type { ProgressStore, StudyPlan, CustomDataStore, Category } from "../types";
+import type { ProgressStore, StudyPlan, LearnPosition, CustomDataStore, Category } from "../types";
 import type { SyncMetadata } from "./google/syncTypes";
 import { SYNC_META_KEY } from "./google/syncTypes";
 
@@ -127,6 +127,47 @@ export function saveStudyPlan(plan: StudyPlan): void {
 export function clearStudyPlan(datasetId: string): void {
   localStorage.removeItem(studyPlanKey(datasetId));
   notifySyncNeeded();
+}
+
+// ========== Learn Position ==========
+
+function learnPositionKey(datasetId: string): string {
+  return `jp-learner:learn-position-${datasetId}`;
+}
+
+function isValidLearnPosition(value: unknown): value is LearnPosition {
+  if (!value || typeof value !== "object") return false;
+  const v = value as Record<string, unknown>;
+  return (
+    typeof v.datasetId === "string" &&
+    (v.planType === "all" || v.planType === "daily") &&
+    typeof v.dayIndex === "number" &&
+    Number.isInteger(v.dayIndex) &&
+    v.dayIndex >= 0 &&
+    typeof v.cardIndex === "number" &&
+    Number.isInteger(v.cardIndex) &&
+    v.cardIndex >= 0 &&
+    typeof v.updatedAt === "string"
+  );
+}
+
+export function loadLearnPosition(datasetId: string): LearnPosition | null {
+  try {
+    const raw = localStorage.getItem(learnPositionKey(datasetId));
+    if (!raw) return null;
+    const parsed: unknown = JSON.parse(raw);
+    return isValidLearnPosition(parsed) ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+export function saveLearnPosition(position: LearnPosition): void {
+  localStorage.setItem(learnPositionKey(position.datasetId), JSON.stringify(position));
+}
+
+export function clearLearnPosition(datasetId: string): void {
+  localStorage.removeItem(learnPositionKey(datasetId));
 }
 
 // ========== Custom Data ==========

@@ -265,3 +265,156 @@ test.describe("Learn Mode - Daily Plan", () => {
     await expect(page.getByRole("button", { name: "學習下一天" })).toBeVisible();
   });
 });
+
+test.describe("Learn Mode - Resume Position", () => {
+  test("resumes 全部學習 from the last card after navigating away", async ({ page }) => {
+    await goToLearnAll(page, "test-vocab");
+    // Advance to card 2 (test-vocab-002 / 天気)
+    await page.getByRole("button", { name: /下一張/ }).click();
+    await expect(page.getByText("天気", { exact: true })).toBeVisible();
+
+    // Leave the page and return through the home → learn-setup flow
+    await page.goto("/");
+    await page.getByRole("heading", { name: "Test 詞彙" }).click();
+    await page.getByText("學習模式（瀏覽全部卡片）").click();
+    await expect(page).toHaveURL(/\/learn\/test-vocab$/);
+
+    // Setup page should offer resume
+    await expect(page.getByText("上次學到一半")).toBeVisible();
+    await expect(page.getByText("已看到第 2 / 3 張")).toBeVisible();
+
+    await page.getByRole("button", { name: "繼續學習" }).click();
+    await expect(page).toHaveURL(/\/learn\/test-vocab\/session$/);
+    // Land on card 2, not card 1
+    await expect(page.getByText("天気", { exact: true })).toBeVisible();
+    await expect(page.getByRole("button", { name: /上一張/ })).toBeEnabled();
+  });
+
+  test("重新開始 clears the saved 全部學習 position", async ({ page }) => {
+    await goToLearnAll(page, "test-vocab");
+    await page.getByRole("button", { name: /下一張/ }).click();
+    await page.waitForTimeout(100);
+
+    await page.goto("/");
+    await page.getByRole("heading", { name: "Test 詞彙" }).click();
+    await page.getByText("學習模式（瀏覽全部卡片）").click();
+    await expect(page.getByText("上次學到一半")).toBeVisible();
+
+    await page.getByRole("button", { name: "重新開始" }).click();
+    // Resume card disappears and fresh setup options return
+    await expect(page.getByText("上次學到一半")).toHaveCount(0);
+    await expect(page.getByText("全部學習")).toBeVisible();
+    await expect(page.getByText("分天計畫")).toBeVisible();
+
+    // Storage cleared
+    const stored = await page.evaluate(() =>
+      localStorage.getItem("jp-learner:learn-position-test-vocab"),
+    );
+    expect(stored).toBeNull();
+  });
+
+  test("resumes daily plan on the same day and card", async ({ page }) => {
+    // Seed a 2-day plan
+    await page.goto("/");
+    await page.evaluate(() => {
+      localStorage.clear();
+      const plan = {
+        datasetId: "test-vocab",
+        totalDays: 2,
+        cardIds: [
+          ["test-vocab-001", "test-vocab-002"],
+          ["test-vocab-003"],
+        ],
+        createdAt: new Date().toISOString(),
+      };
+      localStorage.setItem("jp-learner:study-plan-test-vocab", JSON.stringify(plan));
+    });
+
+    await page.getByRole("heading", { name: "Test 詞彙" }).click();
+    await page.getByText("學習模式（瀏覽全部卡片）").click();
+    await expect(page.getByText("已有學習計畫")).toBeVisible();
+    await page.getByRole("button", { name: "繼續計畫" }).click();
+    await expect(page).toHaveURL(/\/learn\/test-vocab\/session$/);
+
+    // Move to day 2 and view its only card (食べる)
+    await page.getByRole("button", { name: /第 2 天/ }).click();
+    await expect(page.getByText("食べる", { exact: true })).toBeVisible();
+
+    // Leave the page and return through the home → learn-setup flow
+    await page.goto("/");
+    await page.getByRole("heading", { name: "Test 詞彙" }).click();
+    await page.getByText("學習模式（瀏覽全部卡片）").click();
+    await page.getByRole("button", { name: "繼續計畫" }).click();
+    await expect(page).toHaveURL(/\/learn\/test-vocab\/session$/);
+
+    // Should land on day 2 with 食べる, not day 1 with 勉強
+    await expect(page.getByText("食べる", { exact: true })).toBeVisible();
+  });
+
+  test("clamps saved cardIndex past current dataset bounds", async ({ page }) => {
+    await page.goto("/");
+    // Seed a saved 'all' position with cardIndex past the last card (3 cards in fixture)
+    await page.evaluate(() => {
+      localStorage.clear();
+      localStorage.setItem(
+        "jp-learner:learn-position-test-vocab",
+        JSON.stringify({
+          datasetId: "test-vocab",
+          planType: "all",
+          dayIndex: 0,
+          cardIndex: 99,
+          updatedAt: new Date().toISOString(),
+        }),
+      );
+    });
+
+    await page.getByRole("heading", { name: "Test 詞彙" }).click();
+    await page.getByText("學習模式（瀏覽全部卡片）").click();
+    await expect(page.getByText("上次學到一半")).toBeVisible();
+    await page.getByRole("button", { name: "繼續學習" }).click();
+    await expect(page).toHaveURL(/\/learn\/test-vocab\/session$/);
+
+    // Should clamp to last real card (食べる), not show completion screen
+    await expect(page.getByText("食べる", { exact: true })).toBeVisible();
+    await expect(page.getByText("瀏覽完成！")).toHaveCount(0);
+  });
+
+  test("ignores saved position when planType doesn't match", async ({ page }) => {
+    // Seed a saved 'all' position
+    await page.goto("/");
+    await page.evaluate(() => {
+      localStorage.clear();
+      localStorage.setItem(
+        "jp-learner:learn-position-test-vocab",
+        JSON.stringify({
+          datasetId: "test-vocab",
+          planType: "all",
+          dayIndex: 0,
+          cardIndex: 2,
+          updatedAt: new Date().toISOString(),
+        }),
+      );
+      // Add a daily plan that, if restored from the saved 'all' position, would
+      // place the user on the wrong card
+      const plan = {
+        datasetId: "test-vocab",
+        totalDays: 2,
+        cardIds: [
+          ["test-vocab-001", "test-vocab-002"],
+          ["test-vocab-003"],
+        ],
+        createdAt: new Date().toISOString(),
+      };
+      localStorage.setItem("jp-learner:study-plan-test-vocab", JSON.stringify(plan));
+    });
+
+    // Enter via daily plan resume — planType becomes 'daily', saved is 'all', so reset
+    await page.getByRole("heading", { name: "Test 詞彙" }).click();
+    await page.getByText("學習模式（瀏覽全部卡片）").click();
+    await page.getByRole("button", { name: "繼續計畫" }).click();
+    await expect(page).toHaveURL(/\/learn\/test-vocab\/session$/);
+
+    // Should start at day 1, card 1 (勉強), not day 1 card 3 from stale 'all' position
+    await expect(page.getByText("勉強", { exact: true })).toBeVisible();
+  });
+});
